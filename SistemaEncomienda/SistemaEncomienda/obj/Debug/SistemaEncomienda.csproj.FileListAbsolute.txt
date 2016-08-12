@@ -1,0 +1,66 @@
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\bin\Debug\SistemaEncomienda.exe.config
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\bin\Debug\SistemaEncomienda.exe
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\bin\Debug\SistemaEncomienda.pdb
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.csprojResolveAssemblyReference.cache
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmInicio.resources
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.Properties.Resources.resources
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.csproj.GenerateResource.Cache
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.exe
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.pdb
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmLogin.resources
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRegistrarse.resources
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\bin\Debug\claseArchivo.dll
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\bin\Debug\misClases.dll
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\bin\Debug\claseArchivo.pdb
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\bin\Debug\misClases.pdb
+C:\Users\Brayamdario\Documents\Visual Studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenu.resources
+C:\Users\Brayamdario\Documents\Visual Studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarCliente.resources
+C:\Users\Brayamdario\Documents\Visual Studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarPaquete.resources
+C:\Users\Brayamdario\Documents\Visual Studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRegistrarEncomienda.resources
+C:\Users\Brayamdario\Documents\Visual Studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMostrarVentas.resources
+C:\Users\Brayamdario\Documents\Visual Studio 2013\Projects\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmModificarCliente.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\bin\Debug\SistemaEncomienda.exe.config
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.exe
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.pdb
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\bin\Debug\SistemaEncomienda.exe
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\bin\Debug\SistemaEncomienda.pdb
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\bin\Debug\claseArchivo.dll
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\bin\Debug\misClases.dll
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\bin\Debug\claseArchivo.pdb
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\bin\Debug\misClases.pdb
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarCliente.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarPaquete.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmInicio.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmLogin.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenu.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmModificarCliente.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMostrarVentas.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRegistrarEncomienda.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRegistrarse.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.Properties.Resources.resources
+C:\Users\Admin\Downloads\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.csproj.GenerateResource.Cache
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\bin\Debug\SistemaEncomienda.exe.config
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.exe
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.pdb
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\bin\Debug\SistemaEncomienda.exe
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\bin\Debug\SistemaEncomienda.pdb
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\bin\Debug\claseArchivo.dll
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\bin\Debug\misClases.dll
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\bin\Debug\claseArchivo.pdb
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\bin\Debug\misClases.pdb
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.csprojResolveAssemblyReference.cache
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarCliente.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarPaquete.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmInicio.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmLogin.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenu.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmModificarCliente.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRegistrarEncomienda.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRegistrarse.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.Properties.Resources.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.csproj.GenerateResource.Cache
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMostrarEnvios.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmEstadoPaquete.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenuCliente.resources
+C:\Users\Brayamdario\Desktop\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenuEmpresa.resources

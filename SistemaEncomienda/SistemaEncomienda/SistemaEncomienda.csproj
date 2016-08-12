@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DF98CA5-E6C0-4ED9-9718-74BB449E2E7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaEncomienda</RootNamespace>
+    <AssemblyName>SistemaEncomienda</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAgregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarCliente.Designer.cs">
+      <DependentUpon>frmAgregarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarPaquete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarPaquete.Designer.cs">
+      <DependentUpon>frmAgregarPaquete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadoPaquete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadoPaquete.Designer.cs">
+      <DependentUpon>frmEstadoPaquete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuCliente.Designer.cs">
+      <DependentUpon>frmMenuCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarCliente.Designer.cs">
+      <DependentUpon>frmModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostrarEnvios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarEnvios.Designer.cs">
+      <DependentUpon>frmMostrarEnvios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuEmpresa.Designer.cs">
+      <DependentUpon>frmMenuEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarEncomienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarEncomienda.Designer.cs">
+      <DependentUpon>frmRegistrarEncomienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarse.Designer.cs">
+      <DependentUpon>frmRegistrarse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAgregarCliente.resx">
+      <DependentUpon>frmAgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarPaquete.resx">
+      <DependentUpon>frmAgregarPaquete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadoPaquete.resx">
+      <DependentUpon>frmEstadoPaquete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuCliente.resx">
+      <DependentUpon>frmMenuCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuEmpresa.resx">
+      <DependentUpon>frmMenuEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarCliente.resx">
+      <DependentUpon>frmModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarEnvios.resx">
+      <DependentUpon>frmMostrarEnvios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarEncomienda.resx">
+      <DependentUpon>frmRegistrarEncomienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarse.resx">
+      <DependentUpon>frmRegistrarse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linecons_e00d%280%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e7fe%280%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-add-26863.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-7790.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19828088-Login-Form-Formulario-para-el-sitio-web-la-p-gina-de-inicio-de-sesi-n-de-plantilla-Foto-de-archivo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\claseArchivo\claseArchivo.csproj">
+      <Project>{38311f80-aeaf-4c3f-bf58-dfa4eb3b7749}</Project>
+      <Name>claseArchivo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\misClases\misClases.csproj">
+      <Project>{666f34de-0c37-4da4-ba91-e32bd86921c6}</Project>
+      <Name>misClases</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful-origami-background-vector-illustration-design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e7fe%280%29_2561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octicons_f012%280%29_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconic_e01f%280%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e03f%280%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octicons_f035%280%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-pagina_ff13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e161%280%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e235%280%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-vector-minimalistic-red-black-1920x1200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octicons_f007%286%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondos de Pantalla Gratis Abstractos %28164%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_e722%280%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e02f%281%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconic_e001%281%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-colored-vector-background_73531.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows-wallpaper-screen-logon-images-logonscreens-thoosje-check-42786.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\638383__wallpaper-mambots-black-web_p.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e55a%281%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconic_2718%280%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e888%288%29_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-77901.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

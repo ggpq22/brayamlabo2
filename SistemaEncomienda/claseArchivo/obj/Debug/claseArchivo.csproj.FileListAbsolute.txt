@@ -1,0 +1,9 @@
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\claseArchivo\bin\Debug\claseArchivo.dll
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\claseArchivo\bin\Debug\claseArchivo.pdb
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\claseArchivo\obj\Debug\claseArchivo.dll
+c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\claseArchivo\obj\Debug\claseArchivo.pdb
+C:\Users\Admin\Downloads\SistemaEncomienda\claseArchivo\bin\Debug\claseArchivo.dll
+C:\Users\Admin\Downloads\SistemaEncomienda\claseArchivo\bin\Debug\claseArchivo.pdb
+C:\Users\Admin\Downloads\SistemaEncomienda\claseArchivo\obj\Debug\claseArchivo.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Downloads\SistemaEncomienda\claseArchivo\obj\Debug\claseArchivo.dll
+C:\Users\Admin\Downloads\SistemaEncomienda\claseArchivo\obj\Debug\claseArchivo.pdb
