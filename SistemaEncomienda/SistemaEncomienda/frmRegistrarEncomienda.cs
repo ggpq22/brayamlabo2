@@ -76,7 +76,7 @@ namespace SistemaEncomienda
 
         private void dgvElegirPaquete_Click(object sender, EventArgs e)
         {
-            tbIdpaquete.Text = dgvElegirPaquete.CurrentRow.Cells["Id"].Value.ToString();
+            tbCodpaquete.Text = dgvElegirPaquete.CurrentRow.Cells["Codigo"].Value.ToString();
             tbPrecio.Text = dgvElegirPaquete.CurrentRow.Cells["Kilos"].Value.ToString();
            
         }
@@ -89,9 +89,9 @@ namespace SistemaEncomienda
 
         private void btnRegistrarEncomienda_Click(object sender, EventArgs e)
         {
-            clsEncomienda nuevo = new clsEncomienda();
+            clsFactura nuevo = new clsFactura();
             nuevo.Id =nuevo.RecuperarUltimoId()+1;
-            nuevo.Idpaquete = int.Parse(tbIdpaquete.Text);
+            nuevo.CodigoPaquete = tbCodpaquete.Text;
             nuevo.Nombrecliente = tbnomcliente.Text;
             nuevo.Dnicliente = int.Parse(tbdnicliente.Text);
             nuevo.Precio=float.Parse(tbPrecio.Text);
@@ -99,9 +99,9 @@ namespace SistemaEncomienda
             nuevo.Empresa = cbempresas.SelectedItem.ToString();
             List<clsPaquete> lista1 = new List<clsPaquete>();
             clsPaquete cambiar = new clsPaquete();
-            cambiar = cambiar.recuperarPaquete(nuevo.Idpaquete);
+            cambiar = cambiar.retornarPaquete(nuevo.CodigoPaquete);
             clsPaquete modi = new clsPaquete();
-            if (cambiar.Estado == true)
+            if (cambiar.Estado == "Despachado")
             {
                 MessageBox.Show("Este paquete ya fue enviado");
             }
@@ -119,8 +119,9 @@ namespace SistemaEncomienda
                         g.Ciudad = cambiar.Ciudad;
                         g.Direccion = cambiar.Direccion;
                         g.Id = cambiar.Id;
+                        g.Codigo = cambiar.Codigo;
                         g.Kilos = cambiar.Kilos;
-                        g.Estado = true;
+                        g.Estado ="Despachado";
                         lista1.Add(g);
                     }
                     else { lista1.Add(g); }
@@ -134,7 +135,7 @@ namespace SistemaEncomienda
                 res = nuevo.Grabar();
                 if (res == string.Empty)
                 {
-                    MessageBox.Show("encomienda registrada");
+                    MessageBox.Show("encomienda enviada");
                 }
 
                 else { MessageBox.Show("ocurrio el siguiente error" + res); }

@@ -86,5 +86,21 @@ namespace misClases
             
         }
 
+        public clsCliente buscarCliente(int d) 
+        {
+            clsCliente retornar = null;
+            clsCliente aux = new clsCliente();
+
+            foreach (clsCliente c in aux.Leer()) 
+            {
+                if (c.Dni == d) 
+                {
+                    retornar = c;
+                }
+            }
+
+            return retornar;
+        }
+
     }
 }

@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCodigoAbuscar = new System.Windows.Forms.TextBox();
             this.btnRastrear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -58,14 +58,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Ingrese el codigo de su paquete para verificar el estado";
             // 
-            // textBox1
+            // tbCodigoAbuscar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(242, 128);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 35);
-            this.textBox1.TabIndex = 2;
+            this.tbCodigoAbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCodigoAbuscar.Location = new System.Drawing.Point(242, 128);
+            this.tbCodigoAbuscar.MaxLength = 10;
+            this.tbCodigoAbuscar.Name = "tbCodigoAbuscar";
+            this.tbCodigoAbuscar.Size = new System.Drawing.Size(153, 35);
+            this.tbCodigoAbuscar.TabIndex = 2;
             // 
             // btnRastrear
             // 
@@ -85,7 +85,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(631, 386);
             this.Controls.Add(this.btnRastrear);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbCodigoAbuscar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
@@ -99,7 +99,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCodigoAbuscar;
         private System.Windows.Forms.Button btnRastrear;
     }
 }

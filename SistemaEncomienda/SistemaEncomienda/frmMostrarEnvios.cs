@@ -19,8 +19,8 @@ namespace SistemaEncomienda
             InitializeComponent();
         }
 
-        clsEncomienda en = new clsEncomienda();
-        List<clsEncomienda> lista;
+        clsFactura en = new clsFactura();
+        List<clsFactura> lista;
 
         private void frmMostrarVentas_Load(object sender, EventArgs e)
         {
@@ -36,8 +36,8 @@ namespace SistemaEncomienda
             cbEmpresa.SelectedItem = "Todas";
 
             dgvMostrar.DataSource = null;
-            lista = new List<clsEncomienda>();
-            foreach (clsEncomienda a in en.Leer()) 
+            lista = new List<clsFactura>();
+            foreach (clsFactura a in en.Leer()) 
             {
                 lista.Add(a);
             }
@@ -70,9 +70,9 @@ namespace SistemaEncomienda
 
         public void filtros()
         {
-            lista = new List<clsEncomienda>();
+            lista = new List<clsFactura>();
             dgvMostrar.DataSource = null;
-            foreach (clsEncomienda a in en.Leer())
+            foreach (clsFactura a in en.Leer())
             {
                 lista.Add(a);
             }

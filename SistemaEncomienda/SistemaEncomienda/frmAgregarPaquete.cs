@@ -29,7 +29,7 @@ namespace SistemaEncomienda
             nuevo.Ciudad = tbciudadCliente.Text;
             nuevo.Direccion = tbdirecDest.Text;
             nuevo.Kilos = float.Parse(tbKg.Text);
-            nuevo.Estado = false;
+            nuevo.Estado = "Para enviar";
 
             if (tbNomdestinatario.Text != string.Empty && tbDniDestinatario.Text != string.Empty && tbciudadCliente.Text != string.Empty && tbdirecDest.Text != string.Empty && tbKg.Text != string.Empty)
             {
