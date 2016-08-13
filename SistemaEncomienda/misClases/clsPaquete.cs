@@ -13,12 +13,13 @@ namespace misClases
        clsArchivoBinario paquete = new clsArchivoBinario("B://prueba","paquetes.dat");
 
        int id;
+       string codigo;
        string nombreDestinatario;
        int dniDestinatario;
        string ciudad;
        string direccion;
        double kilos;
-       bool estado;
+       string  estado;
 
        public int Id 
        {
@@ -26,7 +27,11 @@ namespace misClases
            get { return id; }
        }
 
- 
+       public string Codigo 
+       {
+           set { codigo = value; }
+           get { return codigo; }
+       }
        public string Ciudad 
        {
            set { ciudad = value; }
@@ -58,7 +63,7 @@ namespace misClases
            get { return dniDestinatario; }
        }
 
-       public bool Estado 
+       public string Estado 
        {
            set { estado = value; }
            get { return estado;}
@@ -121,5 +126,21 @@ namespace misClases
 
            return retornar;
        }
+
+       public clsPaquete retornarPaquete(string cod) 
+       {
+           clsPaquete aux = new clsPaquete();
+           clsPaquete retornar = new clsPaquete();
+           foreach (clsPaquete buscar in aux.Leer())
+           {
+               if (buscar.Codigo == cod)
+               {
+                   retornar = buscar;
+               }
+           }
+
+           return retornar;
+       }
+
     }
 }

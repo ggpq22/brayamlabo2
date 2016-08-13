@@ -84,6 +84,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _27d1 {
+            get {
+                object obj = ResourceManager.GetObject("27d1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _638383__wallpaper_mambots_black_web_p {
             get {
                 object obj = ResourceManager.GetObject("638383__wallpaper-mambots-black-web_p", resourceCulture);
@@ -114,6 +124,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap abstracto_colores_triangulos_images_194433 {
+            get {
+                object obj = ResourceManager.GetObject("abstracto-colores-triangulos-images-194433", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Colorful_origami_background_vector_illustration_design {
             get {
                 object obj = ResourceManager.GetObject("Colorful-origami-background-vector-illustration-design", resourceCulture);
@@ -137,6 +157,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap fondo {
             get {
                 object obj = ResourceManager.GetObject("fondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondo_abstracto_1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo-abstracto-1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

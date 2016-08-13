@@ -280,6 +280,15 @@
   <ItemGroup>
     <None Include="Resources\ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-77901.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstracto-colores-triangulos-images-194433.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27d1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-abstracto-1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

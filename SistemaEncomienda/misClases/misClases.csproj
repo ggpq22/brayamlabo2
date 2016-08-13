@@ -41,7 +41,7 @@
   <ItemGroup>
     <Compile Include="clsUsuario.cs" />
     <Compile Include="clsCliente.cs" />
-    <Compile Include="clsEncomienda.cs" />
+    <Compile Include="clsFactura.cs" />
     <Compile Include="clsPaquete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -32,7 +32,7 @@
             this.dgvElegircliente = new System.Windows.Forms.DataGridView();
             this.lblSleccion = new System.Windows.Forms.Label();
             this.lblSleccioncliente = new System.Windows.Forms.Label();
-            this.tbIdpaquete = new System.Windows.Forms.TextBox();
+            this.tbCodpaquete = new System.Windows.Forms.TextBox();
             this.tbnomcliente = new System.Windows.Forms.TextBox();
             this.tbdnicliente = new System.Windows.Forms.TextBox();
             this.tbPrecio = new System.Windows.Forms.TextBox();
@@ -96,13 +96,13 @@
             this.lblSleccioncliente.TabIndex = 3;
             this.lblSleccioncliente.Text = "Seleccione el cliente";
             // 
-            // tbIdpaquete
+            // tbCodpaquete
             // 
-            this.tbIdpaquete.Location = new System.Drawing.Point(417, 250);
-            this.tbIdpaquete.Multiline = true;
-            this.tbIdpaquete.Name = "tbIdpaquete";
-            this.tbIdpaquete.Size = new System.Drawing.Size(142, 30);
-            this.tbIdpaquete.TabIndex = 4;
+            this.tbCodpaquete.Location = new System.Drawing.Point(417, 250);
+            this.tbCodpaquete.Multiline = true;
+            this.tbCodpaquete.Name = "tbCodpaquete";
+            this.tbCodpaquete.Size = new System.Drawing.Size(142, 30);
+            this.tbCodpaquete.TabIndex = 4;
             // 
             // tbnomcliente
             // 
@@ -150,11 +150,11 @@
             this.lblNropaquete.BackColor = System.Drawing.Color.Black;
             this.lblNropaquete.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNropaquete.ForeColor = System.Drawing.Color.White;
-            this.lblNropaquete.Location = new System.Drawing.Point(233, 250);
+            this.lblNropaquete.Location = new System.Drawing.Point(223, 250);
             this.lblNropaquete.Name = "lblNropaquete";
-            this.lblNropaquete.Size = new System.Drawing.Size(157, 29);
+            this.lblNropaquete.Size = new System.Drawing.Size(188, 29);
             this.lblNropaquete.TabIndex = 10;
-            this.lblNropaquete.Text = "Nro° Paquete";
+            this.lblNropaquete.Text = "Codigo Paquete";
             // 
             // label1
             // 
@@ -265,7 +265,7 @@
             this.Controls.Add(this.tbPrecio);
             this.Controls.Add(this.tbdnicliente);
             this.Controls.Add(this.tbnomcliente);
-            this.Controls.Add(this.tbIdpaquete);
+            this.Controls.Add(this.tbCodpaquete);
             this.Controls.Add(this.lblSleccioncliente);
             this.Controls.Add(this.lblSleccion);
             this.Controls.Add(this.dgvElegircliente);
@@ -285,7 +285,7 @@
         private System.Windows.Forms.DataGridView dgvElegircliente;
         private System.Windows.Forms.Label lblSleccion;
         private System.Windows.Forms.Label lblSleccioncliente;
-        private System.Windows.Forms.TextBox tbIdpaquete;
+        private System.Windows.Forms.TextBox tbCodpaquete;
         private System.Windows.Forms.TextBox tbnomcliente;
         private System.Windows.Forms.TextBox tbdnicliente;
         private System.Windows.Forms.TextBox tbPrecio;

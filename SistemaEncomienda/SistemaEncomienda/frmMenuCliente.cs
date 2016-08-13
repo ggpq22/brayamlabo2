@@ -19,8 +19,8 @@ namespace SistemaEncomienda
 
         private void btnRastrear_Click(object sender, EventArgs e)
         {
-            string codigo = textBox1.Text;
-            if(codigo == string.Empty)
+            string codigo = tbCodigoAbuscar.Text;
+            if(codigo != string.Empty)
             {
                 frmEstadoPaquete frmEP = new frmEstadoPaquete(codigo);
                 frmEP.ShowDialog();
