@@ -19,3 +19,10 @@ C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\bin\Debug\claseArchivo.
 C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\obj\Debug\misClases.csprojResolveAssemblyReference.cache
 C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\obj\Debug\misClases.dll
 C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\obj\Debug\misClases.pdb
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\misClases.dll
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\misClases.pdb
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\claseArchivo.dll
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\claseArchivo.pdb
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\obj\Debug\misClases.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\obj\Debug\misClases.dll
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\obj\Debug\misClases.pdb
