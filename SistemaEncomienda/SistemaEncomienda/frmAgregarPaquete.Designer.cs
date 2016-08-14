@@ -232,6 +232,7 @@
             this.Controls.Add(this.lblNombrecompleto);
             this.DoubleBuffered = true;
             this.Name = "frmAgregarPaquete";
+            this.Load += new System.EventHandler(this.frmAgregarPaquete_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarPaquete)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

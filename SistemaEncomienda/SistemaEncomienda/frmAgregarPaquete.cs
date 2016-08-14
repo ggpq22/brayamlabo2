@@ -22,6 +22,9 @@ namespace SistemaEncomienda
 
         private void btnGrabarPaquete_Click(object sender, EventArgs e)
         {
+
+           if (tbNomdestinatario.Text != string.Empty && tbDniDestinatario.Text != string.Empty && tbciudadCliente.Text != string.Empty && tbdirecDest.Text != string.Empty && tbKg.Text != string.Empty)
+           { 
             clsPaquete nuevo = new clsPaquete();
             nuevo.Id = nuevo.RecuperarUltimoId() + 1;
             nuevo.NombreDestinatario = tbNomdestinatario.Text;
@@ -30,9 +33,8 @@ namespace SistemaEncomienda
             nuevo.Direccion = tbdirecDest.Text;
             nuevo.Kilos = float.Parse(tbKg.Text);
             nuevo.Estado = "Para enviar";
+            nuevo.Codigo = "CDP" + nuevo.Id;
 
-            if (tbNomdestinatario.Text != string.Empty && tbDniDestinatario.Text != string.Empty && tbciudadCliente.Text != string.Empty && tbdirecDest.Text != string.Empty && tbKg.Text != string.Empty)
-            {
                 string res = string.Empty;
                 res = nuevo.Grabar();
                 if (res == string.Empty)
@@ -52,7 +54,11 @@ namespace SistemaEncomienda
 
             foreach (clsPaquete p in aux.Leer()) 
             {
-                lista.Add(p);
+                if (p.Estado == "Para enviar") 
+                {
+                    lista.Add(p);
+                }
+                
             }
 
             dgvAgregarPaquete.DataSource = null;
@@ -93,6 +99,11 @@ namespace SistemaEncomienda
             {
                 e.Handled = true;
             }
+        }
+
+        private void frmAgregarPaquete_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

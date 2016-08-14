@@ -258,6 +258,7 @@
             this.Controls.Add(this.lblAgNombre);
             this.DoubleBuffered = true;
             this.Name = "frmAgregarCliente";
+            this.Load += new System.EventHandler(this.frmAgregarCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
