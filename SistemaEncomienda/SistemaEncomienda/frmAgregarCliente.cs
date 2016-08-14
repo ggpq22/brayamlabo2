@@ -78,7 +78,11 @@ namespace SistemaEncomienda
             clsCliente n = new clsCliente();
             foreach (clsCliente a in n.Leer()) 
             {
-                lista.Add(a);
+                if (a.Estado == true) 
+                {
+                    lista.Add(a);
+                }
+               
             }
             
 
@@ -119,6 +123,11 @@ namespace SistemaEncomienda
             {
                 e.Handled = true;
             }
+        }
+
+        private void frmAgregarCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
