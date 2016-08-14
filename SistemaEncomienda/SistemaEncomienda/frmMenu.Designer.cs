@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.btnAgregarCliente = new System.Windows.Forms.Button();
             this.btnModificarEliminar = new System.Windows.Forms.Button();
             this.btnAgregarPaquete = new System.Windows.Forms.Button();
             this.btnDespacharPaquete = new System.Windows.Forms.Button();
             this.btnMostrarEncomiendas = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnAgregarUsuarios = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAgregarCliente
@@ -131,6 +133,23 @@
             this.btnCerrar.TabIndex = 5;
             this.btnCerrar.UseVisualStyleBackColor = false;
             // 
+            // btnAgregarUsuarios
+            // 
+            this.btnAgregarUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregarUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnAgregarUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarUsuarios.Image")));
+            this.btnAgregarUsuarios.Location = new System.Drawing.Point(12, 12);
+            this.btnAgregarUsuarios.Name = "btnAgregarUsuarios";
+            this.btnAgregarUsuarios.Size = new System.Drawing.Size(58, 59);
+            this.btnAgregarUsuarios.TabIndex = 6;
+            this.btnAgregarUsuarios.Tag = "2";
+            this.btnAgregarUsuarios.UseVisualStyleBackColor = false;
+            this.btnAgregarUsuarios.Click += new System.EventHandler(this.btnAgregarUsuarios_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +157,7 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(756, 461);
+            this.Controls.Add(this.btnAgregarUsuarios);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnMostrarEncomiendas);
             this.Controls.Add(this.btnDespacharPaquete);
@@ -161,5 +181,6 @@
         private System.Windows.Forms.Button btnDespacharPaquete;
         private System.Windows.Forms.Button btnMostrarEncomiendas;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnAgregarUsuarios;
     }
 }

@@ -14,7 +14,7 @@ namespace SistemaEncomienda
 {
     public partial class frmAgregarPaquete : Form
     {
-        clsArchivoBinario paquetitos = new clsArchivoBinario("B://prueba", "paquetes.dat");
+        clsArchivoBinario paquetitos = new clsArchivoBinario("C://prueba", "paquetes.dat");
         public frmAgregarPaquete()
         {
             InitializeComponent();

@@ -10,7 +10,7 @@ namespace misClases
 {
    public class clsCliente:clsObjeto
     {
-        clsArchivoBinario cliente = new clsArchivoBinario("B://prueba","clientes.dat");
+        clsArchivoBinario cliente = new clsArchivoBinario("C://prueba","clientes.dat");
 
         string nombre;
         string apellido;

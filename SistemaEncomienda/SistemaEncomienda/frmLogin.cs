@@ -14,7 +14,7 @@ namespace SistemaEncomienda
 {
     public partial class frmLogin : Form
     {
-        clsArchivoBinario adm = new clsArchivoBinario("B://prueba","administrador.dat");
+        clsArchivoBinario adm = new clsArchivoBinario("C://prueba","administrador.dat");
         public frmLogin()
         {
             InitializeComponent();
@@ -38,7 +38,10 @@ namespace SistemaEncomienda
             bool res = false;
             foreach (clsUsuario a in aux.Leer()) 
             {
-                lista.Add(a);
+                if (a != null)
+                {
+                    lista.Add(a);
+                }
             }
 
             foreach (clsUsuario b in lista) 

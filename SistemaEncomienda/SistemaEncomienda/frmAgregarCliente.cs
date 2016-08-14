@@ -14,7 +14,7 @@ namespace SistemaEncomienda
 {
     public partial class frmAgregarCliente : Form
     {
-        clsArchivoBinario clientito = new clsArchivoBinario("B://prueba", "clientes.dat");
+        clsArchivoBinario clientito = new clsArchivoBinario("C://prueba", "clientes.dat");
         public frmAgregarCliente()
         {
             InitializeComponent();

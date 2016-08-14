@@ -42,9 +42,9 @@
             this.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Location = new System.Drawing.Point(202, 139);
+            this.btnIngresar.Location = new System.Drawing.Point(187, 155);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(169, 149);
+            this.btnIngresar.Size = new System.Drawing.Size(170, 170);
             this.btnIngresar.TabIndex = 0;
             this.btnIngresar.Tag = "1";
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -53,15 +53,15 @@
             // btnRegistrarse
             // 
             this.btnRegistrarse.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegistrarse.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Material_Icons_e7fe_0__256;
             this.btnRegistrarse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRegistrarse.FlatAppearance.BorderSize = 0;
             this.btnRegistrarse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnRegistrarse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarse.Location = new System.Drawing.Point(423, 139);
+            this.btnRegistrarse.Image = global::SistemaEncomienda.Properties.Resources.Material_Icons_e7fe_0__256;
+            this.btnRegistrarse.Location = new System.Drawing.Point(430, 155);
             this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(164, 149);
+            this.btnRegistrarse.Size = new System.Drawing.Size(170, 170);
             this.btnRegistrarse.TabIndex = 1;
             this.btnRegistrarse.Tag = "2";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
@@ -93,6 +93,7 @@
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

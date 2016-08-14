@@ -11,7 +11,7 @@ namespace misClases
 {
    public class clsFactura:clsObjeto
     {
-       clsArchivoBinario paquete = new clsArchivoBinario("B://prueba", "encomiendas.dat");
+       clsArchivoBinario paquete = new clsArchivoBinario("C://prueba", "encomiendas.dat");
 
        int id;
        string  nombrecliente;

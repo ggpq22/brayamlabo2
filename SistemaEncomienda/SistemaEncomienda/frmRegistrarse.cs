@@ -15,7 +15,7 @@ namespace SistemaEncomienda
 {
     public partial class frmRegistrarse : Form
     {
-        clsArchivoBinario ad = new clsArchivoBinario("B://prueba","administrador.dat");
+        clsArchivoBinario ad = new clsArchivoBinario("C://prueba","administrador.dat");
         public frmRegistrarse()
         {
             InitializeComponent();
@@ -28,6 +28,7 @@ namespace SistemaEncomienda
             nuevo.Nombre = tbNomCompletoRegistro.Text;
             nuevo.Usuario = tbNomUsuarioRegistro.Text;
             nuevo.Contraseña = tbContraRegistro.Text;
+            nuevo.TipoUsuario = cbTipoUsuario.SelectedItem.ToString();
 
             if (tbNomCompletoRegistro.Text != string.Empty && tbNomUsuarioRegistro.Text != string.Empty && tbContraRegistro.Text != string.Empty)
             {
@@ -40,9 +41,12 @@ namespace SistemaEncomienda
                 }
                 foreach (clsUsuario b in lista)
                 {
-                    if (tbNomUsuarioRegistro.Text == b.Usuario)
+                    if (b != null)
                     {
-                        encontrado = true;
+                        if (tbNomUsuarioRegistro.Text == b.Usuario)
+                        {
+                            encontrado = true;
+                        }
                     }
                 }
                 if (encontrado == true)
@@ -56,32 +60,45 @@ namespace SistemaEncomienda
                     if (res == string.Empty)
                     {
                         MessageBox.Show("Usuario registrado");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocurrio el siguiente error" + res);
                     }
 
-                    else { MessageBox.Show("Ocurrio el siguiente error" + res); }
                 }
             }
 
-            else { MessageBox.Show("Campos incompletos"); }
+            else 
+            { 
+                MessageBox.Show("Campos incompletos"); 
+            }
+
         }
 
         private void frmRegistrarse_Load(object sender, EventArgs e)
         {
-            cbTipoUsuario.Items.Add("Cliente");
-            cbTipoUsuario.Items.Add("Empresa");
             cbTipoUsuario.Items.Add("Administrador");
-            cbTipoUsuario.SelectedItem = "Cliente";
+            cbTipoUsuario.Items.Add("Empresa");
+            cbTipoUsuario.Items.Add("Cliente");
+            cbTipoUsuario.SelectedItem = "Administrador";
 
-            if(cbTipoUsuario.SelectedItem == "Cliente")
+            List<clsUsuario> lista = new List<clsUsuario>();
+            clsUsuario aux = new clsUsuario();
+            foreach (clsUsuario a in aux.Leer())
             {
-                tbCodigo.Enabled = false;
-                lblCodigo.ForeColor = Color.Gray;
+                if (a != null)
+                {
+                    lista.Add(a);
+                }
             }
-            else
+            if(lista.Count == 0)
             {
-                tbCodigo.Enabled = true;
-                lblCodigo.ForeColor = Color.Black;
+                cbTipoUsuario.Enabled = false;
             }
+
+            
         }
 
         private void tbNomCompletoRegistro_KeyPress(object sender, KeyPressEventArgs e)
@@ -102,19 +119,6 @@ namespace SistemaEncomienda
             }
         }
 
-        private void cbTipoUsuario_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(cbTipoUsuario.SelectedItem == "Cliente")
-            {
-                tbCodigo.Enabled = false;
-                lblCodigo.ForeColor = Color.Gray;
-            }
-            else
-            {
-                tbCodigo.Enabled = true;
-                lblCodigo.ForeColor = Color.Black;
-            }
-        }
 
     }
 }

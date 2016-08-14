@@ -39,8 +39,6 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.cbTipoUsuario = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbCodigo = new System.Windows.Forms.TextBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pnlImagen
@@ -154,7 +152,6 @@
             this.cbTipoUsuario.Name = "cbTipoUsuario";
             this.cbTipoUsuario.Size = new System.Drawing.Size(150, 24);
             this.cbTipoUsuario.TabIndex = 17;
-            this.cbTipoUsuario.SelectedIndexChanged += new System.EventHandler(this.cbTipoUsuario_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -167,29 +164,6 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Tipo Usuario";
             // 
-            // tbCodigo
-            // 
-            this.tbCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCodigo.Location = new System.Drawing.Point(140, 337);
-            this.tbCodigo.MinimumSize = new System.Drawing.Size(130, 25);
-            this.tbCodigo.Multiline = true;
-            this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.PasswordChar = '*';
-            this.tbCodigo.Size = new System.Drawing.Size(130, 25);
-            this.tbCodigo.TabIndex = 19;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(63, 338);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(71, 24);
-            this.lblCodigo.TabIndex = 20;
-            this.lblCodigo.Text = "Codigo";
-            // 
             // frmRegistrarse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,8 +171,6 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.ubuntu_nuevos_fondos_escritorio_wallpaper_predominan_siempre_7790;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(712, 421);
-            this.Controls.Add(this.lblCodigo);
-            this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbTipoUsuario);
             this.Controls.Add(this.lblTitulo);
@@ -231,7 +203,5 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.ComboBox cbTipoUsuario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbCodigo;
-        private System.Windows.Forms.Label lblCodigo;
     }
 }

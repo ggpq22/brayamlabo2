@@ -11,7 +11,7 @@ namespace misClases
     
     public class clsUsuario:clsObjeto
     {
-        clsArchivoBinario admin = new clsArchivoBinario("B://prueba","administrador.dat");
+        clsArchivoBinario admin = new clsArchivoBinario("C://prueba","administrador.dat");
 
         string nombre;
         string usuario;

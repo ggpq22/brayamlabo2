@@ -10,7 +10,7 @@ namespace misClases
 {
    public class clsPaquete:clsObjeto
     {
-       clsArchivoBinario paquete = new clsArchivoBinario("B://prueba","paquetes.dat");
+       clsArchivoBinario paquete = new clsArchivoBinario("C://prueba","paquetes.dat");
 
        int id;
        string codigo;

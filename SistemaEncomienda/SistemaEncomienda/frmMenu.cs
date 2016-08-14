@@ -51,5 +51,11 @@ namespace SistemaEncomienda
             frmModificarCliente n = new frmModificarCliente();
             n.ShowDialog();
         }
+
+        private void btnAgregarUsuarios_Click(object sender, EventArgs e)
+        {
+            frmRegistrarse fr = new frmRegistrarse();
+            fr.ShowDialog();
+        }
     }
 }
