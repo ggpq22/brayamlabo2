@@ -94,5 +94,10 @@ namespace SistemaEncomienda
                 e.Handled = true;
             }
         }
+
+        private void frmAgregarPaquete_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

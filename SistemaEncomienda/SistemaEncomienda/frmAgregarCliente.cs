@@ -22,19 +22,21 @@ namespace SistemaEncomienda
         
         private void btnGrabarCliente_Click(object sender, EventArgs e)
         {
-            clsCliente nuevo = new clsCliente();
-            nuevo.Nombre = tbNomCliente.Text;
-            nuevo.Apellido = tbApellidoCliente.Text;
-            nuevo.Dni = int.Parse(tbDniCliente.Text);
-            nuevo.Direccion = tbDireccionCliente.Text;
-            nuevo.Telefono = int.Parse(tbTelefono.Text);
-            nuevo.Email = tbEmailcliente.Text;
-            nuevo.Estado = true;
-            string res = string.Empty;
-
-            bool encontrado = false;
             if (tbNomCliente.Text != string.Empty && tbApellidoCliente.Text != string.Empty && tbDniCliente.Text != string.Empty && tbTelefono.Text != string.Empty && tbEmailcliente.Text != string.Empty)
             {
+                clsCliente nuevo = new clsCliente();
+              nuevo.Nombre = tbNomCliente.Text;
+              nuevo.Apellido = tbApellidoCliente.Text;
+              nuevo.Dni = int.Parse(tbDniCliente.Text);
+               nuevo.Direccion = tbDireccionCliente.Text;
+               nuevo.Telefono = int.Parse(tbTelefono.Text);
+               nuevo.Email = tbEmailcliente.Text;
+               nuevo.Estado = true;
+               string res = string.Empty;
+
+            bool encontrado = false;
+            
+           
                 List<clsCliente> lista = new List<clsCliente>();
                 clsCliente aux = new clsCliente();
                 foreach (clsCliente a in aux.Leer())
