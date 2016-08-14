@@ -86,14 +86,21 @@ namespace misClases
            clsPaquete p = new clsPaquete();
            ArrayList AL = p.Leer();
 
-           if (AL.Count == 0)
+           if (AL.Count == 0 || AL == null)
            {
                darId = 0;
            }
            else
            {
-               p = (clsPaquete)AL[AL.Count - 1];
-               darId = p.id;
+               if ((clsPaquete)AL[AL.Count - 1] != null)
+               {
+                   p = (clsPaquete)AL[AL.Count - 1];
+                   darId = p.id;
+               }
+               else 
+               {
+                   darId = 0;
+               }
            }
 
            return darId;
