@@ -27,6 +27,8 @@ namespace SistemaEncomienda
 
         private void frmRegistrarEncomienda_Load(object sender, EventArgs e)
         {
+            
+
             dgvElegircliente.DataSource = null;
             dgvElegirPaquete.DataSource = null;
 
@@ -37,12 +39,19 @@ namespace SistemaEncomienda
 
             foreach (clsCliente cli in c1.Leer()) 
             {
-                listaclientes.Add(cli);
+                if (cli.Estado == true)
+                {
+                    listaclientes.Add(cli);
+                }
             }
 
             foreach (clsPaquete paq in p1.Leer()) 
             {
-                listapaquetes.Add(paq);
+                //if (paq.Estado == "Para enviar")
+                //{
+                    listapaquetes.Add(paq);
+                //}
+                
             }
 
             dgvElegircliente.DataSource = listaclientes;
