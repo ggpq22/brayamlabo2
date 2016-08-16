@@ -11,3 +11,4 @@ C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\claseArchivo\bin\D
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\claseArchivo\bin\Debug\claseArchivo.pdb
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\claseArchivo\obj\Debug\claseArchivo.dll
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\claseArchivo\obj\Debug\claseArchivo.pdb
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\claseArchivo\obj\Debug\claseArchivo.csprojResolveAssemblyReference.cache
