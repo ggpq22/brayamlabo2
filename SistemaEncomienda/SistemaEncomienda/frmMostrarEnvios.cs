@@ -55,7 +55,7 @@ namespace SistemaEncomienda
             if (dgvMostrar.Rows.Count != 0)
             {
                 dgvMostrar.Columns["Id"].Visible = false;
-                dgvMostrar.Columns["Idpaquete"].Visible = false;
+              
 
                 dgvMostrar.Columns["Precio"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 dgvMostrar.Columns["Dnicliente"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
@@ -65,6 +65,7 @@ namespace SistemaEncomienda
                 dgvMostrar.Columns["Fechaenvio"].HeaderText = "Fecha Envio";
                 dgvMostrar.Columns["Empresa"].HeaderText = "Empresa";
                 dgvMostrar.Columns["Precio"].HeaderText = "Precio $";
+                dgvMostrar.Columns["CodigoPaquete"].HeaderText = "Codigo Paquete";
             }
         }
 
