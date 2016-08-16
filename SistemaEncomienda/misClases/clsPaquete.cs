@@ -137,7 +137,7 @@ namespace misClases
        public clsPaquete retornarPaquete(string cod) 
        {
            clsPaquete aux = new clsPaquete();
-           clsPaquete retornar = new clsPaquete();
+           clsPaquete retornar = null;
            foreach (clsPaquete buscar in aux.Leer())
            {
                if (buscar.Codigo == cod)

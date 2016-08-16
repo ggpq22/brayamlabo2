@@ -30,24 +30,44 @@ namespace SistemaEncomienda
 
         private void frmEstadoPaquete_Load(object sender, EventArgs e)
         {
+          
+
+            dgvMostrar.Columns.Add("Nombre Cliente","Nombre Cliente");
+            dgvMostrar.Columns.Add("DNI","DNI");
+            dgvMostrar.Columns.Add("Fecha Envio","Fecha Envio");
+            dgvMostrar.Columns.Add("Empresa","Empresa");
+            dgvMostrar.Columns.Add("Destino","Destino");
+            dgvMostrar.Columns.Add("Direccion", "Direccion");
+            dgvMostrar.Columns.Add("Estado", "Estado");
+
+            cargarDgv();
+           
+        }
+
+        private void cargarDgv() 
+        {
             clsPaquete aux = new clsPaquete();
-            aux=p1.retornarPaquete(codigo);
+            aux = p1.retornarPaquete(codigo);
             clsFactura fac = new clsFactura();
             fac = f1.recuperarFac(codigo);
             if (aux != null && fac != null) 
             {
-                lblEstado.Text = aux.Estado;
-                lblNombreCliente.Text = f1.Nombrecliente;
-                lblDniCliente.Text = f1.Dnicliente.ToString();
-                lblCiudad.Text = aux.Ciudad;
-                lblDireccion.Text = aux.Direccion;
-                lblEmpresa.Text = f1.Empresa;
-                lblFecEnvio.Text = f1.Fechaenvio.ToString();
+                dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Nombre Cliente"].Value = fac.Nombrecliente;
+                dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["DNI"].Value = fac.Dnicliente;
+                dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Fecha Envio"].Value = fac.Fechaenvio;
+                dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Empresa"].Value = fac.Empresa;
+                dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Destino"].Value =aux.Ciudad;
+                dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Direccion"].Value = aux.Direccion;
+                dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Estado"].Value = aux.Estado;
+                
 
+
+                
 
             }
 
-            else { MessageBox.Show("Codigo invalido, por favor verifique el codigo"); }
+            else { MessageBox.Show("Codigo invalido, verifique los datos"); }
         }
+
     }
 }
