@@ -29,7 +29,7 @@ namespace SistemaEncomienda
               nuevo.Apellido = tbApellidoCliente.Text;
               nuevo.Dni = int.Parse(tbDniCliente.Text);
                nuevo.Direccion = tbDireccionCliente.Text;
-               nuevo.Telefono = int.Parse(tbTelefono.Text);
+               nuevo.Telefono = Convert.ToInt32(tbTelefono.Text);
                nuevo.Email = tbEmailcliente.Text;
                nuevo.Estado = true;
                string res = string.Empty;
