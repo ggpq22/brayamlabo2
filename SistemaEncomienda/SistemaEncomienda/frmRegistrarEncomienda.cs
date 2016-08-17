@@ -149,6 +149,11 @@ namespace SistemaEncomienda
                 }
 
                 else { MessageBox.Show("ocurrio el siguiente error" + res); }
+
+                tbCodpaquete.Clear();
+                tbdnicliente.Clear();
+                tbnomcliente.Clear();
+                tbPrecio.Clear();
             }
         }
     }

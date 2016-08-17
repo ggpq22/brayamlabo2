@@ -21,10 +21,11 @@ namespace SistemaEncomienda
         {
             string codigo = tbCodigoAbuscar.Text;
             clsPaquete aux = new clsPaquete();
-            aux.retornarPaquete(codigo);
+            clsPaquete p= new clsPaquete();
+            p=aux.retornarPaquete(codigo);
             if (codigo != string.Empty)
             {
-                if (aux.Codigo != null)
+                if (p.Codigo != null)
                 {
 
                     frmEstadoPaquete frmEP = new frmEstadoPaquete(codigo);

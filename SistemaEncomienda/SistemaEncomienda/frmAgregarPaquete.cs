@@ -63,6 +63,13 @@ namespace SistemaEncomienda
 
             dgvAgregarPaquete.DataSource = null;
             dgvAgregarPaquete.DataSource = lista;
+
+            tbciudadCliente.Clear();
+            tbdirecDest.Clear();
+            tbDniDestinatario.Clear();
+            tbNomdestinatario.Clear();
+            tbKg.Clear();
+
         }
 
         private void tbDniCliente_KeyPress(object sender, KeyPressEventArgs e)

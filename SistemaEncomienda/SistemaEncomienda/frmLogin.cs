@@ -73,6 +73,9 @@ namespace SistemaEncomienda
                 
             }
             else { MessageBox.Show("Verifique sus datos"); }
+
+            tbContraIngresar.Clear();
+            tbUsuIngresar.Clear();
         }
     }
 }

@@ -49,6 +49,7 @@
             this.dgvMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMostrar.Location = new System.Drawing.Point(86, 120);
             this.dgvMostrar.Name = "dgvMostrar";
+            this.dgvMostrar.ReadOnly = true;
             this.dgvMostrar.Size = new System.Drawing.Size(669, 150);
             this.dgvMostrar.TabIndex = 15;
             // 
