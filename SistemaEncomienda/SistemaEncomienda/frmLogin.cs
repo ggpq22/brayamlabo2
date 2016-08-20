@@ -27,8 +27,9 @@ namespace SistemaEncomienda
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+          
         }
+
 
         private void btnIngresarLogin_Click(object sender, EventArgs e)
         {
@@ -44,36 +45,46 @@ namespace SistemaEncomienda
                 }
             }
 
-            foreach (clsUsuario b in lista) 
+            
+            if (tbContraIngresar.Text != string.Empty && tbUsuIngresar.Text!=string.Empty)
             {
-                if ((b.Usuario == tbUsuIngresar.Text) && (b.Contraseña == tbContraIngresar.Text)) 
+
+           
+                foreach (clsUsuario b in lista)
                 {
-                    res = true;
-                    tipoUsuario = b.TipoUsuario;
+                    if ((b.Usuario == tbUsuIngresar.Text) && (b.Contraseña == tbContraIngresar.Text))
+                    {
+                        res = true;
+                        tipoUsuario = b.TipoUsuario;
+                    }
                 }
+
+                if (res == true)
+                {
+                    if (tipoUsuario.CompareTo("Administrador") == 0)
+                    {
+                        frmMenu m = new frmMenu();
+                        m.ShowDialog();
+                    }
+                    else if (tipoUsuario.CompareTo("Empresa") == 0)
+                    {
+                        frmMenuEmpresa me = new frmMenuEmpresa();
+                        me.ShowDialog();
+                    }
+
+                    else
+                    {
+                        frmMenuCliente mm = new frmMenuCliente();
+                        mm.ShowDialog();
+                    }
+
+                }
+                else { MessageBox.Show("Verifique sus datos"); }
             }
 
-            if (res == true) 
-            {
-                if(tipoUsuario.CompareTo("Administrador") == 0)
-                {
-                    frmMenu m = new frmMenu();
-                    m.ShowDialog();
-                }
-                else if(tipoUsuario.CompareTo("Cliente") == 0)
-                {
-                    frmMenuCliente mc = new frmMenuCliente();
-                    mc.ShowDialog();
-                }
-                else
-                {
-                    frmMenuEmpresa me = new frmMenuEmpresa();
-                    me.ShowDialog();
-                }
-                
-            }
-            else { MessageBox.Show("Verifique sus datos"); }
-
+            else { MessageBox.Show("Complete los campos"); }
+          
+            
             tbContraIngresar.Clear();
             tbUsuIngresar.Clear();
         }

@@ -25,7 +25,7 @@ namespace SistemaEncomienda
             p=aux.retornarPaquete(codigo);
             if (codigo != string.Empty)
             {
-                if (p.Codigo != null)
+                if (p.Codigo == codigo)
                 {
 
                     frmEstadoPaquete frmEP = new frmEstadoPaquete(codigo);
