@@ -194,6 +194,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondo2 {
+            get {
+                object obj = ResourceManager.GetObject("fondo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fondos_de_Pantalla_Gratis_Abstractos__164_ {
             get {
                 object obj = ResourceManager.GetObject("Fondos de Pantalla Gratis Abstractos (164)", resourceCulture);

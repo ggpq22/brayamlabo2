@@ -68,6 +68,12 @@
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLibre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibre.Designer.cs">
+      <DependentUpon>frmLibre.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenuCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,12 @@
     </Compile>
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMisenvios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMisenvios.Designer.cs">
+      <DependentUpon>frmMisenvios.cs</DependentUpon>
     </Compile>
     <Compile Include="frmModificarCliente.cs">
       <SubType>Form</SubType>
@@ -130,6 +142,9 @@
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLibre.resx">
+      <DependentUpon>frmLibre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenuCliente.resx">
       <DependentUpon>frmMenuCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuEmpresa.resx">
       <DependentUpon>frmMenuEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMisenvios.resx">
+      <DependentUpon>frmMisenvios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificarCliente.resx">
       <DependentUpon>frmModificarCliente.cs</DependentUpon>
@@ -291,6 +309,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\add_user.png" />
+    <None Include="Resources\fondo2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
