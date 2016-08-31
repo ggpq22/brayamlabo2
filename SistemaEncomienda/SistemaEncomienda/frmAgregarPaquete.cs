@@ -33,6 +33,7 @@ namespace SistemaEncomienda
             nuevo.Direccion = tbdirecDest.Text;
             nuevo.Kilos = float.Parse(tbKg.Text);
             nuevo.Estado = "Para enviar";
+            nuevo.Bultos = int.Parse(tbBultos.Text);
             nuevo.Codigo = "CDP" + nuevo.Id;
 
                 string res = string.Empty;

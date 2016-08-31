@@ -19,8 +19,15 @@ namespace misClases
        string ciudad;
        string direccion;
        double kilos;
+       int bultos;
        string  estado;
 
+
+       public int Bultos 
+       {
+           set { bultos = value; }
+           get { return bultos; }
+       }
        public int Id 
        {
            set { id = value; }

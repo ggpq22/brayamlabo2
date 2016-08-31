@@ -42,6 +42,8 @@
             this.lblAgregarPaquete = new System.Windows.Forms.Label();
             this.btnMostrarClientes = new System.Windows.Forms.Button();
             this.btnGrabarPaquete = new System.Windows.Forms.Button();
+            this.tbBultos = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarPaquete)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,7 +187,7 @@
             this.btnMostrarClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMostrarClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMostrarClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarClientes.Location = new System.Drawing.Point(410, 340);
+            this.btnMostrarClientes.Location = new System.Drawing.Point(410, 353);
             this.btnMostrarClientes.Name = "btnMostrarClientes";
             this.btnMostrarClientes.Size = new System.Drawing.Size(114, 88);
             this.btnMostrarClientes.TabIndex = 40;
@@ -202,12 +204,34 @@
             this.btnGrabarPaquete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnGrabarPaquete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnGrabarPaquete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabarPaquete.Location = new System.Drawing.Point(156, 340);
+            this.btnGrabarPaquete.Location = new System.Drawing.Point(153, 353);
             this.btnGrabarPaquete.Name = "btnGrabarPaquete";
             this.btnGrabarPaquete.Size = new System.Drawing.Size(105, 88);
             this.btnGrabarPaquete.TabIndex = 39;
             this.btnGrabarPaquete.UseVisualStyleBackColor = false;
             this.btnGrabarPaquete.Click += new System.EventHandler(this.btnGrabarPaquete_Click);
+            // 
+            // tbBultos
+            // 
+            this.tbBultos.Location = new System.Drawing.Point(153, 320);
+            this.tbBultos.Multiline = true;
+            this.tbBultos.Name = "tbBultos";
+            this.tbBultos.Size = new System.Drawing.Size(198, 27);
+            this.tbBultos.TabIndex = 42;
+            this.tbBultos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbDniCliente_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(24, 320);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 27);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Bultos";
             // 
             // frmAgregarPaquete
             // 
@@ -216,6 +240,8 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.abstract_vector_minimalistic_red_black_1920x1200;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(975, 474);
+            this.Controls.Add(this.tbBultos);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMostrarClientes);
             this.Controls.Add(this.btnGrabarPaquete);
             this.Controls.Add(this.lblAgregarPaquete);
@@ -255,5 +281,7 @@
         private System.Windows.Forms.Label lblAgregarPaquete;
         private System.Windows.Forms.Button btnMostrarClientes;
         private System.Windows.Forms.Button btnGrabarPaquete;
+        private System.Windows.Forms.TextBox tbBultos;
+        private System.Windows.Forms.Label label1;
     }
 }
