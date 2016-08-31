@@ -75,10 +75,11 @@
             // cbUsuarios
             // 
             this.cbUsuarios.FormattingEnabled = true;
-            this.cbUsuarios.Location = new System.Drawing.Point(216, 312);
+            this.cbUsuarios.Location = new System.Drawing.Point(216, 107);
             this.cbUsuarios.Name = "cbUsuarios";
             this.cbUsuarios.Size = new System.Drawing.Size(121, 21);
             this.cbUsuarios.TabIndex = 7;
+            this.cbUsuarios.SelectedIndexChanged += new System.EventHandler(this.cbUsuarios_SelectedIndexChanged);
             // 
             // lblCliente
             // 
@@ -86,11 +87,11 @@
             this.lblCliente.BackColor = System.Drawing.Color.Black;
             this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente.ForeColor = System.Drawing.Color.Red;
-            this.lblCliente.Location = new System.Drawing.Point(42, 25);
+            this.lblCliente.Location = new System.Drawing.Point(166, 25);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(530, 18);
+            this.lblCliente.Size = new System.Drawing.Size(312, 18);
             this.lblCliente.TabIndex = 8;
-            this.lblCliente.Text = "Si eres cliente ingresa con tu nombre completo y dni como password";
+            this.lblCliente.Text = "Si eres cliente oprima el boton Ingresar!!";
             // 
             // frmLogin
             // 

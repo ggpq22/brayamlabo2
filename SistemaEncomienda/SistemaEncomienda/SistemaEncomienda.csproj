@@ -50,11 +50,29 @@
     <Compile Include="frmAgregarCliente.Designer.cs">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarEmpresa.Designer.cs">
+      <DependentUpon>frmAgregarEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAgregarPaquete.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAgregarPaquete.Designer.cs">
       <DependentUpon>frmAgregarPaquete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarSucursal.Designer.cs">
+      <DependentUpon>frmAgregarSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresaMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresaMenuPrincipal.Designer.cs">
+      <DependentUpon>frmEmpresaMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEstadoPaquete.cs">
       <SubType>Form</SubType>
@@ -133,8 +151,17 @@
     <EmbeddedResource Include="frmAgregarCliente.resx">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarEmpresa.resx">
+      <DependentUpon>frmAgregarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarPaquete.resx">
       <DependentUpon>frmAgregarPaquete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarSucursal.resx">
+      <DependentUpon>frmAgregarSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresaMenuPrincipal.resx">
+      <DependentUpon>frmEmpresaMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstadoPaquete.resx">
       <DependentUpon>frmEstadoPaquete.cs</DependentUpon>
@@ -308,7 +335,11 @@
     <None Include="Resources\fondo-abstracto-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Material Icons_e161%280%29_2561.png" />
+    <None Include="Resources\23214wide.jpg" />
+    <None Include="Resources\AA1.jpg" />
     <Content Include="Resources\add_user.png" />
+    <None Include="Resources\Door.png" />
     <None Include="Resources\fondo2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

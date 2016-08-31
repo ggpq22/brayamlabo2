@@ -23,7 +23,7 @@ namespace SistemaEncomienda
         private void btnGrabarPaquete_Click(object sender, EventArgs e)
         {
 
-           if (tbNomdestinatario.Text != string.Empty && tbDniDestinatario.Text != string.Empty && tbciudadCliente.Text != string.Empty && tbdirecDest.Text != string.Empty && tbKg.Text != string.Empty)
+           if (tbNomdestinatario.Text != string.Empty && tbDniDestinatario.Text != string.Empty && tbciudadCliente.Text != string.Empty && tbdirecDest.Text != string.Empty && tbKg.Text != string.Empty && tbBultos.Text != string.Empty && tbCodigoPostal.Text != string.Empty)
            { 
             clsPaquete nuevo = new clsPaquete();
             nuevo.Id = nuevo.RecuperarUltimoId() + 1;
@@ -34,6 +34,7 @@ namespace SistemaEncomienda
             nuevo.Kilos = float.Parse(tbKg.Text);
             nuevo.Estado = "Para enviar";
             nuevo.Bultos = int.Parse(tbBultos.Text);
+            nuevo.CodigoPostal = int.Parse(tbCodigoPostal.Text);
             nuevo.Codigo = "CDP" + nuevo.Id;
 
                 string res = string.Empty;
@@ -70,7 +71,8 @@ namespace SistemaEncomienda
             tbDniDestinatario.Clear();
             tbNomdestinatario.Clear();
             tbKg.Clear();
-
+            tbCodigoPostal.Clear();
+            tbBultos.Clear();
         }
 
         private void tbDniCliente_KeyPress(object sender, KeyPressEventArgs e)

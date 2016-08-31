@@ -142,11 +142,17 @@
   <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AA1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="octicons_f012(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\octicons_f012(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Material Icons_e7fe(0)_2561" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Material Icons_e7fe(0)_2561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="octicons_f035(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\octicons_f035(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,6 +199,9 @@
   <data name="ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-77901" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-77901.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Material Icons_e02f(1)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Material Icons_e02f(1)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,8 +217,8 @@
   <data name="Iconic_2718(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Iconic_2718(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fondo-abstracto-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo-abstracto-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,10 +226,13 @@
   <data name="Colorful-origami-background-vector-illustration-design" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Colorful-origami-background-vector-illustration-design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="23214wide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\23214wide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Entypo_e722(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Entypo_e722(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Material Icons_e161(0)_2561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e161(0)_2561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

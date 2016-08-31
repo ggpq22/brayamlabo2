@@ -193,7 +193,7 @@
             // 
             this.dgvAgregarCliente.AllowUserToAddRows = false;
             this.dgvAgregarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAgregarCliente.Location = new System.Drawing.Point(445, 88);
+            this.dgvAgregarCliente.Location = new System.Drawing.Point(432, 88);
             this.dgvAgregarCliente.MultiSelect = false;
             this.dgvAgregarCliente.Name = "dgvAgregarCliente";
             this.dgvAgregarCliente.ReadOnly = true;

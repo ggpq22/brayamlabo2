@@ -27,7 +27,10 @@ namespace SistemaEncomienda
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-          
+            lblCliente.Visible = false;
+            cbUsuarios.Items.Add("Administrador");
+            cbUsuarios.Items.Add("Empresa");
+            cbUsuarios.Items.Add("Cliente");
         }
 
 
@@ -37,6 +40,7 @@ namespace SistemaEncomienda
             clsUsuario aux = new clsUsuario();
             string tipoUsuario = string.Empty;
             bool res = false;
+            
             foreach (clsUsuario a in aux.Leer()) 
             {
                 if (a != null)
@@ -45,6 +49,12 @@ namespace SistemaEncomienda
                 }
             }
 
+        /*    if ( usuario.CompareTo("Cliente")==0) 
+            {
+                frmLibre fl = new frmLibre();
+                fl.ShowDialog();
+
+            }*/
             
             if (tbContraIngresar.Text != string.Empty && tbUsuIngresar.Text!=string.Empty)
             {
@@ -72,11 +82,7 @@ namespace SistemaEncomienda
                         me.ShowDialog();
                     }
 
-                    else
-                    {
-                        frmMenuCliente mm = new frmMenuCliente();
-                        mm.ShowDialog();
-                    }
+                   
 
                 }
                 else { MessageBox.Show("Verifique sus datos"); }
@@ -87,6 +93,17 @@ namespace SistemaEncomienda
             
             tbContraIngresar.Clear();
             tbUsuIngresar.Clear();
+        }
+
+        private void cbUsuarios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblCliente.Visible = true;
+            if (cbUsuarios.SelectedItem == "Cliente")
+            {
+                tbContraIngresar.Enabled = true;
+                tbUsuIngresar.Enabled = true;
+
+            }
         }
     }
 }

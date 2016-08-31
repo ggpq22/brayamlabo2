@@ -20,6 +20,7 @@ namespace misClases
        string direccion;
        double kilos;
        int bultos;
+       int codigoPostal;
        string  estado;
 
 
@@ -27,6 +28,12 @@ namespace misClases
        {
            set { bultos = value; }
            get { return bultos; }
+       }
+
+       public int CodigoPostal
+       {
+           set { codigoPostal = value; }
+           get { return codigoPostal; }
        }
        public int Id 
        {

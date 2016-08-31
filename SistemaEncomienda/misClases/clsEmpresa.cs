@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using claseArchivo;
 namespace misClases
 {
-   public  class clsEmpresa
+   public  class clsEmpresa : clsObjeto
     {
        int idEmpresa;
        string nombreEmpresa;
        string ciudadUbicacion;
        string direccion;
+       string telefono;
 
        public int IdEmpresa 
        {

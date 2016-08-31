@@ -74,6 +74,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _23214wide {
+            get {
+                object obj = ResourceManager.GetObject("23214wide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _27d {
             get {
                 object obj = ResourceManager.GetObject("27d", resourceCulture);
@@ -97,6 +107,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap _638383__wallpaper_mambots_black_web_p {
             get {
                 object obj = ResourceManager.GetObject("638383__wallpaper-mambots-black-web_p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AA1 {
+            get {
+                object obj = ResourceManager.GetObject("AA1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -137,6 +157,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap Colorful_origami_background_vector_illustration_design {
             get {
                 object obj = ResourceManager.GetObject("Colorful-origami-background-vector-illustration-design", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Door {
+            get {
+                object obj = ResourceManager.GetObject("Door", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -287,6 +317,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap Material_Icons_e161_0__256 {
             get {
                 object obj = ResourceManager.GetObject("Material Icons_e161(0)_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Material_Icons_e161_0__2561 {
+            get {
+                object obj = ResourceManager.GetObject("Material Icons_e161(0)_2561", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

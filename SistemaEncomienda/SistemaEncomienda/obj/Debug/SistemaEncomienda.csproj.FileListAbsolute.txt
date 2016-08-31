@@ -22,3 +22,7 @@ C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncom
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.csproj.GenerateResource.Cache
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.exe
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.pdb
+C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarSucursal.resources
+C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmEmpresaMenuPrincipal.resources
+C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmLibre.resources
+C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMisenvios.resources

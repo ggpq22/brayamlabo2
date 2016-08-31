@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsEmpresa.cs" />
+    <Compile Include="clsSucursal.cs" />
     <Compile Include="clsUsuario.cs" />
     <Compile Include="clsCliente.cs" />
     <Compile Include="clsFactura.cs" />

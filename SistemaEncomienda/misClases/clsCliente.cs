@@ -15,11 +15,18 @@ namespace misClases
         string nombre;
         string apellido;
         int dni;
+        string ciudad;
         string direccion;
         int telefono;
         string email;
         bool estado;
 
+
+        public string Ciudad 
+        {
+            get { return ciudad; }
+            set { ciudad = value; }
+        }
         public string Nombre 
         {
             set { nombre = value; }
