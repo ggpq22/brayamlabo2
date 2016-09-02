@@ -31,8 +31,9 @@
             this.btnIngresarLogin = new System.Windows.Forms.Button();
             this.tbUsuIngresar = new System.Windows.Forms.TextBox();
             this.tbContraIngresar = new System.Windows.Forms.TextBox();
-            this.cbUsuarios = new System.Windows.Forms.ComboBox();
             this.lblCliente = new System.Windows.Forms.Label();
+            this.btnCliente = new System.Windows.Forms.Button();
+            this.cbCliente = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnIngresarLogin
@@ -72,15 +73,6 @@
             this.tbContraIngresar.Size = new System.Drawing.Size(297, 39);
             this.tbContraIngresar.TabIndex = 6;
             // 
-            // cbUsuarios
-            // 
-            this.cbUsuarios.FormattingEnabled = true;
-            this.cbUsuarios.Location = new System.Drawing.Point(216, 107);
-            this.cbUsuarios.Name = "cbUsuarios";
-            this.cbUsuarios.Size = new System.Drawing.Size(121, 21);
-            this.cbUsuarios.TabIndex = 7;
-            this.cbUsuarios.SelectedIndexChanged += new System.EventHandler(this.cbUsuarios_SelectedIndexChanged);
-            // 
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
@@ -93,6 +85,34 @@
             this.lblCliente.TabIndex = 8;
             this.lblCliente.Text = "Si eres cliente oprima el boton Ingresar!!";
             // 
+            // btnCliente
+            // 
+            this.btnCliente.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.ForeColor = System.Drawing.Color.Red;
+            this.btnCliente.Location = new System.Drawing.Point(216, 302);
+            this.btnCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(140, 54);
+            this.btnCliente.TabIndex = 9;
+            this.btnCliente.Text = "Ingresar";
+            this.btnCliente.UseVisualStyleBackColor = false;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
+            // 
+            // cbCliente
+            // 
+            this.cbCliente.AutoSize = true;
+            this.cbCliente.BackColor = System.Drawing.Color.Black;
+            this.cbCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCliente.ForeColor = System.Drawing.Color.White;
+            this.cbCliente.Location = new System.Drawing.Point(216, 108);
+            this.cbCliente.Name = "cbCliente";
+            this.cbCliente.Size = new System.Drawing.Size(180, 24);
+            this.cbCliente.TabIndex = 10;
+            this.cbCliente.Text = "Ingresar como cliente";
+            this.cbCliente.UseVisualStyleBackColor = false;
+            this.cbCliente.CheckedChanged += new System.EventHandler(this.cbCliente_CheckedChanged);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,12 +121,14 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources._19828088_Login_Form_Formulario_para_el_sitio_web_la_p_gina_de_inicio_de_sesi_n_de_plantilla_Foto_de_archivo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(602, 403);
+            this.Controls.Add(this.cbCliente);
+            this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.lblCliente);
-            this.Controls.Add(this.cbUsuarios);
             this.Controls.Add(this.tbContraIngresar);
             this.Controls.Add(this.tbUsuIngresar);
             this.Controls.Add(this.btnIngresarLogin);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,7 +140,8 @@
         private System.Windows.Forms.Button btnIngresarLogin;
         private System.Windows.Forms.TextBox tbUsuIngresar;
         private System.Windows.Forms.TextBox tbContraIngresar;
-        private System.Windows.Forms.ComboBox cbUsuarios;
         private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.Button btnCliente;
+        private System.Windows.Forms.CheckBox cbCliente;
     }
 }

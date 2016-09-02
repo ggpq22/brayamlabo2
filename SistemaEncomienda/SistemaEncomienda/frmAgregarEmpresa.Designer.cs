@@ -151,6 +151,7 @@
             this.btnGrabar.Size = new System.Drawing.Size(105, 101);
             this.btnGrabar.TabIndex = 40;
             this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // button2
             // 

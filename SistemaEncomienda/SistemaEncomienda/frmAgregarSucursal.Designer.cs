@@ -145,6 +145,7 @@
             this.btnGrabarSucursal.TabIndex = 54;
             this.btnGrabarSucursal.Text = "grabar";
             this.btnGrabarSucursal.UseVisualStyleBackColor = true;
+            this.btnGrabarSucursal.Click += new System.EventHandler(this.btnGrabarSucursal_Click);
             // 
             // btnLeer
             // 

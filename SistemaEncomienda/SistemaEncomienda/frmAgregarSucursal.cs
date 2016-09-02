@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using claseArchivo;
+using misClases;
 namespace SistemaEncomienda
 {
     public partial class frmAgregarSucursal : Form
@@ -15,6 +16,11 @@ namespace SistemaEncomienda
         public frmAgregarSucursal()
         {
             InitializeComponent();
+        }
+
+        private void btnGrabarSucursal_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

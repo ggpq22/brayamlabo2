@@ -92,7 +92,22 @@ namespace misClases
            return darId;
        }
 
+       public List<clsFactura> recuperarFac(int dni)
+       {
 
+          
+          clsFactura aux = new clsFactura();
+          List<clsFactura> lista = new List<clsFactura>();
+           foreach (clsFactura c in aux.Leer())
+           {
+               if (c.dnicliente == dni)
+               {
+                   lista.Add(c);
+               }
+           }
+
+           return lista;
+       }
        public clsFactura recuperarFac(string codPaq) 
        {
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using misClases;
 namespace SistemaEncomienda
 {
-    public partial class frmMenuCliente : Form
+    public partial class frmRastrearPaquete : Form
     {
-        public frmMenuCliente()
+        public frmRastrearPaquete()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace SistemaEncomienda
             p=aux.retornarPaquete(codigo);
             if (codigo != string.Empty)
             {
-                if (p.Codigo == codigo)
+                if (p!=null && p.Codigo == codigo)
                 {
 
                     frmEstadoPaquete frmEP = new frmEstadoPaquete(codigo);

@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using claseArchivo;
+using System.Collections;
 namespace misClases
 {
     public class clsSucursal:clsObjeto
     {
+        clsArchivoBinario sucu = new clsArchivoBinario("C://prueba", "paquetes.dat");
         int idSucursal;
 
         public int IdSucursal
@@ -42,6 +44,50 @@ namespace misClases
         {
             get { return codigoPostal; }
             set { codigoPostal = value; }
+        }
+
+        string nombre;
+        public string Nombre 
+        {
+            set { nombre = value; }
+            get { return nombre; }
+        }
+
+
+        public int RecuperarUltimoId()
+        {
+            int darId = 0;
+            clsSucursal p = new clsSucursal();
+            ArrayList AL = p.Leer();
+
+            if (AL.Count == 0 || AL == null)
+            {
+                darId = 0;
+            }
+            else
+            {
+                if ((clsSucursal)AL[AL.Count - 1] != null)
+                {
+                    p = (clsSucursal)AL[AL.Count - 1];
+                    darId = p.idSucursal;
+                }
+                else
+                {
+                    darId = 0;
+                }
+            }
+
+            return darId;
+        }
+
+        public string Grabar()
+        {
+            return sucu.Grabar(this);
+        }
+
+        public ArrayList Leer()
+        {
+            return sucu.Leer(this);
         }
 
     }

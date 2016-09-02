@@ -28,9 +28,8 @@ namespace SistemaEncomienda
         private void frmLogin_Load(object sender, EventArgs e)
         {
             lblCliente.Visible = false;
-            cbUsuarios.Items.Add("Administrador");
-            cbUsuarios.Items.Add("Empresa");
-            cbUsuarios.Items.Add("Cliente");
+            btnCliente.Visible = false;
+            
         }
 
 
@@ -49,12 +48,7 @@ namespace SistemaEncomienda
                 }
             }
 
-        /*    if ( usuario.CompareTo("Cliente")==0) 
-            {
-                frmLibre fl = new frmLibre();
-                fl.ShowDialog();
-
-            }*/
+       
             
             if (tbContraIngresar.Text != string.Empty && tbUsuIngresar.Text!=string.Empty)
             {
@@ -78,7 +72,7 @@ namespace SistemaEncomienda
                     }
                     else if (tipoUsuario.CompareTo("Empresa") == 0)
                     {
-                        frmMenuEmpresa me = new frmMenuEmpresa();
+                        frmEmpresaMenuPrincipal me = new frmEmpresaMenuPrincipal();
                         me.ShowDialog();
                     }
 
@@ -97,12 +91,33 @@ namespace SistemaEncomienda
 
         private void cbUsuarios_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblCliente.Visible = true;
-            if (cbUsuarios.SelectedItem == "Cliente")
-            {
-                tbContraIngresar.Enabled = true;
-                tbUsuIngresar.Enabled = true;
+            
+           
+        }
 
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            frmLibre l = new frmLibre();
+            l.ShowDialog();
+        }
+
+        private void cbCliente_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbCliente.Checked == true)
+            {
+                lblCliente.Visible = true;
+                tbContraIngresar.Enabled = false;
+                tbUsuIngresar.Enabled = false;
+                btnIngresarLogin.Visible = false;
+                btnCliente.Visible = true;
+
+            }
+
+            else
+            {
+                lblCliente.Visible = false;
+                btnCliente.Visible = false;
+                btnIngresarLogin.Visible = true;
             }
         }
     }

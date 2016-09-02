@@ -335,9 +335,14 @@
     <None Include="Resources\fondo-abstracto-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Aquaris-E10_wallpaper_v1.jpg" />
+    <None Include="Resources\wallpaper_fullhd-2.jpg" />
+    <None Include="Resources\la-foto.jpg" />
+    <None Include="Resources\icomoon_e681%280%29_256.png" />
     <None Include="Resources\Material Icons_e161%280%29_2561.png" />
     <None Include="Resources\23214wide.jpg" />
     <None Include="Resources\AA1.jpg" />
+    <None Include="Resources\3D-Neon-Balls-2880x1920.jpg" />
     <Content Include="Resources\add_user.png" />
     <None Include="Resources\Door.png" />
     <None Include="Resources\fondo2.png" />

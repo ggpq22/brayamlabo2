@@ -19,7 +19,7 @@ namespace SistemaEncomienda
 
         private void btnRastrear_Click(object sender, EventArgs e)
         {
-            frmMenuCliente nuevo = new frmMenuCliente();
+            frmRastrearPaquete nuevo = new frmRastrearPaquete();
             nuevo.ShowDialog();
         }
 

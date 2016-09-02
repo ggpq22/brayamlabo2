@@ -44,6 +44,8 @@
             this.dgvAgregarCliente = new System.Windows.Forms.DataGridView();
             this.btnGrabarCliente = new System.Windows.Forms.Button();
             this.btnMostrarClientes = new System.Windows.Forms.Button();
+            this.tbCiudadCliente = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,7 +195,7 @@
             // 
             this.dgvAgregarCliente.AllowUserToAddRows = false;
             this.dgvAgregarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAgregarCliente.Location = new System.Drawing.Point(432, 88);
+            this.dgvAgregarCliente.Location = new System.Drawing.Point(380, 87);
             this.dgvAgregarCliente.MultiSelect = false;
             this.dgvAgregarCliente.Name = "dgvAgregarCliente";
             this.dgvAgregarCliente.ReadOnly = true;
@@ -210,7 +212,7 @@
             this.btnGrabarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnGrabarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnGrabarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabarCliente.Location = new System.Drawing.Point(154, 364);
+            this.btnGrabarCliente.Location = new System.Drawing.Point(154, 376);
             this.btnGrabarCliente.Name = "btnGrabarCliente";
             this.btnGrabarCliente.Size = new System.Drawing.Size(105, 88);
             this.btnGrabarCliente.TabIndex = 27;
@@ -226,12 +228,33 @@
             this.btnMostrarClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMostrarClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMostrarClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarClientes.Location = new System.Drawing.Point(445, 364);
+            this.btnMostrarClientes.Location = new System.Drawing.Point(451, 376);
             this.btnMostrarClientes.Name = "btnMostrarClientes";
             this.btnMostrarClientes.Size = new System.Drawing.Size(114, 88);
             this.btnMostrarClientes.TabIndex = 28;
             this.btnMostrarClientes.UseVisualStyleBackColor = false;
             this.btnMostrarClientes.Click += new System.EventHandler(this.btnMostrarClientes_Click);
+            // 
+            // tbCiudadCliente
+            // 
+            this.tbCiudadCliente.Location = new System.Drawing.Point(154, 343);
+            this.tbCiudadCliente.Multiline = true;
+            this.tbCiudadCliente.Name = "tbCiudadCliente";
+            this.tbCiudadCliente.Size = new System.Drawing.Size(198, 27);
+            this.tbCiudadCliente.TabIndex = 30;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(25, 343);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 27);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Ciudad";
             // 
             // frmAgregarCliente
             // 
@@ -240,6 +263,8 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo_pagina_ff13;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(970, 464);
+            this.Controls.Add(this.tbCiudadCliente);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMostrarClientes);
             this.Controls.Add(this.btnGrabarCliente);
             this.Controls.Add(this.dgvAgregarCliente);
@@ -283,5 +308,7 @@
         private System.Windows.Forms.DataGridView dgvAgregarCliente;
         private System.Windows.Forms.Button btnGrabarCliente;
         private System.Windows.Forms.Button btnMostrarClientes;
+        private System.Windows.Forms.TextBox tbCiudadCliente;
+        private System.Windows.Forms.Label label1;
     }
 }

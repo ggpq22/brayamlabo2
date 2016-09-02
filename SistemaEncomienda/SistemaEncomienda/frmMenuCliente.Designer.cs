@@ -1,6 +1,6 @@
 ﻿namespace SistemaEncomienda
 {
-    partial class frmMenuCliente
+    partial class frmRastrearPaquete
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(218, 54);
@@ -69,19 +69,19 @@
             // 
             // btnRastrear
             // 
-            this.btnRastrear.Location = new System.Drawing.Point(271, 256);
+            this.btnRastrear.Location = new System.Drawing.Point(274, 246);
             this.btnRastrear.Name = "btnRastrear";
-            this.btnRastrear.Size = new System.Drawing.Size(75, 23);
+            this.btnRastrear.Size = new System.Drawing.Size(75, 46);
             this.btnRastrear.TabIndex = 3;
             this.btnRastrear.Text = "Rastrear";
             this.btnRastrear.UseVisualStyleBackColor = true;
             this.btnRastrear.Click += new System.EventHandler(this.btnRastrear_Click);
             // 
-            // frmMenuCliente
+            // frmRastrearPaquete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo1;
+            this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Aquaris_E10_wallpaper_v1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(631, 386);
             this.Controls.Add(this.btnRastrear);
@@ -89,7 +89,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Name = "frmMenuCliente";
+            this.Name = "frmRastrearPaquete";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 

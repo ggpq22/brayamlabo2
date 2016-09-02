@@ -104,6 +104,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3D_Neon_Balls_2880x1920 {
+            get {
+                object obj = ResourceManager.GetObject("3D-Neon-Balls-2880x1920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _638383__wallpaper_mambots_black_web_p {
             get {
                 object obj = ResourceManager.GetObject("638383__wallpaper-mambots-black-web_p", resourceCulture);
@@ -147,6 +157,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap abstracto_colores_triangulos_images_194433 {
             get {
                 object obj = ResourceManager.GetObject("abstracto-colores-triangulos-images-194433", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Aquaris_E10_wallpaper_v1 {
+            get {
+                object obj = ResourceManager.GetObject("Aquaris-E10_wallpaper_v1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -244,6 +264,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icomoon_e681_0__256 {
+            get {
+                object obj = ResourceManager.GetObject("icomoon_e681(0)_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Iconic_2718_0__256 {
             get {
                 object obj = ResourceManager.GetObject("Iconic_2718(0)_256", resourceCulture);
@@ -277,6 +307,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap la_foto {
+            get {
+                object obj = ResourceManager.GetObject("la-foto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -437,6 +477,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap user_add_26863 {
             get {
                 object obj = ResourceManager.GetObject("user-add-26863", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaper_fullhd_2 {
+            get {
+                object obj = ResourceManager.GetObject("wallpaper_fullhd-2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

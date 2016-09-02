@@ -10,7 +10,6 @@ C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncom
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarPaquete.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmEstadoPaquete.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmInicio.resources
-C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenuCliente.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmLogin.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenu.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenuEmpresa.resources
@@ -26,3 +25,5 @@ C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncom
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmEmpresaMenuPrincipal.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmLibre.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMisenvios.resources
+C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarEmpresa.resources
+C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRastrearPaquete.resources
