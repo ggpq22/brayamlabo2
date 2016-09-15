@@ -93,42 +93,54 @@ namespace SistemaEncomienda
             tbDniCliente.Enabled = false;
             tbNomCliente.Enabled = false;
             tbApellidoCliente.Enabled = false;
-            clsCliente eliminar = new clsCliente();
-            eliminar.Nombre = tbNomCliente.Text;
-            eliminar.Apellido = tbApellidoCliente.Text;
-            eliminar.Dni = int.Parse(tbDniCliente.Text);
-            eliminar.Direccion = tbDireccionCliente.Text;
-            eliminar.Email = tbEmailcliente.Text;
-            eliminar.Telefono = int.Parse(tbTelefono.Text);
-            eliminar.Estado = true;
-            List<clsCliente> lista = new List<clsCliente>();
-            clsCliente aux = new clsCliente();
-            foreach (clsCliente c in aux.Leer())
+           
+
+            if (tbApellidoCliente.Text != string.Empty && tbNomCliente.Text != string.Empty)
             {
-                if (c.Dni == eliminar.Dni)
+                clsCliente eliminar = new clsCliente();
+                eliminar.Nombre = tbNomCliente.Text;
+                eliminar.Apellido = tbApellidoCliente.Text;
+                eliminar.Dni = int.Parse(tbDniCliente.Text);
+                eliminar.Direccion = tbDireccionCliente.Text;
+                eliminar.Email = tbEmailcliente.Text;
+                eliminar.Telefono = int.Parse(tbTelefono.Text);
+                eliminar.Estado = Convert.ToBoolean(dgvModificar.CurrentRow.Cells["estado"].Value);
+
+                if (eliminar.Estado != false)
                 {
-                    c.Nombre = eliminar.Nombre;
-                    c.Apellido = eliminar.Apellido;
-                    c.Dni = eliminar.Dni;
-                    c.Direccion = eliminar.Direccion;
-                    c.Telefono = eliminar.Telefono;
-                    c.Email = eliminar.Email;
-                    c.Estado = false;
-                    lista.Add(c);
+                    List<clsCliente> lista = new List<clsCliente>();
+                    clsCliente aux = new clsCliente();
+                    foreach (clsCliente c in aux.Leer())
+                    {
+                        if (c.Dni == eliminar.Dni)
+                        {
+                            c.Nombre = eliminar.Nombre;
+                            c.Apellido = eliminar.Apellido;
+                            c.Dni = eliminar.Dni;
+                            c.Direccion = eliminar.Direccion;
+                            c.Telefono = eliminar.Telefono;
+                            c.Email = eliminar.Email;
+                            c.Estado = false;
+                            lista.Add(c);
+                        }
+
+                        else { lista.Add(c); }
+                    }
+
+                    string res = string.Empty;
+                    res = eliminar.Modificar(lista);
+                    if (res == string.Empty)
+                    {
+                        MessageBox.Show("Se dio de baja al cliente");
+                        dgvModificar.DataSource = lista;
+                    }
+
+                    else { MessageBox.Show("Ocurrio el siguiente error" + res); }
                 }
-
-                else { lista.Add(c); }
+                else { MessageBox.Show("Este cliente ya fue dado de baja"); }
+            }
+            else { MessageBox.Show("Seleccione un contacto"); }
             }
 
-            string res = string.Empty;
-            res = eliminar.Modificar(lista);
-            if (res == string.Empty)
-            {
-                MessageBox.Show("Se dio de baja al cliente");
-                dgvModificar.DataSource = lista;
-            }
-
-            else { MessageBox.Show("Ocurrio el siguiente error" + res); }
-        }
     }
 }

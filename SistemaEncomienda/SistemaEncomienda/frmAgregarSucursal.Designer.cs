@@ -190,6 +190,7 @@
             this.Controls.Add(this.lblNombrecompleto);
             this.Name = "frmAgregarSucursal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.frmAgregarSucursal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarPaquete)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

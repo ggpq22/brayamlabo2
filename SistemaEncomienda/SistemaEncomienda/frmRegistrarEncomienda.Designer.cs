@@ -46,6 +46,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnRegistrarEncomienda = new System.Windows.Forms.Button();
             this.lblAgcliente = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbCodPostal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElegirPaquete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElegircliente)).BeginInit();
             this.SuspendLayout();
@@ -131,7 +133,7 @@
             // 
             // dtpfecha
             // 
-            this.dtpfecha.Location = new System.Drawing.Point(417, 451);
+            this.dtpfecha.Location = new System.Drawing.Point(417, 499);
             this.dtpfecha.Name = "dtpfecha";
             this.dtpfecha.Size = new System.Drawing.Size(200, 20);
             this.dtpfecha.TabIndex = 8;
@@ -139,7 +141,7 @@
             // cbempresas
             // 
             this.cbempresas.FormattingEnabled = true;
-            this.cbempresas.Location = new System.Drawing.Point(417, 495);
+            this.cbempresas.Location = new System.Drawing.Point(417, 543);
             this.cbempresas.Name = "cbempresas";
             this.cbempresas.Size = new System.Drawing.Size(121, 21);
             this.cbempresas.TabIndex = 9;
@@ -198,7 +200,7 @@
             this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(233, 445);
+            this.label4.Location = new System.Drawing.Point(233, 493);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 29);
             this.label4.TabIndex = 14;
@@ -210,7 +212,7 @@
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(233, 487);
+            this.label5.Location = new System.Drawing.Point(233, 535);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 29);
             this.label5.TabIndex = 15;
@@ -225,7 +227,7 @@
             this.btnRegistrarEncomienda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnRegistrarEncomienda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnRegistrarEncomienda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarEncomienda.Location = new System.Drawing.Point(682, 410);
+            this.btnRegistrarEncomienda.Location = new System.Drawing.Point(679, 457);
             this.btnRegistrarEncomienda.Name = "btnRegistrarEncomienda";
             this.btnRegistrarEncomienda.Size = new System.Drawing.Size(133, 109);
             this.btnRegistrarEncomienda.TabIndex = 16;
@@ -245,13 +247,35 @@
             this.lblAgcliente.Text = "Agregar un nuevo cliente";
             this.lblAgcliente.Click += new System.EventHandler(this.lblAgcliente_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(233, 446);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 29);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Cod Postal";
+            // 
+            // tbCodPostal
+            // 
+            this.tbCodPostal.Location = new System.Drawing.Point(417, 445);
+            this.tbCodPostal.Multiline = true;
+            this.tbCodPostal.Name = "tbCodPostal";
+            this.tbCodPostal.Size = new System.Drawing.Size(142, 30);
+            this.tbCodPostal.TabIndex = 18;
+            // 
             // frmRegistrarEncomienda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Fondos_de_Pantalla_Gratis_Abstractos__164_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1160, 533);
+            this.ClientSize = new System.Drawing.Size(1160, 574);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.tbCodPostal);
             this.Controls.Add(this.lblAgcliente);
             this.Controls.Add(this.btnRegistrarEncomienda);
             this.Controls.Add(this.label5);
@@ -299,5 +323,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnRegistrarEncomienda;
         private System.Windows.Forms.Label lblAgcliente;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbCodPostal;
     }
 }

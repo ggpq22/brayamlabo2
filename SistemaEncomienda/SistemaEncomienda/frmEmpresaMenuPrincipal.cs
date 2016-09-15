@@ -12,15 +12,23 @@ namespace SistemaEncomienda
 {
     public partial class frmEmpresaMenuPrincipal : Form
     {
-        public frmEmpresaMenuPrincipal()
+        string nombre;
+        public frmEmpresaMenuPrincipal(string nombre)
         {
             InitializeComponent();
+            this.nombre = nombre;
         }
 
         private void btnAgregarSucursal_Click(object sender, EventArgs e)
         {
-            frmAgregarSucursal s = new frmAgregarSucursal();
+            frmAgregarSucursal s = new frmAgregarSucursal(nombre);
             s.ShowDialog();
+        }
+
+        private void btnPaquetes_Click(object sender, EventArgs e)
+        {
+            frmMenuEmpresa f = new frmMenuEmpresa(nombre);
+            f.ShowDialog();
         }
     }
 }

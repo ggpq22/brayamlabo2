@@ -50,6 +50,7 @@
             this.btnPaquetes.TabIndex = 1;
             this.btnPaquetes.Text = "Encomiendas";
             this.btnPaquetes.UseVisualStyleBackColor = true;
+            this.btnPaquetes.Click += new System.EventHandler(this.btnPaquetes_Click);
             // 
             // frmEmpresaMenuPrincipal
             // 

@@ -72,7 +72,7 @@ namespace SistemaEncomienda
                     }
                     else if (tipoUsuario.CompareTo("Empresa") == 0)
                     {
-                        frmEmpresaMenuPrincipal me = new frmEmpresaMenuPrincipal();
+                        frmEmpresaMenuPrincipal me = new frmEmpresaMenuPrincipal(tbUsuIngresar.Text);
                         me.ShowDialog();
                     }
 
@@ -118,6 +118,8 @@ namespace SistemaEncomienda
                 lblCliente.Visible = false;
                 btnCliente.Visible = false;
                 btnIngresarLogin.Visible = true;
+                tbContraIngresar.Enabled = true;
+                tbUsuIngresar.Enabled = true;
             }
         }
     }

@@ -7,14 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using misClases;
+using claseArchivo;
 namespace SistemaEncomienda
 {
     public partial class frmMenuEmpresa : Form
     {
-        public frmMenuEmpresa()
+        string nombre;
+        public frmMenuEmpresa(string nombre)
         {
+            this.nombre = nombre;
             InitializeComponent();
+        }
+
+        private void frmMenuEmpresa_Load(object sender, EventArgs e)
+        {
+            List<clsFactura> lista = new List<clsFactura>();
+            clsFactura aux = new clsFactura();
+            lista = aux.traerFacturas(nombre);
+
+            dgvEnviosRecibidos.DataSource = lista;
+
         }
     }
 }

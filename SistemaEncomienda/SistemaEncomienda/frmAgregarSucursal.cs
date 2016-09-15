@@ -13,14 +13,21 @@ namespace SistemaEncomienda
 {
     public partial class frmAgregarSucursal : Form
     {
-        public frmAgregarSucursal()
+        string nombre;
+        public frmAgregarSucursal(string nombre)
         {
             InitializeComponent();
+            this.nombre = nombre;
         }
 
         private void btnGrabarSucursal_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void frmAgregarSucursal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

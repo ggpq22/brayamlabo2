@@ -20,7 +20,16 @@ namespace misClases
        float precio;
        DateTime fechaenvio;
        string empresa;
+       int postal;
 
+
+       public int Postal 
+       {
+           set { postal = value; }
+           get { return postal; }
+       }
+
+     
        public int Id 
        {
            set { id = value; }
@@ -124,5 +133,25 @@ namespace misClases
 
            return retornar;
        }
+
+
+       public List<clsFactura> traerFacturas(string nomEmpresa)
+       {
+
+           List<clsFactura> lista = new List<clsFactura>();
+           clsFactura aux = new clsFactura();
+
+           foreach (clsFactura c in aux.Leer())
+           {
+               if (c.empresa == nomEmpresa)
+               {
+                   lista.Add(c);
+               }
+           }
+
+           return lista;
+       }
+
+
     }
 }
