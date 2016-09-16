@@ -63,9 +63,13 @@ namespace SistemaEncomienda
                 
             }
 
-            dgvAgregarPaquete.DataSource = null;
-            dgvAgregarPaquete.DataSource = lista;
+            if (lista != null)
+            {
+                dgvAgregarPaquete.DataSource = null;
+                dgvAgregarPaquete.DataSource = lista;
+            }
 
+            else { MessageBox.Show("vacio"); }
             tbciudadCliente.Clear();
             tbdirecDest.Clear();
             tbDniDestinatario.Clear();

@@ -35,6 +35,7 @@ namespace SistemaEncomienda
                 nuevaEmpresa.Direccion = tbDireccionEmpresa.Text;
                 nuevaEmpresa.Telefono = tbTelefono.Text;
                 nuevaEmpresa.CiudadUbicacion = tbCiudad.Text;
+                nuevaEmpresa.CodPostal =int.Parse(tbCodP.Text);
                 nuevaEmpresa.Id = nuevaEmpresa.RecuperarUltimoId();
                 res1 = nuevaEmpresa.Grabar();
                 usuarioEmpresa.Nombre = tbNomEmpresa.Text;

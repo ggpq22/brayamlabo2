@@ -22,7 +22,35 @@ namespace SistemaEncomienda
 
         private void btnGrabarSucursal_Click(object sender, EventArgs e)
         {
+            clsSucursal nueva = new clsSucursal();
+            if (tbCodPostal.Text != string.Empty && tbDireccion.Text != string.Empty && tbProvincia.Text != string.Empty && tbLocalidad.Text != string.Empty)
+            {
+                nueva.Nombre = "Sucursal " + nombre + " " + tbLocalidad.Text;
+                nueva.LocalidadUbicacion = tbLocalidad.Text;
+                nueva.Provincia = tbProvincia.Text;
+                nueva.CodigoPostal = int.Parse(tbCodPostal.Text);
+                nueva.Direccion = tbDireccion.Text;
+                nueva.IdSucursal = nueva.RecuperarUltimoId();
 
+                clsUsuario nuevo = new clsUsuario();
+                nuevo.Nombre = nueva.Nombre;
+                nuevo.Usuario = nueva.Nombre;
+                nuevo.Contraseña = "1234";
+                nuevo.TipoUsuario = "Sucursal";
+
+                string resSucursal = string.Empty;
+                string resUsuario = string.Empty;
+                resSucursal = nueva.Grabar();
+                resUsuario = nuevo.Grabar();
+                if (resSucursal == string.Empty && resUsuario == string.Empty)
+                {
+                    MessageBox.Show("Sucursal registrada con exito el usuario para ingresar al sistema es: " + nuevo.Usuario + " y la contraseña: " + nuevo.Contraseña);
+                }
+
+                else { MessageBox.Show("Ocurrio el siguiente error: " + resSucursal + resUsuario); }
+
+            }
+            else { MessageBox.Show("Campos de datos incompletos"); }
         }
 
         private void frmAgregarSucursal_Load(object sender, EventArgs e)

@@ -28,6 +28,15 @@ namespace SistemaEncomienda
 
             dgvEnviosRecibidos.DataSource = lista;
 
+            List<clsSucursal> listasucursal = new List<clsSucursal>();
+            clsSucursal a = new clsSucursal();
+
+            foreach (clsSucursal f in a.Leer()) 
+            {
+                listasucursal.Add(f);
+            }
+
+            dgvSucursal.DataSource = listasucursal;
         }
     }
 }

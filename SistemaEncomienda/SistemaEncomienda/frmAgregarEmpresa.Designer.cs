@@ -38,7 +38,8 @@
             this.lblAgNombre = new System.Windows.Forms.Label();
             this.tbTelefono = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.tbCodP = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,21 +147,33 @@
             this.btnGrabar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnGrabar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabar.Location = new System.Drawing.Point(214, 305);
+            this.btnGrabar.Location = new System.Drawing.Point(214, 316);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(105, 101);
             this.btnGrabar.TabIndex = 40;
             this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
-            // button2
+            // tbCodP
             // 
-            this.button2.Location = new System.Drawing.Point(365, 332);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 47);
-            this.button2.TabIndex = 41;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.tbCodP.Location = new System.Drawing.Point(214, 292);
+            this.tbCodP.Multiline = true;
+            this.tbCodP.Name = "tbCodP";
+            this.tbCodP.Size = new System.Drawing.Size(105, 27);
+            this.tbCodP.TabIndex = 43;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(58, 292);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 27);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Cod-Postal";
             // 
             // frmAgregarEmpresa
             // 
@@ -169,7 +182,8 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.AA1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(848, 418);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.tbCodP);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.dgvAgregarCliente);
             this.Controls.Add(this.tbTelefono);
@@ -200,6 +214,7 @@
         private System.Windows.Forms.Label lblAgNombre;
         private System.Windows.Forms.TextBox tbTelefono;
         private System.Windows.Forms.Button btnGrabar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox tbCodP;
+        private System.Windows.Forms.Label label1;
     }
 }

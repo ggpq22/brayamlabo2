@@ -9,7 +9,7 @@ namespace misClases
 {
     public class clsSucursal:clsObjeto
     {
-        clsArchivoBinario sucu = new clsArchivoBinario("C://prueba", "paquetes.dat");
+        clsArchivoBinario sucu = new clsArchivoBinario("C://prueba", "sucursal.dat");
         int idSucursal;
 
         public int IdSucursal

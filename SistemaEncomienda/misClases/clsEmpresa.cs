@@ -16,7 +16,14 @@ namespace misClases
        string ciudadUbicacion;
        string direccion;
        string telefono;
+       int codPostal;
 
+
+       public int CodPostal 
+       {
+           set { codPostal = value; }
+           get { return codPostal; }
+       }
        public int Id
        {
            set { id = value; }
