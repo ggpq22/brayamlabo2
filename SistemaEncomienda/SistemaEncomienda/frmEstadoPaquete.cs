@@ -39,9 +39,9 @@ namespace SistemaEncomienda
             dgvMostrar.Columns.Add("Destino","Destino");
             dgvMostrar.Columns.Add("Direccion", "Direccion");
             dgvMostrar.Columns.Add("Estado", "Estado");
-
+            dgvMostrar.Columns.Add("fechallegada","fechallegada");
             cargarDgv();
-           
+            lblEstado.Text = "Estado:" + dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Estado"].Value.ToString();
         }
 
         private void cargarDgv() 
@@ -59,9 +59,9 @@ namespace SistemaEncomienda
                 dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Destino"].Value =aux.Ciudad;
                 dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Direccion"].Value = aux.Direccion;
                 dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["Estado"].Value = aux.Estado;
+                dgvMostrar.Rows[dgvMostrar.Rows.Count - 1].Cells["fechallegada"].Value = fac.Fechallegada;
+
                 
-
-
                 
 
             }

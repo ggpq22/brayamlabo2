@@ -36,7 +36,6 @@
             this.tbnomcliente = new System.Windows.Forms.TextBox();
             this.tbdnicliente = new System.Windows.Forms.TextBox();
             this.tbPrecio = new System.Windows.Forms.TextBox();
-            this.dtpfecha = new System.Windows.Forms.DateTimePicker();
             this.cbempresas = new System.Windows.Forms.ComboBox();
             this.lblNropaquete = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,6 +47,8 @@
             this.lblAgcliente = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tbCodPostal = new System.Windows.Forms.TextBox();
+            this.dtpfecha = new System.Windows.Forms.DateTimePicker();
+            this.dtOculto = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElegirPaquete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvElegircliente)).BeginInit();
             this.SuspendLayout();
@@ -130,13 +131,6 @@
             this.tbPrecio.Name = "tbPrecio";
             this.tbPrecio.Size = new System.Drawing.Size(142, 30);
             this.tbPrecio.TabIndex = 7;
-            // 
-            // dtpfecha
-            // 
-            this.dtpfecha.Location = new System.Drawing.Point(417, 499);
-            this.dtpfecha.Name = "dtpfecha";
-            this.dtpfecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpfecha.TabIndex = 8;
             // 
             // cbempresas
             // 
@@ -267,6 +261,21 @@
             this.tbCodPostal.Size = new System.Drawing.Size(142, 30);
             this.tbCodPostal.TabIndex = 18;
             // 
+            // dtpfecha
+            // 
+            this.dtpfecha.Location = new System.Drawing.Point(417, 499);
+            this.dtpfecha.Name = "dtpfecha";
+            this.dtpfecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpfecha.TabIndex = 8;
+            // 
+            // dtOculto
+            // 
+            this.dtOculto.Location = new System.Drawing.Point(465, -5);
+            this.dtOculto.Name = "dtOculto";
+            this.dtOculto.Size = new System.Drawing.Size(200, 20);
+            this.dtOculto.TabIndex = 20;
+            this.dtOculto.Visible = false;
+            // 
             // frmRegistrarEncomienda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,6 +283,7 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Fondos_de_Pantalla_Gratis_Abstractos__164_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1160, 574);
+            this.Controls.Add(this.dtOculto);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbCodPostal);
             this.Controls.Add(this.lblAgcliente);
@@ -313,7 +323,6 @@
         private System.Windows.Forms.TextBox tbnomcliente;
         private System.Windows.Forms.TextBox tbdnicliente;
         private System.Windows.Forms.TextBox tbPrecio;
-        private System.Windows.Forms.DateTimePicker dtpfecha;
         private System.Windows.Forms.ComboBox cbempresas;
         private System.Windows.Forms.Label lblNropaquete;
         private System.Windows.Forms.Label label1;
@@ -325,5 +334,7 @@
         private System.Windows.Forms.Label lblAgcliente;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbCodPostal;
+        private System.Windows.Forms.DateTimePicker dtpfecha;
+        private System.Windows.Forms.DateTimePicker dtOculto;
     }
 }

@@ -29,7 +29,7 @@ namespace SistemaEncomienda
             clsEmpresa nuevaEmpresa = new clsEmpresa();
             string res1 = string.Empty;
             string res2 = string.Empty;
-            if (tbNomEmpresa.Text != string.Empty && tbDireccionEmpresa.Text != string.Empty && tbCiudad.Text != string.Empty && tbTelefono.Text != string.Empty)
+            if (tbNomEmpresa.Text != string.Empty && tbDireccionEmpresa.Text != string.Empty && tbCiudad.Text != string.Empty && tbTelefono.Text != string.Empty && tbCodP.Text!=string.Empty)
             {
                 nuevaEmpresa.NombreEmpresa = tbNomEmpresa.Text;
                 nuevaEmpresa.Direccion = tbDireccionEmpresa.Text;

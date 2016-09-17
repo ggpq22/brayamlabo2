@@ -38,7 +38,6 @@
             this.lblciudad = new System.Windows.Forms.Label();
             this.lblNombrecompleto = new System.Windows.Forms.Label();
             this.btnGrabarSucursal = new System.Windows.Forms.Button();
-            this.btnLeer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarPaquete)).BeginInit();
             this.SuspendLayout();
@@ -139,22 +138,19 @@
             // 
             // btnGrabarSucursal
             // 
-            this.btnGrabarSucursal.Location = new System.Drawing.Point(165, 301);
+            this.btnGrabarSucursal.BackColor = System.Drawing.Color.Transparent;
+            this.btnGrabarSucursal.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Material_Icons_e161_0__2562;
+            this.btnGrabarSucursal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGrabarSucursal.FlatAppearance.BorderSize = 0;
+            this.btnGrabarSucursal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnGrabarSucursal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnGrabarSucursal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabarSucursal.Location = new System.Drawing.Point(165, 296);
             this.btnGrabarSucursal.Name = "btnGrabarSucursal";
-            this.btnGrabarSucursal.Size = new System.Drawing.Size(100, 70);
+            this.btnGrabarSucursal.Size = new System.Drawing.Size(113, 91);
             this.btnGrabarSucursal.TabIndex = 54;
-            this.btnGrabarSucursal.Text = "grabar";
-            this.btnGrabarSucursal.UseVisualStyleBackColor = true;
+            this.btnGrabarSucursal.UseVisualStyleBackColor = false;
             this.btnGrabarSucursal.Click += new System.EventHandler(this.btnGrabarSucursal_Click);
-            // 
-            // btnLeer
-            // 
-            this.btnLeer.Location = new System.Drawing.Point(378, 301);
-            this.btnLeer.Name = "btnLeer";
-            this.btnLeer.Size = new System.Drawing.Size(100, 70);
-            this.btnLeer.TabIndex = 55;
-            this.btnLeer.Text = "Leer";
-            this.btnLeer.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -177,7 +173,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(918, 435);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnLeer);
             this.Controls.Add(this.btnGrabarSucursal);
             this.Controls.Add(this.dgvAgregarPaquete);
             this.Controls.Add(this.tbCodPostal);
@@ -209,7 +204,6 @@
         private System.Windows.Forms.Label lblciudad;
         private System.Windows.Forms.Label lblNombrecompleto;
         private System.Windows.Forms.Button btnGrabarSucursal;
-        private System.Windows.Forms.Button btnLeer;
         private System.Windows.Forms.Label label1;
     }
 }

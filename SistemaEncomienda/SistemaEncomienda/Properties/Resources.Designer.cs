@@ -114,6 +114,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _40998137_Guardar_icono_Foto_de_archivo {
+            get {
+                object obj = ResourceManager.GetObject("40998137-Guardar-icono-Foto-de-archivo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _638383__wallpaper_mambots_black_web_p {
             get {
                 object obj = ResourceManager.GetObject("638383__wallpaper-mambots-black-web_p", resourceCulture);
@@ -274,6 +284,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Iconia_41_2__256 {
+            get {
+                object obj = ResourceManager.GetObject("Iconia_41(2)_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Iconic_2718_0__256 {
             get {
                 object obj = ResourceManager.GetObject("Iconic_2718(0)_256", resourceCulture);
@@ -367,6 +387,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap Material_Icons_e161_0__2561 {
             get {
                 object obj = ResourceManager.GetObject("Material Icons_e161(0)_2561", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Material_Icons_e161_0__2562 {
+            get {
+                object obj = ResourceManager.GetObject("Material Icons_e161(0)_2562", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

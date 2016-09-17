@@ -88,6 +88,21 @@ namespace misClases
            return darId;
        }
 
+       public clsEmpresa traerEmpresa(string nombre) 
+       {
+           clsEmpresa nueva = new clsEmpresa();
+           clsEmpresa aux = new clsEmpresa();
 
+           foreach (clsEmpresa a in aux.Leer()) 
+           {
+               if (a.nombreEmpresa == nombre) 
+               {
+                   nueva = a;
+                   break;
+               }
+           }
+
+           return nueva;
+       }
     }
 }

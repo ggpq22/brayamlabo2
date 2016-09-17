@@ -48,10 +48,10 @@ namespace SistemaEncomienda
 
             foreach (clsPaquete paq in p1.Leer()) 
             {
-                //if (paq.Estado == "Para enviar")
-                //{
+                if (paq.Estado == "Para enviar")
+                {
                     listapaquetes.Add(paq);
-                //}
+                }
                 
             }
 
@@ -61,8 +61,13 @@ namespace SistemaEncomienda
             clsEmpresa nueva = new clsEmpresa();
             foreach (clsEmpresa c in nueva.Leer()) 
             {
-                cbempresas.Items.Add(c.NombreEmpresa);
+                if (c != null)
+                {
+                    cbempresas.Items.Add(c.NombreEmpresa);
+                }
             }
+
+           
             
         }
 
@@ -109,7 +114,8 @@ namespace SistemaEncomienda
                 nuevo.Nombrecliente = tbnomcliente.Text;
                 nuevo.Dnicliente = int.Parse(tbdnicliente.Text);
                 nuevo.Precio = float.Parse(tbPrecio.Text);
-                nuevo.Fechaenvio = dtpfecha.Value;
+                nuevo.Fechallegada = dtpfecha.Value;
+                nuevo.Fechaenvio = dtOculto.Value;
                 nuevo.Empresa = cbempresas.SelectedItem.ToString();
                 nuevo.Postal = int.Parse(tbCodPostal.Text);
                 List<clsPaquete> lista1 = new List<clsPaquete>();
@@ -120,7 +126,7 @@ namespace SistemaEncomienda
                 {
                     MessageBox.Show("Este paquete ya fue enviado");
                 }
-
+                
                 else
                 {
                     clsPaquete p2 = new clsPaquete();

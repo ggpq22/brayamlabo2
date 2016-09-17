@@ -45,12 +45,18 @@
             // 
             // btnMostrarInfo
             // 
-            this.btnMostrarInfo.Location = new System.Drawing.Point(548, 25);
+            this.btnMostrarInfo.BackColor = System.Drawing.Color.Transparent;
+            this.btnMostrarInfo.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Iconia_41_2__256;
+            this.btnMostrarInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMostrarInfo.FlatAppearance.BorderSize = 0;
+            this.btnMostrarInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMostrarInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMostrarInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarInfo.Location = new System.Drawing.Point(532, 12);
             this.btnMostrarInfo.Name = "btnMostrarInfo";
-            this.btnMostrarInfo.Size = new System.Drawing.Size(75, 35);
+            this.btnMostrarInfo.Size = new System.Drawing.Size(91, 65);
             this.btnMostrarInfo.TabIndex = 2;
-            this.btnMostrarInfo.Text = "Ver";
-            this.btnMostrarInfo.UseVisualStyleBackColor = true;
+            this.btnMostrarInfo.UseVisualStyleBackColor = false;
             this.btnMostrarInfo.Click += new System.EventHandler(this.btnMostrarInfo_Click);
             // 
             // tbDniBuscar
@@ -84,7 +90,6 @@
             this.Controls.Add(this.btnMostrarInfo);
             this.Controls.Add(this.dgvFacturas);
             this.Name = "frmMisenvios";
-            this.Text = "frmMisenvios";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

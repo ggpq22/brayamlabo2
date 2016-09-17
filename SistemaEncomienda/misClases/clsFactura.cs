@@ -19,10 +19,15 @@ namespace misClases
        string codigoPaquete;
        float precio;
        DateTime fechaenvio;
+       DateTime fechallegada;
        string empresa;
        int postal;
 
-
+       public DateTime Fechallegada 
+       {
+           set { fechallegada = value; }
+           get { return fechallegada; }
+       }
        public int Postal 
        {
            set { postal = value; }
@@ -134,6 +139,19 @@ namespace misClases
            return retornar;
        }
 
+
+       public string ModificarFac(List<clsFactura> mod)
+       {
+           string res = string.Empty;
+           paquete.Borrar();
+           foreach (clsFactura nuevo in mod)
+           {
+               res = nuevo.Grabar();
+           }
+
+           return res;
+
+       }
 
        public List<clsFactura> traerFacturas(string nomEmpresa)
        {
