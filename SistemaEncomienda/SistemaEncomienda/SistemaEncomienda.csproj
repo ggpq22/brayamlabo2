@@ -335,6 +335,11 @@
     <None Include="Resources\fondo-abstracto-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Material Icons_e888%280%29_256.png" />
+    <None Include="Resources\mini-fletes-fletes-economicos-repartos-encomiendas-etc-18450-MLU20155030348_082014-O.jpg" />
+    <None Include="Resources\cryan-tick-round-button-26826.jpg" />
+    <None Include="Resources\ok-icon-6091.jpg" />
+    <None Include="Resources\maxresdefault.jpg" />
     <None Include="Resources\Iconia_41%282%29_256.png" />
     <None Include="Resources\Material Icons_e161%280%29_2562.png" />
     <None Include="Resources\Aquaris-E10_wallpaper_v1.jpg" />

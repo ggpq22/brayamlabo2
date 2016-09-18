@@ -90,7 +90,7 @@
             this.btnCliente.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.ForeColor = System.Drawing.Color.Red;
-            this.btnCliente.Location = new System.Drawing.Point(216, 302);
+            this.btnCliente.Location = new System.Drawing.Point(389, 302);
             this.btnCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(140, 54);

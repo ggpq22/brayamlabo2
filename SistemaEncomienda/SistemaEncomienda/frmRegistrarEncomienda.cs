@@ -105,7 +105,7 @@ namespace SistemaEncomienda
         private void btnRegistrarEncomienda_Click(object sender, EventArgs e)
         {
 
-            if (tbCodpaquete.Text != string.Empty && tbdnicliente.Text != string.Empty)
+            if (tbCodpaquete.Text != string.Empty && tbdnicliente.Text != string.Empty && cbempresas.SelectedItem !=null)
             {
 
                 clsFactura nuevo = new clsFactura();
@@ -166,6 +166,10 @@ namespace SistemaEncomienda
                     tbnomcliente.Clear();
                     tbPrecio.Clear();
                 }
+            }
+            else if (tbCodpaquete.Text != string.Empty && tbdnicliente.Text == string.Empty) 
+            {
+                MessageBox.Show("Seleccione el cliente");
             }
             else { MessageBox.Show("Seleccione el paquete a enviar  "); }
         }

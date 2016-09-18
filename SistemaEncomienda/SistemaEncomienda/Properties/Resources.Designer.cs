@@ -194,6 +194,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cryan_tick_round_button_26826 {
+            get {
+                object obj = ResourceManager.GetObject("cryan-tick-round-button-26826", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Door {
             get {
                 object obj = ResourceManager.GetObject("Door", resourceCulture);
@@ -444,9 +454,40 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Material_Icons_e888_0__256 {
+            get {
+                object obj = ResourceManager.GetObject("Material Icons_e888(0)_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Material_Icons_e888_8__256 {
             get {
                 object obj = ResourceManager.GetObject("Material Icons_e888(8)_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maxresdefault {
+            get {
+                object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mini_fletes_fletes_economicos_repartos_encomiendas_etc_18450_MLU20155030348_082014_O {
+            get {
+                object obj = ResourceManager.GetObject("mini-fletes-fletes-economicos-repartos-encomiendas-etc-18450-MLU20155030348_08201" +
+                        "4-O", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -477,6 +518,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap octicons_f035_0__256 {
             get {
                 object obj = ResourceManager.GetObject("octicons_f035(0)_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ok_icon_6091 {
+            get {
+                object obj = ResourceManager.GetObject("ok-icon-6091", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

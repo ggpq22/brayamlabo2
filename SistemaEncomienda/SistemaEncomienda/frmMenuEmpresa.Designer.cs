@@ -35,6 +35,7 @@
             this.btnRecibido = new System.Windows.Forms.Button();
             this.btnTransferir = new System.Windows.Forms.Button();
             this.dt = new System.Windows.Forms.DateTimePicker();
+            this.btnDevolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEnviosRecibidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSucursal)).BeginInit();
             this.SuspendLayout();
@@ -75,22 +76,26 @@
             // 
             // btnRecibido
             // 
-            this.btnRecibido.Location = new System.Drawing.Point(809, 177);
+            this.btnRecibido.BackColor = System.Drawing.Color.Transparent;
+            this.btnRecibido.BackgroundImage = global::SistemaEncomienda.Properties.Resources.cryan_tick_round_button_26826;
+            this.btnRecibido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRecibido.Location = new System.Drawing.Point(800, 100);
             this.btnRecibido.Name = "btnRecibido";
-            this.btnRecibido.Size = new System.Drawing.Size(81, 56);
+            this.btnRecibido.Size = new System.Drawing.Size(164, 135);
             this.btnRecibido.TabIndex = 28;
-            this.btnRecibido.Text = "recibido";
-            this.btnRecibido.UseVisualStyleBackColor = true;
+            this.btnRecibido.UseVisualStyleBackColor = false;
             this.btnRecibido.Click += new System.EventHandler(this.btnRecibido_Click);
             // 
             // btnTransferir
             // 
-            this.btnTransferir.Location = new System.Drawing.Point(815, 275);
+            this.btnTransferir.BackgroundImage = global::SistemaEncomienda.Properties.Resources.mini_fletes_fletes_economicos_repartos_encomiendas_etc_18450_MLU20155030348_082014_O;
+            this.btnTransferir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTransferir.Location = new System.Drawing.Point(800, 477);
             this.btnTransferir.Name = "btnTransferir";
-            this.btnTransferir.Size = new System.Drawing.Size(75, 56);
+            this.btnTransferir.Size = new System.Drawing.Size(164, 134);
             this.btnTransferir.TabIndex = 29;
-            this.btnTransferir.Text = "Transferir";
             this.btnTransferir.UseVisualStyleBackColor = true;
+            this.btnTransferir.Click += new System.EventHandler(this.btnTransferir_Click);
             // 
             // dt
             // 
@@ -100,6 +105,22 @@
             this.dt.TabIndex = 30;
             this.dt.Visible = false;
             // 
+            // btnDevolver
+            // 
+            this.btnDevolver.BackColor = System.Drawing.Color.Transparent;
+            this.btnDevolver.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Material_Icons_e888_0__256;
+            this.btnDevolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDevolver.FlatAppearance.BorderSize = 0;
+            this.btnDevolver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnDevolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnDevolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDevolver.Location = new System.Drawing.Point(800, 290);
+            this.btnDevolver.Name = "btnDevolver";
+            this.btnDevolver.Size = new System.Drawing.Size(164, 134);
+            this.btnDevolver.TabIndex = 31;
+            this.btnDevolver.UseVisualStyleBackColor = false;
+            this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
+            // 
             // frmMenuEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,6 +128,7 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo_abstracto_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1174, 649);
+            this.Controls.Add(this.btnDevolver);
             this.Controls.Add(this.dt);
             this.Controls.Add(this.btnTransferir);
             this.Controls.Add(this.btnRecibido);
@@ -135,5 +157,6 @@
         private System.Windows.Forms.Button btnRecibido;
         private System.Windows.Forms.Button btnTransferir;
         private System.Windows.Forms.DateTimePicker dt;
+        private System.Windows.Forms.Button btnDevolver;
     }
 }
