@@ -110,6 +110,7 @@ namespace claseArchivo
 
             ArrayList Lista = new ArrayList();
 
+
             FileStream fs = new FileStream(nombreCompleto, FileMode.OpenOrCreate);
             BinaryReader br;
             br = new BinaryReader(fs);

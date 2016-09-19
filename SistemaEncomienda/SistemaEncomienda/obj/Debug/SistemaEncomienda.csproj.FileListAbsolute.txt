@@ -27,3 +27,4 @@ C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncom
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMisenvios.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarEmpresa.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRastrearPaquete.resources
+C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenuSucursal.resources

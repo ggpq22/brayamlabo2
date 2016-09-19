@@ -36,46 +36,58 @@ namespace SistemaEncomienda
 
         private void btnModificarCliente_Click(object sender, EventArgs e)
         {
+           
+           
             tbDniCliente.Enabled = false;
             tbNomCliente.Enabled = false;
             tbApellidoCliente.Enabled = false;
-            clsCliente modificar = new clsCliente();
-            modificar.Nombre=tbNomCliente.Text;
-            modificar.Apellido=tbApellidoCliente.Text;
-            modificar.Dni=int.Parse(tbDniCliente.Text);
-            modificar.Direccion=tbDireccionCliente.Text;
-            modificar.Email=tbEmailcliente.Text;
-            modificar.Telefono=int.Parse(tbTelefono.Text);
-            modificar.Estado=true;
-            List<clsCliente> lista = new List<clsCliente>();
-            clsCliente aux = new clsCliente();
-            foreach (clsCliente c in aux.Leer()) 
+
+            if (dgvModificar.SelectedRows.Count != 0)
             {
-                if (c.Dni == modificar.Dni) 
+
+                if (tbDireccionCliente.Text != string.Empty && tbEmailcliente.Text != string.Empty && tbTelefono.Text != string.Empty)
                 {
-                    c.Nombre = modificar.Nombre;
-                    c.Apellido = modificar.Apellido;
-                    c.Dni = modificar.Dni;
-                    c.Direccion = modificar.Direccion;
-                    c.Telefono = modificar.Telefono;
-                    c.Email = modificar.Email;
-                    c.Estado = modificar.Estado;
-                    lista.Add(c);
+
+                    clsCliente modificar = new clsCliente();
+                    modificar.Nombre = tbNomCliente.Text;
+                    modificar.Apellido = tbApellidoCliente.Text;
+                    modificar.Dni = int.Parse(tbDniCliente.Text);
+                    modificar.Direccion = tbDireccionCliente.Text;
+                    modificar.Email = tbEmailcliente.Text;
+                    modificar.Telefono = int.Parse(tbTelefono.Text);
+                    modificar.Estado = true;
+                    List<clsCliente> lista = new List<clsCliente>();
+                    clsCliente aux = new clsCliente();
+                    foreach (clsCliente c in aux.Leer())
+                    {
+                        if (c.Dni == modificar.Dni)
+                        {
+                            c.Nombre = modificar.Nombre;
+                            c.Apellido = modificar.Apellido;
+                            c.Dni = modificar.Dni;
+                            c.Direccion = modificar.Direccion;
+                            c.Telefono = modificar.Telefono;
+                            c.Email = modificar.Email;
+                            c.Estado = modificar.Estado;
+                            lista.Add(c);
+                        }
+
+                        else { lista.Add(c); }
+                    }
+
+                    string res = string.Empty;
+                    res = modificar.Modificar(lista);
+                    if (res == string.Empty)
+                    {
+                        MessageBox.Show("Cliente modificado con exito");
+                        dgvModificar.DataSource = lista;
+                    }
+
+                    else { MessageBox.Show("Ocurrio el siguiente error" + res); }
                 }
-
-                else { lista.Add(c); }
-            }
-
-            string res = string.Empty;
-            res=modificar.Modificar(lista);
-            if (res == string.Empty) 
-            {
-                MessageBox.Show("Cliente modificado con exito");
-                dgvModificar.DataSource = lista;
-            }
-
-            else { MessageBox.Show("Ocurrio el siguiente error" + res); }
-
+                else { MessageBox.Show("Complete los campos con sus respectivos datos"); }
+                }
+            else { MessageBox.Show("Seleccione un cliente para poder modificar sus datos"); }
         }
 
         private void dgvModificar_Click(object sender, EventArgs e)

@@ -20,6 +20,19 @@ namespace SistemaEncomienda
 
         private void frmAgregarEmpresa_Load(object sender, EventArgs e)
         {
+            clsEmpresa nueva = new clsEmpresa();
+            List<clsEmpresa> lista = new List<clsEmpresa>();
+
+            foreach (clsEmpresa a in nueva.Leer()) 
+            {
+                lista.Add(a);
+            }
+
+            if (lista != null) 
+            {
+                dgvEmpresa.DataSource = null;
+                dgvEmpresa.DataSource = lista;
+            }
 
         }
 
@@ -31,15 +44,15 @@ namespace SistemaEncomienda
             string res2 = string.Empty;
             if (tbNomEmpresa.Text != string.Empty && tbDireccionEmpresa.Text != string.Empty && tbCiudad.Text != string.Empty && tbTelefono.Text != string.Empty && tbCodP.Text!=string.Empty)
             {
-                nuevaEmpresa.NombreEmpresa = tbNomEmpresa.Text;
+                nuevaEmpresa.CiudadUbicacion = tbCiudad.Text;
+                nuevaEmpresa.NombreEmpresa = tbNomEmpresa.Text +" "+ tbCiudad.Text;
                 nuevaEmpresa.Direccion = tbDireccionEmpresa.Text;
                 nuevaEmpresa.Telefono = tbTelefono.Text;
-                nuevaEmpresa.CiudadUbicacion = tbCiudad.Text;
                 nuevaEmpresa.CodPostal =int.Parse(tbCodP.Text);
                 nuevaEmpresa.Id = nuevaEmpresa.RecuperarUltimoId();
                 res1 = nuevaEmpresa.Grabar();
-                usuarioEmpresa.Nombre = tbNomEmpresa.Text;
-                usuarioEmpresa.Usuario = tbNomEmpresa.Text;
+                usuarioEmpresa.Nombre = nuevaEmpresa.NombreEmpresa;
+                usuarioEmpresa.Usuario = nuevaEmpresa.NombreEmpresa;
                 usuarioEmpresa.Contraseña = "1234";
                 usuarioEmpresa.TipoUsuario = "Empresa";
                 res2 = usuarioEmpresa.Grabar();
@@ -52,5 +65,43 @@ namespace SistemaEncomienda
             }
             else { MessageBox.Show("Campos incompleto, por favor ingrese todos los datos solicitados"); }
         }
+
+        private void tbNomEmpresa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            else if (char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            else if (char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+       
     }
 }

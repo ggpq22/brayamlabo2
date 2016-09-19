@@ -110,6 +110,12 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMenuSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuSucursal.Designer.cs">
+      <DependentUpon>frmMenuSucursal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMisenvios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuEmpresa.resx">
       <DependentUpon>frmMenuEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuSucursal.resx">
+      <DependentUpon>frmMenuSucursal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMisenvios.resx">
       <DependentUpon>frmMisenvios.cs</DependentUpon>
@@ -335,6 +344,7 @@
     <None Include="Resources\fondo-abstracto-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bge02.jpg" />
     <None Include="Resources\Material Icons_e888%280%29_256.png" />
     <None Include="Resources\mini-fletes-fletes-economicos-repartos-encomiendas-etc-18450-MLU20155030348_082014-O.jpg" />
     <None Include="Resources\cryan-tick-round-button-26826.jpg" />

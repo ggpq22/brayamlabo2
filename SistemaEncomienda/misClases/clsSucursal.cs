@@ -10,8 +10,11 @@ namespace misClases
     public class clsSucursal:clsObjeto
     {
         clsArchivoBinario sucu = new clsArchivoBinario("C://prueba", "sucursal.dat");
+       
+        
         int idSucursal;
 
+        
         public int IdSucursal
         {
             get { return idSucursal; }
@@ -80,6 +83,13 @@ namespace misClases
             return darId;
         }
 
+        int idCentral;
+
+        public int IdCentral 
+        {
+            set { idCentral = value; }
+            get { return idCentral; }
+        }
         public string Grabar()
         {
             return sucu.Grabar(this);

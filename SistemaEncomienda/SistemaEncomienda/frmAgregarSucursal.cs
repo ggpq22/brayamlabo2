@@ -22,8 +22,10 @@ namespace SistemaEncomienda
 
         private void btnGrabarSucursal_Click(object sender, EventArgs e)
         {
+            clsEmpresa c= new clsEmpresa();
+            clsEmpresa c1= c.traerEmpresa(nombre);
             clsSucursal nueva = new clsSucursal();
-            if (tbCodPostal.Text != string.Empty && tbDireccion.Text != string.Empty && tbProvincia.Text != string.Empty && tbLocalidad.Text != string.Empty)
+            if (tbCodPostal.Text != string.Empty && tbDireccion.Text != string.Empty && tbProvincia.Text != string.Empty && tbLocalidad.Text != string.Empty && c1!= null)
             {
                 nueva.Nombre = "Sucursal " + nombre + " " + tbLocalidad.Text;
                 nueva.LocalidadUbicacion = tbLocalidad.Text;
@@ -31,7 +33,7 @@ namespace SistemaEncomienda
                 nueva.CodigoPostal = int.Parse(tbCodPostal.Text);
                 nueva.Direccion = tbDireccion.Text;
                 nueva.IdSucursal = nueva.RecuperarUltimoId();
-
+                nueva.IdCentral = c1.Id;
                 clsUsuario nuevo = new clsUsuario();
                 nuevo.Nombre = nueva.Nombre;
                 nuevo.Usuario = nueva.Nombre;

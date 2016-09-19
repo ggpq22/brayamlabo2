@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvAgregarCliente = new System.Windows.Forms.DataGridView();
+            this.dgvEmpresa = new System.Windows.Forms.DataGridView();
             this.tbDireccionEmpresa = new System.Windows.Forms.TextBox();
             this.tbCiudad = new System.Windows.Forms.TextBox();
             this.tbNomEmpresa = new System.Windows.Forms.TextBox();
@@ -40,19 +40,19 @@
             this.btnGrabar = new System.Windows.Forms.Button();
             this.tbCodP = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresa)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvAgregarCliente
+            // dgvEmpresa
             // 
-            this.dgvAgregarCliente.AllowUserToAddRows = false;
-            this.dgvAgregarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAgregarCliente.Location = new System.Drawing.Point(365, 89);
-            this.dgvAgregarCliente.MultiSelect = false;
-            this.dgvAgregarCliente.Name = "dgvAgregarCliente";
-            this.dgvAgregarCliente.ReadOnly = true;
-            this.dgvAgregarCliente.Size = new System.Drawing.Size(432, 188);
-            this.dgvAgregarCliente.TabIndex = 39;
+            this.dgvEmpresa.AllowUserToAddRows = false;
+            this.dgvEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmpresa.Location = new System.Drawing.Point(365, 89);
+            this.dgvEmpresa.MultiSelect = false;
+            this.dgvEmpresa.Name = "dgvEmpresa";
+            this.dgvEmpresa.ReadOnly = true;
+            this.dgvEmpresa.Size = new System.Drawing.Size(432, 188);
+            this.dgvEmpresa.TabIndex = 39;
             // 
             // tbDireccionEmpresa
             // 
@@ -69,6 +69,7 @@
             this.tbCiudad.Name = "tbCiudad";
             this.tbCiudad.Size = new System.Drawing.Size(105, 27);
             this.tbCiudad.TabIndex = 34;
+            this.tbCiudad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNomEmpresa_KeyPress);
             // 
             // tbNomEmpresa
             // 
@@ -77,6 +78,7 @@
             this.tbNomEmpresa.Name = "tbNomEmpresa";
             this.tbNomEmpresa.Size = new System.Drawing.Size(105, 27);
             this.tbNomEmpresa.TabIndex = 33;
+            this.tbNomEmpresa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNomEmpresa_KeyPress);
             // 
             // lblCel
             // 
@@ -137,6 +139,7 @@
             this.tbTelefono.Name = "tbTelefono";
             this.tbTelefono.Size = new System.Drawing.Size(105, 27);
             this.tbTelefono.TabIndex = 37;
+            this.tbTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTelefono_KeyPress);
             // 
             // btnGrabar
             // 
@@ -157,10 +160,12 @@
             // tbCodP
             // 
             this.tbCodP.Location = new System.Drawing.Point(214, 292);
+            this.tbCodP.MaxLength = 4;
             this.tbCodP.Multiline = true;
             this.tbCodP.Name = "tbCodP";
             this.tbCodP.Size = new System.Drawing.Size(105, 27);
             this.tbCodP.TabIndex = 43;
+            this.tbCodP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTelefono_KeyPress);
             // 
             // label1
             // 
@@ -185,7 +190,7 @@
             this.Controls.Add(this.tbCodP);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGrabar);
-            this.Controls.Add(this.dgvAgregarCliente);
+            this.Controls.Add(this.dgvEmpresa);
             this.Controls.Add(this.tbTelefono);
             this.Controls.Add(this.tbDireccionEmpresa);
             this.Controls.Add(this.tbCiudad);
@@ -196,7 +201,7 @@
             this.Controls.Add(this.lblAgNombre);
             this.Name = "frmAgregarEmpresa";
             this.Load += new System.EventHandler(this.frmAgregarEmpresa_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,7 +209,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvAgregarCliente;
+        private System.Windows.Forms.DataGridView dgvEmpresa;
         private System.Windows.Forms.TextBox tbDireccionEmpresa;
         private System.Windows.Forms.TextBox tbCiudad;
         private System.Windows.Forms.TextBox tbNomEmpresa;

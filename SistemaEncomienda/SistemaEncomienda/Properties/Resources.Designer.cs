@@ -184,6 +184,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bge02 {
+            get {
+                object obj = ResourceManager.GetObject("bge02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Colorful_origami_background_vector_illustration_design {
             get {
                 object obj = ResourceManager.GetObject("Colorful-origami-background-vector-illustration-design", resourceCulture);

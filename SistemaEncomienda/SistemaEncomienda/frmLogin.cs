@@ -76,6 +76,11 @@ namespace SistemaEncomienda
                         me.ShowDialog();
                     }
 
+                    else if (tipoUsuario.CompareTo("Sucursal") == 0) 
+                    {
+                        frmMenuSucursal mn = new frmMenuSucursal();
+                        mn.ShowDialog();
+                    }
                    
 
                 }
