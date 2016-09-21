@@ -36,6 +36,7 @@
             this.btnMostrarEncomiendas = new System.Windows.Forms.Button();
             this.btnAgregarEmpresa = new System.Windows.Forms.Button();
             this.btnAgregarUsuarios = new System.Windows.Forms.Button();
+            this.btnEstadistica = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAgregarCliente
@@ -151,6 +152,22 @@
             this.btnAgregarUsuarios.UseVisualStyleBackColor = false;
             this.btnAgregarUsuarios.Click += new System.EventHandler(this.btnAgregarUsuarios_Click);
             // 
+            // btnEstadistica
+            // 
+            this.btnEstadistica.BackColor = System.Drawing.Color.Transparent;
+            this.btnEstadistica.BackgroundImage = global::SistemaEncomienda.Properties.Resources.linea_1f4_0__1024;
+            this.btnEstadistica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEstadistica.FlatAppearance.BorderSize = 0;
+            this.btnEstadistica.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnEstadistica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnEstadistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstadistica.Location = new System.Drawing.Point(300, 147);
+            this.btnEstadistica.Name = "btnEstadistica";
+            this.btnEstadistica.Size = new System.Drawing.Size(162, 158);
+            this.btnEstadistica.TabIndex = 7;
+            this.btnEstadistica.UseVisualStyleBackColor = false;
+            this.btnEstadistica.Click += new System.EventHandler(this.btnEstadistica_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +175,7 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(756, 461);
+            this.Controls.Add(this.btnEstadistica);
             this.Controls.Add(this.btnAgregarUsuarios);
             this.Controls.Add(this.btnAgregarEmpresa);
             this.Controls.Add(this.btnMostrarEncomiendas);
@@ -184,5 +202,6 @@
         private System.Windows.Forms.Button btnMostrarEncomiendas;
         private System.Windows.Forms.Button btnAgregarEmpresa;
         private System.Windows.Forms.Button btnAgregarUsuarios;
+        private System.Windows.Forms.Button btnEstadistica;
     }
 }

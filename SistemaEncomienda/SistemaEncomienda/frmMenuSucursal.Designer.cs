@@ -70,6 +70,7 @@
             this.btnRecibido.TabIndex = 3;
             this.btnRecibido.Text = "btnRecibido";
             this.btnRecibido.UseVisualStyleBackColor = true;
+            this.btnRecibido.Click += new System.EventHandler(this.btnRecibido_Click);
             // 
             // btnDevolver
             // 

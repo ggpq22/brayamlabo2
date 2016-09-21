@@ -34,7 +34,7 @@
             // 
             // btnAgregarSucursal
             // 
-            this.btnAgregarSucursal.Location = new System.Drawing.Point(229, 24);
+            this.btnAgregarSucursal.Location = new System.Drawing.Point(329, 24);
             this.btnAgregarSucursal.Name = "btnAgregarSucursal";
             this.btnAgregarSucursal.Size = new System.Drawing.Size(101, 51);
             this.btnAgregarSucursal.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // btnPaquetes
             // 
-            this.btnPaquetes.Location = new System.Drawing.Point(229, 103);
+            this.btnPaquetes.Location = new System.Drawing.Point(329, 103);
             this.btnPaquetes.Name = "btnPaquetes";
             this.btnPaquetes.Size = new System.Drawing.Size(101, 51);
             this.btnPaquetes.TabIndex = 1;
@@ -58,7 +58,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Door;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(523, 378);
+            this.ClientSize = new System.Drawing.Size(714, 458);
             this.Controls.Add(this.btnPaquetes);
             this.Controls.Add(this.btnAgregarSucursal);
             this.DoubleBuffered = true;

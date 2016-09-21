@@ -70,7 +70,7 @@
             // btnRastrear
             // 
             this.btnRastrear.BackColor = System.Drawing.Color.Transparent;
-            this.btnRastrear.BackgroundImage = global::SistemaEncomienda.Properties.Resources.maxresdefault;
+            this.btnRastrear.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Entypo_d83d_0__512;
             this.btnRastrear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRastrear.FlatAppearance.BorderSize = 0;
             this.btnRastrear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -78,7 +78,7 @@
             this.btnRastrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRastrear.Location = new System.Drawing.Point(242, 246);
             this.btnRastrear.Name = "btnRastrear";
-            this.btnRastrear.Size = new System.Drawing.Size(153, 67);
+            this.btnRastrear.Size = new System.Drawing.Size(153, 111);
             this.btnRastrear.TabIndex = 3;
             this.btnRastrear.UseVisualStyleBackColor = false;
             this.btnRastrear.Click += new System.EventHandler(this.btnRastrear_Click);

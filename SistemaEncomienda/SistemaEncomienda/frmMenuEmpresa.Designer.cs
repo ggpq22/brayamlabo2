@@ -50,7 +50,7 @@
             // 
             // tbCodAbuscar
             // 
-            this.tbCodAbuscar.Location = new System.Drawing.Point(598, 42);
+            this.tbCodAbuscar.Location = new System.Drawing.Point(318, 53);
             this.tbCodAbuscar.Multiline = true;
             this.tbCodAbuscar.Name = "tbCodAbuscar";
             this.tbCodAbuscar.Size = new System.Drawing.Size(129, 31);
@@ -60,7 +60,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(349, 42);
+            this.label1.Location = new System.Drawing.Point(69, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(222, 31);
             this.label1.TabIndex = 2;
@@ -77,24 +77,33 @@
             // btnRecibido
             // 
             this.btnRecibido.BackColor = System.Drawing.Color.Transparent;
-            this.btnRecibido.BackgroundImage = global::SistemaEncomienda.Properties.Resources.cryan_tick_round_button_26826;
+            this.btnRecibido.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Entypo_2713_0__512;
             this.btnRecibido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRecibido.Location = new System.Drawing.Point(800, 100);
+            this.btnRecibido.FlatAppearance.BorderSize = 0;
+            this.btnRecibido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnRecibido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnRecibido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecibido.Location = new System.Drawing.Point(778, 100);
             this.btnRecibido.Name = "btnRecibido";
-            this.btnRecibido.Size = new System.Drawing.Size(164, 135);
+            this.btnRecibido.Size = new System.Drawing.Size(186, 160);
             this.btnRecibido.TabIndex = 28;
             this.btnRecibido.UseVisualStyleBackColor = false;
             this.btnRecibido.Click += new System.EventHandler(this.btnRecibido_Click);
             // 
             // btnTransferir
             // 
-            this.btnTransferir.BackgroundImage = global::SistemaEncomienda.Properties.Resources.mini_fletes_fletes_economicos_repartos_encomiendas_etc_18450_MLU20155030348_082014_O;
+            this.btnTransferir.BackColor = System.Drawing.Color.Transparent;
+            this.btnTransferir.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Entypo_e4ae_0__5121;
             this.btnTransferir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTransferir.Location = new System.Drawing.Point(800, 477);
+            this.btnTransferir.FlatAppearance.BorderSize = 0;
+            this.btnTransferir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnTransferir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnTransferir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransferir.Location = new System.Drawing.Point(778, 448);
             this.btnTransferir.Name = "btnTransferir";
-            this.btnTransferir.Size = new System.Drawing.Size(164, 134);
+            this.btnTransferir.Size = new System.Drawing.Size(186, 176);
             this.btnTransferir.TabIndex = 29;
-            this.btnTransferir.UseVisualStyleBackColor = true;
+            this.btnTransferir.UseVisualStyleBackColor = false;
             this.btnTransferir.Click += new System.EventHandler(this.btnTransferir_Click);
             // 
             // dt
@@ -108,15 +117,15 @@
             // btnDevolver
             // 
             this.btnDevolver.BackColor = System.Drawing.Color.Transparent;
-            this.btnDevolver.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Material_Icons_e888_0__256;
+            this.btnDevolver.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Entypo_e4ad_0__512;
             this.btnDevolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDevolver.FlatAppearance.BorderSize = 0;
             this.btnDevolver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnDevolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnDevolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDevolver.Location = new System.Drawing.Point(800, 290);
+            this.btnDevolver.Location = new System.Drawing.Point(778, 290);
             this.btnDevolver.Name = "btnDevolver";
-            this.btnDevolver.Size = new System.Drawing.Size(164, 134);
+            this.btnDevolver.Size = new System.Drawing.Size(186, 152);
             this.btnDevolver.TabIndex = 31;
             this.btnDevolver.UseVisualStyleBackColor = false;
             this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
@@ -125,9 +134,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo_abstracto_1;
+            this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo_negro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1174, 649);
+            this.ClientSize = new System.Drawing.Size(1037, 649);
             this.Controls.Add(this.btnDevolver);
             this.Controls.Add(this.dt);
             this.Controls.Add(this.btnTransferir);

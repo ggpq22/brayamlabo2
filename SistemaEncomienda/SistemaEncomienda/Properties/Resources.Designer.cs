@@ -224,6 +224,66 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Entypo_2713_0__512 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_2713(0)_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entypo_2716_0__512 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_2716(0)_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entypo_d83d_0__512 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_d83d(0)_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entypo_e4ad_0__512 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_e4ad(0)_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entypo_e4ae_0__512 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_e4ae(0)_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entypo_e4ae_0__5121 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_e4ae(0)_5121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Entypo_e722_0__256 {
             get {
                 object obj = ResourceManager.GetObject("Entypo_e722(0)_256", resourceCulture);
@@ -247,6 +307,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap fondo_abstracto_1 {
             get {
                 object obj = ResourceManager.GetObject("fondo-abstracto-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondo_negro {
+            get {
+                object obj = ResourceManager.GetObject("fondo-negro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -354,9 +424,39 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image1 {
+            get {
+                object obj = ResourceManager.GetObject("image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap la_foto {
             get {
                 object obj = ResourceManager.GetObject("la-foto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap linea_1f4_0__1024 {
+            get {
+                object obj = ResourceManager.GetObject("linea_1f4(0)_1024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap linea_1f4_0__512 {
+            get {
+                object obj = ResourceManager.GetObject("linea_1f4(0)_512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

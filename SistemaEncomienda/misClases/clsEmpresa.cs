@@ -104,5 +104,47 @@ namespace misClases
 
            return nueva;
        }
+
+       public bool existeCodigoPostal(string nombre, int codigo) 
+       {
+           bool res1 = false;
+          
+
+           clsSucursal aux = new clsSucursal();
+           clsEmpresa nueva = new clsEmpresa();
+           clsEmpresa buscar = new clsEmpresa();
+           List<clsSucursal> lista = new List<clsSucursal>();
+           buscar = nueva.traerEmpresa(nombre);
+
+           if (buscar.CodPostal == codigo) 
+           {
+               res1 = true;
+           }
+
+           else 
+           {
+               foreach (clsSucursal c in aux.Leer()) 
+               {
+                   if (c.IdCentral == buscar.Id) 
+                   {
+                       lista.Add(c);
+                   }
+               }
+
+
+               foreach (clsSucursal retornar in lista) 
+               {
+                   if (retornar.CodigoPostal == codigo) 
+                   {
+                       res1 = true;
+                   }
+               }
+          
+           }
+
+
+           return res1;
+       }
+
     }
 }

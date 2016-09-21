@@ -63,5 +63,11 @@ namespace SistemaEncomienda
             frmAgregarEmpresa ade = new frmAgregarEmpresa();
             ade.ShowDialog();
         }
+
+        private void btnEstadistica_Click(object sender, EventArgs e)
+        {
+            frmEstadisticas fe = new frmEstadisticas();
+            fe.ShowDialog();
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace SistemaEncomienda
         {
             InitializeComponent();
         }
+
+        private void btnRecibido_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
