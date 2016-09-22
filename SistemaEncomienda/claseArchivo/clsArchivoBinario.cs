@@ -49,7 +49,7 @@ namespace claseArchivo
                 fs = new FileStream(nombreCompleto, FileMode.Append);
             }
 
-            bw = new BinaryWriter(fs, Encoding.UTF8);
+            bw = new BinaryWriter(fs);
 
             try
             {
@@ -172,9 +172,9 @@ namespace claseArchivo
                 }
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Lista.Add(null);
+                throw ex;
             }
 
             br.Close();

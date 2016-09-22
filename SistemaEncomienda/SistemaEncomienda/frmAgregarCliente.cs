@@ -70,6 +70,14 @@ namespace SistemaEncomienda
                 }
             }
             else { MessageBox.Show("Complete los campos por favor"); }
+
+            tbApellidoCliente.Clear();
+            tbCiudadCliente.Clear();
+            tbDireccionCliente.Clear();
+            tbDniCliente.Clear();
+            tbEmailcliente.Clear();
+            tbTelefono.Clear();
+            tbNomCliente.Clear();
         }
 
         private void btnMostrarClientes_Click(object sender, EventArgs e)

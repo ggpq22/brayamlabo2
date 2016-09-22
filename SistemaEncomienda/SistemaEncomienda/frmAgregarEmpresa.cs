@@ -25,7 +25,11 @@ namespace SistemaEncomienda
 
             foreach (clsEmpresa a in nueva.Leer()) 
             {
-                lista.Add(a);
+                if (a!=null)
+                {
+                    lista.Add(a);
+                }
+               
             }
 
             if (lista != null) 
@@ -33,6 +37,7 @@ namespace SistemaEncomienda
                 dgvEmpresa.DataSource = null;
                 dgvEmpresa.DataSource = lista;
             }
+
 
         }
 
@@ -44,12 +49,13 @@ namespace SistemaEncomienda
             string res2 = string.Empty;
             if (tbNomEmpresa.Text != string.Empty && tbDireccionEmpresa.Text != string.Empty && tbCiudad.Text != string.Empty && tbTelefono.Text != string.Empty && tbCodP.Text!=string.Empty)
             {
+                nuevaEmpresa.Id = nuevaEmpresa.RecuperarUltimoId() + 1;
                 nuevaEmpresa.CiudadUbicacion = tbCiudad.Text;
                 nuevaEmpresa.NombreEmpresa = tbNomEmpresa.Text +" "+ tbCiudad.Text;
                 nuevaEmpresa.Direccion = tbDireccionEmpresa.Text;
                 nuevaEmpresa.Telefono = tbTelefono.Text;
                 nuevaEmpresa.CodPostal =int.Parse(tbCodP.Text);
-                nuevaEmpresa.Id = nuevaEmpresa.RecuperarUltimoId();
+                
                 res1 = nuevaEmpresa.Grabar();
                 usuarioEmpresa.Nombre = nuevaEmpresa.NombreEmpresa;
                 usuarioEmpresa.Usuario = nuevaEmpresa.NombreEmpresa;
