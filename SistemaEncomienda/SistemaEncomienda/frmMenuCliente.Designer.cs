@@ -1,6 +1,6 @@
 ﻿namespace SistemaEncomienda
 {
-    partial class frmMenuCliente
+    partial class frmRastrearPaquete
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(218, 54);
@@ -52,11 +52,11 @@
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(78, 193);
+            this.label2.Location = new System.Drawing.Point(46, 197);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(474, 24);
+            this.label2.Size = new System.Drawing.Size(549, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Ingrese el codigo de su paquete para verificar el estado";
+            this.label2.Text = "Ingrese el codigo de su paquete para  el seguimiento del mismo";
             // 
             // tbCodigoAbuscar
             // 
@@ -69,27 +69,34 @@
             // 
             // btnRastrear
             // 
-            this.btnRastrear.Location = new System.Drawing.Point(271, 256);
+            this.btnRastrear.BackColor = System.Drawing.Color.Transparent;
+            this.btnRastrear.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Entypo_d83d_0__512;
+            this.btnRastrear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRastrear.FlatAppearance.BorderSize = 0;
+            this.btnRastrear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnRastrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnRastrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRastrear.Location = new System.Drawing.Point(242, 246);
             this.btnRastrear.Name = "btnRastrear";
-            this.btnRastrear.Size = new System.Drawing.Size(75, 23);
+            this.btnRastrear.Size = new System.Drawing.Size(153, 111);
             this.btnRastrear.TabIndex = 3;
-            this.btnRastrear.Text = "Rastrear";
-            this.btnRastrear.UseVisualStyleBackColor = true;
+            this.btnRastrear.UseVisualStyleBackColor = false;
             this.btnRastrear.Click += new System.EventHandler(this.btnRastrear_Click);
             // 
-            // frmMenuCliente
+            // frmRastrearPaquete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo1;
+            this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Aquaris_E10_wallpaper_v1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(631, 386);
+            this.ClientSize = new System.Drawing.Size(634, 395);
             this.Controls.Add(this.btnRastrear);
             this.Controls.Add(this.tbCodigoAbuscar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Name = "frmMenuCliente";
+            this.Name = "frmRastrearPaquete";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 

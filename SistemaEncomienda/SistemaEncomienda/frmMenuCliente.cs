@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using misClases;
 namespace SistemaEncomienda
 {
-    public partial class frmMenuCliente : Form
+    public partial class frmRastrearPaquete : Form
     {
-        public frmMenuCliente()
+        public frmRastrearPaquete()
         {
             InitializeComponent();
         }
@@ -20,10 +20,19 @@ namespace SistemaEncomienda
         private void btnRastrear_Click(object sender, EventArgs e)
         {
             string codigo = tbCodigoAbuscar.Text;
-            if(codigo != string.Empty)
+            clsPaquete aux = new clsPaquete();
+            clsPaquete p= new clsPaquete();
+            p=aux.retornarPaquete(codigo);
+            if (codigo != string.Empty)
             {
-                frmEstadoPaquete frmEP = new frmEstadoPaquete(codigo);
-                frmEP.ShowDialog();
+                if (p!=null && p.Codigo == codigo)
+                {
+
+                    frmEstadoPaquete frmEP = new frmEstadoPaquete(codigo);
+                    frmEP.ShowDialog();
+                }
+
+                else { MessageBox.Show("codigo ingresado no es valido"); }
             }
             else
             {

@@ -36,46 +36,58 @@ namespace SistemaEncomienda
 
         private void btnModificarCliente_Click(object sender, EventArgs e)
         {
+           
+           
             tbDniCliente.Enabled = false;
             tbNomCliente.Enabled = false;
             tbApellidoCliente.Enabled = false;
-            clsCliente modificar = new clsCliente();
-            modificar.Nombre=tbNomCliente.Text;
-            modificar.Apellido=tbApellidoCliente.Text;
-            modificar.Dni=int.Parse(tbDniCliente.Text);
-            modificar.Direccion=tbDireccionCliente.Text;
-            modificar.Email=tbEmailcliente.Text;
-            modificar.Telefono=int.Parse(tbTelefono.Text);
-            modificar.Estado=true;
-            List<clsCliente> lista = new List<clsCliente>();
-            clsCliente aux = new clsCliente();
-            foreach (clsCliente c in aux.Leer()) 
+
+            if (dgvModificar.SelectedRows.Count != 0)
             {
-                if (c.Dni == modificar.Dni) 
+
+                if (tbDireccionCliente.Text != string.Empty && tbEmailcliente.Text != string.Empty && tbTelefono.Text != string.Empty)
                 {
-                    c.Nombre = modificar.Nombre;
-                    c.Apellido = modificar.Apellido;
-                    c.Dni = modificar.Dni;
-                    c.Direccion = modificar.Direccion;
-                    c.Telefono = modificar.Telefono;
-                    c.Email = modificar.Email;
-                    c.Estado = modificar.Estado;
-                    lista.Add(c);
+
+                    clsCliente modificar = new clsCliente();
+                    modificar.Nombre = tbNomCliente.Text;
+                    modificar.Apellido = tbApellidoCliente.Text;
+                    modificar.Dni = int.Parse(tbDniCliente.Text);
+                    modificar.Direccion = tbDireccionCliente.Text;
+                    modificar.Email = tbEmailcliente.Text;
+                    modificar.Telefono = int.Parse(tbTelefono.Text);
+                    modificar.Estado = true;
+                    List<clsCliente> lista = new List<clsCliente>();
+                    clsCliente aux = new clsCliente();
+                    foreach (clsCliente c in aux.Leer())
+                    {
+                        if (c.Dni == modificar.Dni)
+                        {
+                            c.Nombre = modificar.Nombre;
+                            c.Apellido = modificar.Apellido;
+                            c.Dni = modificar.Dni;
+                            c.Direccion = modificar.Direccion;
+                            c.Telefono = modificar.Telefono;
+                            c.Email = modificar.Email;
+                            c.Estado = modificar.Estado;
+                            lista.Add(c);
+                        }
+
+                        else { lista.Add(c); }
+                    }
+
+                    string res = string.Empty;
+                    res = modificar.Modificar(lista);
+                    if (res == string.Empty)
+                    {
+                        MessageBox.Show("Cliente modificado con exito");
+                        dgvModificar.DataSource = lista;
+                    }
+
+                    else { MessageBox.Show("Ocurrio el siguiente error" + res); }
                 }
-
-                else { lista.Add(c); }
-            }
-
-            string res = string.Empty;
-            res=modificar.Modificar(lista);
-            if (res == string.Empty) 
-            {
-                MessageBox.Show("Cliente modificado con exito");
-                dgvModificar.DataSource = lista;
-            }
-
-            else { MessageBox.Show("Ocurrio el siguiente error" + res); }
-
+                else { MessageBox.Show("Complete los campos con sus respectivos datos"); }
+                }
+            else { MessageBox.Show("Seleccione un cliente para poder modificar sus datos"); }
         }
 
         private void dgvModificar_Click(object sender, EventArgs e)
@@ -93,42 +105,54 @@ namespace SistemaEncomienda
             tbDniCliente.Enabled = false;
             tbNomCliente.Enabled = false;
             tbApellidoCliente.Enabled = false;
-            clsCliente eliminar = new clsCliente();
-            eliminar.Nombre = tbNomCliente.Text;
-            eliminar.Apellido = tbApellidoCliente.Text;
-            eliminar.Dni = int.Parse(tbDniCliente.Text);
-            eliminar.Direccion = tbDireccionCliente.Text;
-            eliminar.Email = tbEmailcliente.Text;
-            eliminar.Telefono = int.Parse(tbTelefono.Text);
-            eliminar.Estado = true;
-            List<clsCliente> lista = new List<clsCliente>();
-            clsCliente aux = new clsCliente();
-            foreach (clsCliente c in aux.Leer())
+           
+
+            if (tbApellidoCliente.Text != string.Empty && tbNomCliente.Text != string.Empty)
             {
-                if (c.Dni == eliminar.Dni)
+                clsCliente eliminar = new clsCliente();
+                eliminar.Nombre = tbNomCliente.Text;
+                eliminar.Apellido = tbApellidoCliente.Text;
+                eliminar.Dni = int.Parse(tbDniCliente.Text);
+                eliminar.Direccion = tbDireccionCliente.Text;
+                eliminar.Email = tbEmailcliente.Text;
+                eliminar.Telefono = int.Parse(tbTelefono.Text);
+                eliminar.Estado = Convert.ToBoolean(dgvModificar.CurrentRow.Cells["estado"].Value);
+
+                if (eliminar.Estado != false)
                 {
-                    c.Nombre = eliminar.Nombre;
-                    c.Apellido = eliminar.Apellido;
-                    c.Dni = eliminar.Dni;
-                    c.Direccion = eliminar.Direccion;
-                    c.Telefono = eliminar.Telefono;
-                    c.Email = eliminar.Email;
-                    c.Estado = false;
-                    lista.Add(c);
+                    List<clsCliente> lista = new List<clsCliente>();
+                    clsCliente aux = new clsCliente();
+                    foreach (clsCliente c in aux.Leer())
+                    {
+                        if (c.Dni == eliminar.Dni)
+                        {
+                            c.Nombre = eliminar.Nombre;
+                            c.Apellido = eliminar.Apellido;
+                            c.Dni = eliminar.Dni;
+                            c.Direccion = eliminar.Direccion;
+                            c.Telefono = eliminar.Telefono;
+                            c.Email = eliminar.Email;
+                            c.Estado = false;
+                            lista.Add(c);
+                        }
+
+                        else { lista.Add(c); }
+                    }
+
+                    string res = string.Empty;
+                    res = eliminar.Modificar(lista);
+                    if (res == string.Empty)
+                    {
+                        MessageBox.Show("Se dio de baja al cliente");
+                        dgvModificar.DataSource = lista;
+                    }
+
+                    else { MessageBox.Show("Ocurrio el siguiente error" + res); }
                 }
-
-                else { lista.Add(c); }
+                else { MessageBox.Show("Este cliente ya fue dado de baja"); }
+            }
+            else { MessageBox.Show("Seleccione un contacto"); }
             }
 
-            string res = string.Empty;
-            res = eliminar.Modificar(lista);
-            if (res == string.Empty)
-            {
-                MessageBox.Show("Se dio de baja al cliente");
-                dgvModificar.DataSource = lista;
-            }
-
-            else { MessageBox.Show("Ocurrio el siguiente error" + res); }
-        }
     }
 }

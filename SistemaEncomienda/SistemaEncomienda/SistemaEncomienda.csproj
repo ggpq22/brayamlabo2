@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,11 +51,35 @@
     <Compile Include="frmAgregarCliente.Designer.cs">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarEmpresa.Designer.cs">
+      <DependentUpon>frmAgregarEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAgregarPaquete.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAgregarPaquete.Designer.cs">
       <DependentUpon>frmAgregarPaquete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarSucursal.Designer.cs">
+      <DependentUpon>frmAgregarSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresaMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresaMenuPrincipal.Designer.cs">
+      <DependentUpon>frmEmpresaMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadisticas.Designer.cs">
+      <DependentUpon>frmEstadisticas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEstadoPaquete.cs">
       <SubType>Form</SubType>
@@ -67,6 +92,12 @@
     </Compile>
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLibre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibre.Designer.cs">
+      <DependentUpon>frmLibre.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenuCliente.cs">
       <SubType>Form</SubType>
@@ -85,6 +116,18 @@
     </Compile>
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuSucursal.Designer.cs">
+      <DependentUpon>frmMenuSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMisenvios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMisenvios.Designer.cs">
+      <DependentUpon>frmMisenvios.cs</DependentUpon>
     </Compile>
     <Compile Include="frmModificarCliente.cs">
       <SubType>Form</SubType>
@@ -121,14 +164,29 @@
     <EmbeddedResource Include="frmAgregarCliente.resx">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarEmpresa.resx">
+      <DependentUpon>frmAgregarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarPaquete.resx">
       <DependentUpon>frmAgregarPaquete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarSucursal.resx">
+      <DependentUpon>frmAgregarSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresaMenuPrincipal.resx">
+      <DependentUpon>frmEmpresaMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadisticas.resx">
+      <DependentUpon>frmEstadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstadoPaquete.resx">
       <DependentUpon>frmEstadoPaquete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLibre.resx">
+      <DependentUpon>frmLibre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuCliente.resx">
       <DependentUpon>frmMenuCliente.cs</DependentUpon>
@@ -141,6 +199,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuEmpresa.resx">
       <DependentUpon>frmMenuEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuSucursal.resx">
+      <DependentUpon>frmMenuSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMisenvios.resx">
+      <DependentUpon>frmMisenvios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificarCliente.resx">
       <DependentUpon>frmModificarCliente.cs</DependentUpon>
@@ -290,7 +354,36 @@
     <None Include="Resources\fondo-abstracto-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\image1.jpg" />
+    <None Include="Resources\linea_1f4%280%29_1024.png" />
+    <None Include="Resources\linea_1f4%280%29_512.png" />
+    <None Include="Resources\Entypo_e4ad%280%29_512.png" />
+    <None Include="Resources\Entypo_d83d%280%29_512.png" />
+    <None Include="Resources\Entypo_e4ae%280%29_5121.png" />
+    <None Include="Resources\fondo-negro.jpg" />
+    <None Include="Resources\Entypo_e4ae%280%29_512.png" />
+    <None Include="Resources\Entypo_2716%280%29_512.png" />
+    <None Include="Resources\Entypo_2713%280%29_512.png" />
+    <None Include="Resources\bge02.jpg" />
+    <None Include="Resources\Material Icons_e888%280%29_256.png" />
+    <None Include="Resources\mini-fletes-fletes-economicos-repartos-encomiendas-etc-18450-MLU20155030348_082014-O.jpg" />
+    <None Include="Resources\cryan-tick-round-button-26826.jpg" />
+    <None Include="Resources\ok-icon-6091.jpg" />
+    <None Include="Resources\maxresdefault.jpg" />
+    <None Include="Resources\Iconia_41%282%29_256.png" />
+    <None Include="Resources\Material Icons_e161%280%29_2562.png" />
+    <None Include="Resources\Aquaris-E10_wallpaper_v1.jpg" />
+    <None Include="Resources\wallpaper_fullhd-2.jpg" />
+    <None Include="Resources\la-foto.jpg" />
+    <None Include="Resources\icomoon_e681%280%29_256.png" />
+    <None Include="Resources\Material Icons_e161%280%29_2561.png" />
+    <None Include="Resources\23214wide.jpg" />
+    <None Include="Resources\AA1.jpg" />
+    <None Include="Resources\3D-Neon-Balls-2880x1920.jpg" />
+    <None Include="Resources\40998137-Guardar-icono-Foto-de-archivo.jpg" />
     <Content Include="Resources\add_user.png" />
+    <None Include="Resources\Door.png" />
+    <None Include="Resources\fondo2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

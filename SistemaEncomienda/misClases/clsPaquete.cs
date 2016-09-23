@@ -19,8 +19,22 @@ namespace misClases
        string ciudad;
        string direccion;
        double kilos;
+       int bultos;
+       int codigoPostal;
        string  estado;
 
+
+       public int Bultos 
+       {
+           set { bultos = value; }
+           get { return bultos; }
+       }
+
+       public int CodigoPostal
+       {
+           set { codigoPostal = value; }
+           get { return codigoPostal; }
+       }
        public int Id 
        {
            set { id = value; }
@@ -137,7 +151,7 @@ namespace misClases
        public clsPaquete retornarPaquete(string cod) 
        {
            clsPaquete aux = new clsPaquete();
-           clsPaquete retornar = new clsPaquete();
+           clsPaquete retornar = null;
            foreach (clsPaquete buscar in aux.Leer())
            {
                if (buscar.Codigo == cod)
@@ -148,6 +162,9 @@ namespace misClases
 
            return retornar;
        }
+
+
+      
 
     }
 }

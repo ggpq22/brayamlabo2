@@ -27,8 +27,11 @@ namespace SistemaEncomienda
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            lblCliente.Visible = false;
+            btnCliente.Visible = false;
+            
         }
+
 
         private void btnIngresarLogin_Click(object sender, EventArgs e)
         {
@@ -36,6 +39,7 @@ namespace SistemaEncomienda
             clsUsuario aux = new clsUsuario();
             string tipoUsuario = string.Empty;
             bool res = false;
+            
             foreach (clsUsuario a in aux.Leer()) 
             {
                 if (a != null)
@@ -44,35 +48,84 @@ namespace SistemaEncomienda
                 }
             }
 
-            foreach (clsUsuario b in lista) 
+       
+            
+            if (tbContraIngresar.Text != string.Empty && tbUsuIngresar.Text!=string.Empty)
             {
-                if ((b.Usuario == tbUsuIngresar.Text) && (b.Contraseña == tbContraIngresar.Text)) 
+
+           
+                foreach (clsUsuario b in lista)
                 {
-                    res = true;
-                    tipoUsuario = b.TipoUsuario;
+                    if ((b.Usuario == tbUsuIngresar.Text) && (b.Contraseña == tbContraIngresar.Text))
+                    {
+                        res = true;
+                        tipoUsuario = b.TipoUsuario;
+                    }
                 }
+
+                if (res == true)
+                {
+                    if (tipoUsuario.CompareTo("Administrador") == 0)
+                    {
+                        frmMenu m = new frmMenu();
+                        m.ShowDialog();
+                    }
+                    else if (tipoUsuario.CompareTo("Empresa") == 0)
+                    {
+                        frmEmpresaMenuPrincipal me = new frmEmpresaMenuPrincipal(tbUsuIngresar.Text);
+                        me.ShowDialog();
+                    }
+
+                    else if (tipoUsuario.CompareTo("Sucursal") == 0) 
+                    {
+                        frmMenuSucursal mn = new frmMenuSucursal();
+                        mn.ShowDialog();
+                    }
+                   
+
+                }
+                else { MessageBox.Show("Verifique sus datos"); }
             }
 
-            if (res == true) 
+            else { MessageBox.Show("Complete los campos"); }
+          
+            
+            tbContraIngresar.Clear();
+            tbUsuIngresar.Clear();
+        }
+
+        private void cbUsuarios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            frmLibre l = new frmLibre();
+            l.ShowDialog();
+        }
+
+        private void cbCliente_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbCliente.Checked == true)
             {
-                if(tipoUsuario.CompareTo("Administrador") == 0)
-                {
-                    frmMenu m = new frmMenu();
-                    m.ShowDialog();
-                }
-                else if(tipoUsuario.CompareTo("Cliente") == 0)
-                {
-                    frmMenuCliente mc = new frmMenuCliente();
-                    mc.ShowDialog();
-                }
-                else
-                {
-                    frmMenuEmpresa me = new frmMenuEmpresa();
-                    me.ShowDialog();
-                }
-                
+                lblCliente.Visible = true;
+                tbContraIngresar.Enabled = false;
+                tbUsuIngresar.Enabled = false;
+                btnIngresarLogin.Visible = false;
+                btnCliente.Visible = true;
+
             }
-            else { MessageBox.Show("Verifique sus datos"); }
+
+            else
+            {
+                lblCliente.Visible = false;
+                btnCliente.Visible = false;
+                btnIngresarLogin.Visible = true;
+                tbContraIngresar.Enabled = true;
+                tbUsuIngresar.Enabled = true;
+            }
         }
     }
 }

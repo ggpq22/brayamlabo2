@@ -42,6 +42,10 @@
             this.lblAgregarPaquete = new System.Windows.Forms.Label();
             this.btnMostrarClientes = new System.Windows.Forms.Button();
             this.btnGrabarPaquete = new System.Windows.Forms.Button();
+            this.tbBultos = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbCodigoPostal = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgregarPaquete)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,10 +162,10 @@
             // dgvAgregarPaquete
             // 
             this.dgvAgregarPaquete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAgregarPaquete.Location = new System.Drawing.Point(410, 98);
+            this.dgvAgregarPaquete.Location = new System.Drawing.Point(375, 98);
             this.dgvAgregarPaquete.Name = "dgvAgregarPaquete";
             this.dgvAgregarPaquete.ReadOnly = true;
-            this.dgvAgregarPaquete.Size = new System.Drawing.Size(563, 202);
+            this.dgvAgregarPaquete.Size = new System.Drawing.Size(665, 249);
             this.dgvAgregarPaquete.TabIndex = 37;
             // 
             // lblAgregarPaquete
@@ -185,7 +189,7 @@
             this.btnMostrarClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMostrarClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMostrarClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarClientes.Location = new System.Drawing.Point(410, 340);
+            this.btnMostrarClientes.Location = new System.Drawing.Point(392, 410);
             this.btnMostrarClientes.Name = "btnMostrarClientes";
             this.btnMostrarClientes.Size = new System.Drawing.Size(114, 88);
             this.btnMostrarClientes.TabIndex = 40;
@@ -202,12 +206,55 @@
             this.btnGrabarPaquete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnGrabarPaquete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnGrabarPaquete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabarPaquete.Location = new System.Drawing.Point(156, 340);
+            this.btnGrabarPaquete.Location = new System.Drawing.Point(153, 410);
             this.btnGrabarPaquete.Name = "btnGrabarPaquete";
             this.btnGrabarPaquete.Size = new System.Drawing.Size(105, 88);
             this.btnGrabarPaquete.TabIndex = 39;
             this.btnGrabarPaquete.UseVisualStyleBackColor = false;
             this.btnGrabarPaquete.Click += new System.EventHandler(this.btnGrabarPaquete_Click);
+            // 
+            // tbBultos
+            // 
+            this.tbBultos.Location = new System.Drawing.Point(154, 320);
+            this.tbBultos.Multiline = true;
+            this.tbBultos.Name = "tbBultos";
+            this.tbBultos.Size = new System.Drawing.Size(105, 27);
+            this.tbBultos.TabIndex = 42;
+            this.tbBultos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbDniCliente_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(25, 320);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 27);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Bultos";
+            // 
+            // tbCodigoPostal
+            // 
+            this.tbCodigoPostal.Location = new System.Drawing.Point(161, 365);
+            this.tbCodigoPostal.Multiline = true;
+            this.tbCodigoPostal.Name = "tbCodigoPostal";
+            this.tbCodigoPostal.Size = new System.Drawing.Size(105, 27);
+            this.tbCodigoPostal.TabIndex = 44;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(24, 365);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 27);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Cod-Postal";
             // 
             // frmAgregarPaquete
             // 
@@ -215,7 +262,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.abstract_vector_minimalistic_red_black_1920x1200;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(975, 474);
+            this.ClientSize = new System.Drawing.Size(1066, 519);
+            this.Controls.Add(this.tbCodigoPostal);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tbBultos);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMostrarClientes);
             this.Controls.Add(this.btnGrabarPaquete);
             this.Controls.Add(this.lblAgregarPaquete);
@@ -255,5 +306,9 @@
         private System.Windows.Forms.Label lblAgregarPaquete;
         private System.Windows.Forms.Button btnMostrarClientes;
         private System.Windows.Forms.Button btnGrabarPaquete;
+        private System.Windows.Forms.TextBox tbBultos;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbCodigoPostal;
+        private System.Windows.Forms.Label label2;
     }
 }

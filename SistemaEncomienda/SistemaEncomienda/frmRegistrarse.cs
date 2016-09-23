@@ -80,10 +80,8 @@ namespace SistemaEncomienda
         private void frmRegistrarse_Load(object sender, EventArgs e)
         {
             cbTipoUsuario.Items.Add("Administrador");
-            cbTipoUsuario.Items.Add("Empresa");
-            cbTipoUsuario.Items.Add("Cliente");
             cbTipoUsuario.SelectedItem = "Administrador";
-
+            cbTipoUsuario.Enabled = false;
             List<clsUsuario> lista = new List<clsUsuario>();
             clsUsuario aux = new clsUsuario();
             foreach (clsUsuario a in aux.Leer())

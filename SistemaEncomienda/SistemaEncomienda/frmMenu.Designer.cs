@@ -34,8 +34,9 @@
             this.btnAgregarPaquete = new System.Windows.Forms.Button();
             this.btnDespacharPaquete = new System.Windows.Forms.Button();
             this.btnMostrarEncomiendas = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnAgregarEmpresa = new System.Windows.Forms.Button();
             this.btnAgregarUsuarios = new System.Windows.Forms.Button();
+            this.btnEstadistica = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAgregarCliente
@@ -118,20 +119,21 @@
             this.btnMostrarEncomiendas.UseVisualStyleBackColor = false;
             this.btnMostrarEncomiendas.Click += new System.EventHandler(this.btnMostrarEncomiendas_Click);
             // 
-            // btnCerrar
+            // btnAgregarEmpresa
             // 
-            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Material_Icons_e888_8__256;
-            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Location = new System.Drawing.Point(468, 101);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(150, 129);
-            this.btnCerrar.TabIndex = 5;
-            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnAgregarEmpresa.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarEmpresa.BackgroundImage = global::SistemaEncomienda.Properties.Resources.icomoon_e681_0__256;
+            this.btnAgregarEmpresa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregarEmpresa.FlatAppearance.BorderSize = 0;
+            this.btnAgregarEmpresa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarEmpresa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarEmpresa.Location = new System.Drawing.Point(468, 101);
+            this.btnAgregarEmpresa.Name = "btnAgregarEmpresa";
+            this.btnAgregarEmpresa.Size = new System.Drawing.Size(150, 129);
+            this.btnAgregarEmpresa.TabIndex = 5;
+            this.btnAgregarEmpresa.UseVisualStyleBackColor = false;
+            this.btnAgregarEmpresa.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnAgregarUsuarios
             // 
@@ -150,6 +152,22 @@
             this.btnAgregarUsuarios.UseVisualStyleBackColor = false;
             this.btnAgregarUsuarios.Click += new System.EventHandler(this.btnAgregarUsuarios_Click);
             // 
+            // btnEstadistica
+            // 
+            this.btnEstadistica.BackColor = System.Drawing.Color.Transparent;
+            this.btnEstadistica.BackgroundImage = global::SistemaEncomienda.Properties.Resources.linea_1f4_0__1024;
+            this.btnEstadistica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEstadistica.FlatAppearance.BorderSize = 0;
+            this.btnEstadistica.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnEstadistica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnEstadistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstadistica.Location = new System.Drawing.Point(300, 147);
+            this.btnEstadistica.Name = "btnEstadistica";
+            this.btnEstadistica.Size = new System.Drawing.Size(162, 158);
+            this.btnEstadistica.TabIndex = 7;
+            this.btnEstadistica.UseVisualStyleBackColor = false;
+            this.btnEstadistica.Click += new System.EventHandler(this.btnEstadistica_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,8 +175,9 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(756, 461);
+            this.Controls.Add(this.btnEstadistica);
             this.Controls.Add(this.btnAgregarUsuarios);
-            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnAgregarEmpresa);
             this.Controls.Add(this.btnMostrarEncomiendas);
             this.Controls.Add(this.btnDespacharPaquete);
             this.Controls.Add(this.btnAgregarPaquete);
@@ -168,6 +187,7 @@
             this.MaximumSize = new System.Drawing.Size(772, 500);
             this.MinimumSize = new System.Drawing.Size(772, 500);
             this.Name = "frmMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.ResumeLayout(false);
 
@@ -180,7 +200,8 @@
         private System.Windows.Forms.Button btnAgregarPaquete;
         private System.Windows.Forms.Button btnDespacharPaquete;
         private System.Windows.Forms.Button btnMostrarEncomiendas;
-        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnAgregarEmpresa;
         private System.Windows.Forms.Button btnAgregarUsuarios;
+        private System.Windows.Forms.Button btnEstadistica;
     }
 }

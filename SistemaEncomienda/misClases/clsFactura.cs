@@ -19,8 +19,22 @@ namespace misClases
        string codigoPaquete;
        float precio;
        DateTime fechaenvio;
+       DateTime fechallegada;
        string empresa;
+       int postal;
 
+       public DateTime Fechallegada 
+       {
+           set { fechallegada = value; }
+           get { return fechallegada; }
+       }
+       public int Postal 
+       {
+           set { postal = value; }
+           get { return postal; }
+       }
+
+     
        public int Id 
        {
            set { id = value; }
@@ -92,7 +106,22 @@ namespace misClases
            return darId;
        }
 
+       public List<clsFactura> recuperarFac(int dni)
+       {
 
+          
+          clsFactura aux = new clsFactura();
+          List<clsFactura> lista = new List<clsFactura>();
+           foreach (clsFactura c in aux.Leer())
+           {
+               if (c.dnicliente == dni)
+               {
+                   lista.Add(c);
+               }
+           }
+
+           return lista;
+       }
        public clsFactura recuperarFac(string codPaq) 
        {
 
@@ -109,5 +138,38 @@ namespace misClases
 
            return retornar;
        }
+
+
+       public string ModificarFac(List<clsFactura> mod)
+       {
+           string res = string.Empty;
+           paquete.Borrar();
+           foreach (clsFactura nuevo in mod)
+           {
+               res = nuevo.Grabar();
+           }
+
+           return res;
+
+       }
+
+       public List<clsFactura> traerFacturas(string nomEmpresa)
+       {
+
+           List<clsFactura> lista = new List<clsFactura>();
+           clsFactura aux = new clsFactura();
+
+           foreach (clsFactura c in aux.Leer())
+           {
+               if (c.empresa == nomEmpresa)
+               {
+                   lista.Add(c);
+               }
+           }
+
+           return lista;
+       }
+
+
     }
 }

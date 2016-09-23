@@ -25,13 +25,14 @@ namespace SistemaEncomienda
             if (tbNomCliente.Text != string.Empty && tbApellidoCliente.Text != string.Empty && tbDniCliente.Text != string.Empty && tbTelefono.Text != string.Empty && tbEmailcliente.Text != string.Empty)
             {
                 clsCliente nuevo = new clsCliente();
-              nuevo.Nombre = tbNomCliente.Text;
-              nuevo.Apellido = tbApellidoCliente.Text;
-              nuevo.Dni = int.Parse(tbDniCliente.Text);
+                nuevo.Nombre = tbNomCliente.Text;
+               nuevo.Apellido = tbApellidoCliente.Text;
+               nuevo.Dni = int.Parse(tbDniCliente.Text);
                nuevo.Direccion = tbDireccionCliente.Text;
-               nuevo.Telefono = Convert.ToInt32(tbTelefono.Text);
+               nuevo.Telefono = int.Parse(tbTelefono.Text);
                nuevo.Email = tbEmailcliente.Text;
                nuevo.Estado = true;
+               nuevo.Ciudad = tbCiudadCliente.Text;
                string res = string.Empty;
 
             bool encontrado = false;
@@ -69,6 +70,14 @@ namespace SistemaEncomienda
                 }
             }
             else { MessageBox.Show("Complete los campos por favor"); }
+
+            tbApellidoCliente.Clear();
+            tbCiudadCliente.Clear();
+            tbDireccionCliente.Clear();
+            tbDniCliente.Clear();
+            tbEmailcliente.Clear();
+            tbTelefono.Clear();
+            tbNomCliente.Clear();
         }
 
         private void btnMostrarClientes_Click(object sender, EventArgs e)

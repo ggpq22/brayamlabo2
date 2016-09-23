@@ -57,5 +57,17 @@ namespace SistemaEncomienda
             frmRegistrarse fr = new frmRegistrarse();
             fr.ShowDialog();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            frmAgregarEmpresa ade = new frmAgregarEmpresa();
+            ade.ShowDialog();
+        }
+
+        private void btnEstadistica_Click(object sender, EventArgs e)
+        {
+            frmEstadisticas fe = new frmEstadisticas();
+            fe.ShowDialog();
+        }
     }
 }
