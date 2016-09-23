@@ -64,3 +64,4 @@ C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRastrearPaquete.resources
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenuSucursal.resources
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMisenvios.resources
+C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmVerCuentas.resources

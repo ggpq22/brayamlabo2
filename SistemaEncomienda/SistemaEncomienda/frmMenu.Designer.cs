@@ -37,6 +37,7 @@
             this.btnAgregarEmpresa = new System.Windows.Forms.Button();
             this.btnAgregarUsuarios = new System.Windows.Forms.Button();
             this.btnEstadistica = new System.Windows.Forms.Button();
+            this.btnVerUsuarios = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAgregarCliente
@@ -54,6 +55,7 @@
             this.btnAgregarCliente.TabIndex = 0;
             this.btnAgregarCliente.UseVisualStyleBackColor = false;
             this.btnAgregarCliente.Click += new System.EventHandler(this.btnAgregarCliente_Click);
+            this.btnAgregarCliente.MouseHover += new System.EventHandler(this.btnAgregarCliente_MouseHover);
             // 
             // btnModificarEliminar
             // 
@@ -70,6 +72,7 @@
             this.btnModificarEliminar.TabIndex = 1;
             this.btnModificarEliminar.UseVisualStyleBackColor = false;
             this.btnModificarEliminar.Click += new System.EventHandler(this.btnModificarEliminar_Click);
+            this.btnModificarEliminar.MouseHover += new System.EventHandler(this.btnModificarEliminar_MouseHover);
             // 
             // btnAgregarPaquete
             // 
@@ -86,6 +89,7 @@
             this.btnAgregarPaquete.TabIndex = 2;
             this.btnAgregarPaquete.UseVisualStyleBackColor = false;
             this.btnAgregarPaquete.Click += new System.EventHandler(this.btnAgregarPaquete_Click);
+            this.btnAgregarPaquete.MouseHover += new System.EventHandler(this.btnAgregarPaquete_MouseHover);
             // 
             // btnDespacharPaquete
             // 
@@ -102,6 +106,7 @@
             this.btnDespacharPaquete.TabIndex = 3;
             this.btnDespacharPaquete.UseVisualStyleBackColor = false;
             this.btnDespacharPaquete.Click += new System.EventHandler(this.btnDespacharPaquete_Click);
+            this.btnDespacharPaquete.MouseHover += new System.EventHandler(this.btnDespacharPaquete_MouseHover);
             // 
             // btnMostrarEncomiendas
             // 
@@ -118,6 +123,7 @@
             this.btnMostrarEncomiendas.TabIndex = 4;
             this.btnMostrarEncomiendas.UseVisualStyleBackColor = false;
             this.btnMostrarEncomiendas.Click += new System.EventHandler(this.btnMostrarEncomiendas_Click);
+            this.btnMostrarEncomiendas.MouseHover += new System.EventHandler(this.btnMostrarEncomiendas_MouseHover);
             // 
             // btnAgregarEmpresa
             // 
@@ -134,6 +140,7 @@
             this.btnAgregarEmpresa.TabIndex = 5;
             this.btnAgregarEmpresa.UseVisualStyleBackColor = false;
             this.btnAgregarEmpresa.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnAgregarEmpresa.MouseHover += new System.EventHandler(this.btnAgregarEmpresa_MouseHover);
             // 
             // btnAgregarUsuarios
             // 
@@ -146,11 +153,12 @@
             this.btnAgregarUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarUsuarios.Image")));
             this.btnAgregarUsuarios.Location = new System.Drawing.Point(12, 12);
             this.btnAgregarUsuarios.Name = "btnAgregarUsuarios";
-            this.btnAgregarUsuarios.Size = new System.Drawing.Size(58, 59);
+            this.btnAgregarUsuarios.Size = new System.Drawing.Size(58, 71);
             this.btnAgregarUsuarios.TabIndex = 6;
             this.btnAgregarUsuarios.Tag = "2";
             this.btnAgregarUsuarios.UseVisualStyleBackColor = false;
             this.btnAgregarUsuarios.Click += new System.EventHandler(this.btnAgregarUsuarios_Click);
+            this.btnAgregarUsuarios.MouseHover += new System.EventHandler(this.btnAgregarUsuarios_MouseHover);
             // 
             // btnEstadistica
             // 
@@ -167,6 +175,24 @@
             this.btnEstadistica.TabIndex = 7;
             this.btnEstadistica.UseVisualStyleBackColor = false;
             this.btnEstadistica.Click += new System.EventHandler(this.btnEstadistica_Click);
+            this.btnEstadistica.MouseHover += new System.EventHandler(this.btnEstadistica_MouseHover);
+            // 
+            // btnVerUsuarios
+            // 
+            this.btnVerUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.btnVerUsuarios.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Material_Icons_e7fb_3__256;
+            this.btnVerUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVerUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnVerUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnVerUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnVerUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerUsuarios.Location = new System.Drawing.Point(76, 12);
+            this.btnVerUsuarios.Name = "btnVerUsuarios";
+            this.btnVerUsuarios.Size = new System.Drawing.Size(75, 71);
+            this.btnVerUsuarios.TabIndex = 8;
+            this.btnVerUsuarios.UseVisualStyleBackColor = false;
+            this.btnVerUsuarios.Click += new System.EventHandler(this.btnVerUsuarios_Click);
+            this.btnVerUsuarios.MouseHover += new System.EventHandler(this.btnVerUsuarios_MouseHover);
             // 
             // frmMenu
             // 
@@ -175,6 +201,7 @@
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(756, 461);
+            this.Controls.Add(this.btnVerUsuarios);
             this.Controls.Add(this.btnEstadistica);
             this.Controls.Add(this.btnAgregarUsuarios);
             this.Controls.Add(this.btnAgregarEmpresa);
@@ -203,5 +230,6 @@
         private System.Windows.Forms.Button btnAgregarEmpresa;
         private System.Windows.Forms.Button btnAgregarUsuarios;
         private System.Windows.Forms.Button btnEstadistica;
+        private System.Windows.Forms.Button btnVerUsuarios;
     }
 }

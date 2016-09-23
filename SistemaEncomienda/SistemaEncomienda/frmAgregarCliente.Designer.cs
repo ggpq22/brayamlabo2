@@ -64,6 +64,7 @@
             this.tbTelefono.Name = "tbTelefono";
             this.tbTelefono.Size = new System.Drawing.Size(158, 27);
             this.tbTelefono.TabIndex = 23;
+            this.tbTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbDniCliente_KeyPress);
             // 
             // tbDireccionCliente
             // 
@@ -242,6 +243,7 @@
             this.tbCiudadCliente.Name = "tbCiudadCliente";
             this.tbCiudadCliente.Size = new System.Drawing.Size(198, 27);
             this.tbCiudadCliente.TabIndex = 30;
+            this.tbCiudadCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNomCliente_KeyPress);
             // 
             // label1
             // 

@@ -78,7 +78,7 @@ namespace SistemaEncomienda
 
                     else if (tipoUsuario.CompareTo("Sucursal") == 0) 
                     {
-                        frmMenuSucursal mn = new frmMenuSucursal();
+                        frmMenuSucursal mn = new frmMenuSucursal(tbUsuIngresar.Text);
                         mn.ShowDialog();
                     }
                    

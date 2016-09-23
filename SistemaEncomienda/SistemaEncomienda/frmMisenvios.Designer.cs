@@ -66,6 +66,7 @@
             this.tbDniBuscar.Name = "tbDniBuscar";
             this.tbDniBuscar.Size = new System.Drawing.Size(139, 35);
             this.tbDniBuscar.TabIndex = 3;
+            this.tbDniBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbDniBuscar_KeyPress);
             // 
             // label1
             // 
@@ -82,7 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SistemaEncomienda.Properties.Resources._3D_Neon_Balls_2880x1920;
+            this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.Wallpapers_room_com___Wood_I_clean_by_abh83_1280x800;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(934, 474);
             this.Controls.Add(this.label1);

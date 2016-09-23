@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsDevolucion.cs" />
     <Compile Include="clsEmpresa.cs" />
     <Compile Include="clsEmpresa2.cs" />
     <Compile Include="clsSucursal.cs" />

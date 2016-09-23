@@ -21,11 +21,11 @@ namespace SistemaEncomienda
         private void frmAgregarEmpresa_Load(object sender, EventArgs e)
         {
 
-            actualizarGrilla();
+           actualizarGrilla();
 
         }
 
-        public void actualizarGrilla()
+       public void actualizarGrilla()
         {
             clsEmpresa nueva = new clsEmpresa();
             List<clsEmpresa> lista = new List<clsEmpresa>();
@@ -76,6 +76,13 @@ namespace SistemaEncomienda
                 else { MessageBox.Show("ocurrio el siguiente error" + res1 + res2); }
             }
             else { MessageBox.Show("Campos incompleto, por favor ingrese todos los datos solicitados"); }
+
+            tbCiudad.Clear();
+            tbCodP.Clear();
+            tbDireccionEmpresa.Clear();
+            tbNomEmpresa.Clear();
+            tbTelefono.Clear();
+
         }
 
         private void tbNomEmpresa_KeyPress(object sender, KeyPressEventArgs e)

@@ -98,6 +98,23 @@ namespace misClases
         public ArrayList Leer()
         {
             return sucu.Leer(this);
+
+        }
+
+        public clsSucursal traerSucursal(string nombre) 
+        {
+            clsSucursal retornar = new clsSucursal();
+            clsSucursal aux = new clsSucursal();
+            foreach (clsSucursal a in aux.Leer()) 
+            {
+                if (a.Nombre == nombre) 
+                {
+                    retornar = a;
+                    break;
+                }
+            }
+
+            return retornar;
         }
 
     }

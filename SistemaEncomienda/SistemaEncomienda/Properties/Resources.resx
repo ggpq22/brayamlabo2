@@ -118,193 +118,202 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="octicons_f007(6)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\octicons_f007(6)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cryan-tick-round-button-26826" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cryan-tick-round-button-26826.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="27d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\27d1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="linea_1f4(0)_1024" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\linea_1f4(0)_1024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e161(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e161(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Entypo_e4ae(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Entypo_e4ae(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="19828088-Login-Form-Formulario-para-el-sitio-web-la-p-gina-de-inicio-de-sesi-n-de-plantilla-Foto-de-archivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\19828088-Login-Form-Formulario-para-el-sitio-web-la-p-gina-de-inicio-de-sesi-n-de-plantilla-Foto-de-archivo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondo-negro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo-negro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wallpaper_fullhd-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wallpaper_fullhd-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icomoon_e681(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icomoon_e681(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e888(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e888(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-7790" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-7790.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e7fe(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e7fe(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Entypo_2713(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Entypo_2713(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ok-icon-6091" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ok-icon-6091.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Aquaris-E10_wallpaper_v1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Aquaris-E10_wallpaper_v1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AA1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="la-foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\la-foto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maxresdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxresdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Iconia_41(2)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Iconia_41(2)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="octicons_f012(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\octicons_f012(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e7fe(0)_2561" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e7fe(0)_2561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="octicons_f035(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\octicons_f035(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e888(8)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e888(8)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e161(0)_2561" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e161(0)_2561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="linecons_e00d(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\linecons_e00d(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondo-pagina_ff13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo-pagina_ff13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Entypo_e4ae(0)_5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Entypo_e4ae(0)_5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="linea_1f4(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\linea_1f4(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="27d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\27d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abstract-vector-minimalistic-red-black-1920x1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abstract-vector-minimalistic-red-black-1920x1200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e235(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e235(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user-add-26863" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-add-26863.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="638383__wallpaper-mambots-black-web_p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\638383__wallpaper-mambots-black-web_p.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Entypo_2716(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Entypo_2716(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e03f(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e03f(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Iconic_e001(1)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Iconic_e001(1)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e55a(1)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e55a(1)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-77901" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-77901.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Door" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Entypo_e4ad(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Entypo_e4ad(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e02f(1)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e02f(1)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Iconic_e01f(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Iconic_e01f(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fondos de Pantalla Gratis Abstractos (164)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fondos de Pantalla Gratis Abstractos (164).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abstracto-colores-triangulos-images-194433" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abstracto-colores-triangulos-images-194433.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Iconic_2718(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Iconic_2718(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="abstract-colored-vector-background_73531" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstract-colored-vector-background_73531.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo-abstracto-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo-abstracto-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mini-fletes-fletes-economicos-repartos-encomiendas-etc-18450-MLU20155030348_082014-O" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mini-fletes-fletes-economicos-repartos-encomiendas-etc-18450-MLU20155030348_082014-O.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Colorful-origami-background-vector-illustration-design" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Colorful-origami-background-vector-illustration-design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Material Icons_e161(0)_2562" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Material Icons_e161(0)_2562.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="23214wide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\23214wide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="octicons_f012(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\octicons_f012(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bge02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bge02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="abstract-colored-vector-background_73531" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abstract-colored-vector-background_73531.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e161(0)_2562" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e161(0)_2562.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e161(0)_2561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e161(0)_2561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iconia_41(2)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconia_41(2)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-7790" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-7790.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aquaris-E10_wallpaper_v1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aquaris-E10_wallpaper_v1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mini-fletes-fletes-economicos-repartos-encomiendas-etc-18450-MLU20155030348_082014-O" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mini-fletes-fletes-economicos-repartos-encomiendas-etc-18450-MLU20155030348_082014-O.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="23214wide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\23214wide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo-pagina_ff13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo-pagina_ff13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icomoon_e681(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icomoon_e681(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Entypo_e722(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Entypo_e722(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Material Icons_e888(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e888(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Entypo_e4ad(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Entypo_e4ad(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e888(8)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e888(8)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo-abstracto-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo-abstracto-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iconic_e001(1)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconic_e001(1)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoOtro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoOtro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AA1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linecons_e00d(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linecons_e00d(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="octicons_f035(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\octicons_f035(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="octicons_f007(6)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\octicons_f007(6)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abstract-vector-minimalistic-red-black-1920x1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstract-vector-minimalistic-red-black-1920x1200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok-icon-6091" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok-icon-6091.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="windows-wallpaper-screen-logon-images-logonscreens-thoosje-check-42786" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\windows-wallpaper-screen-logon-images-logonscreens-thoosje-check-42786.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="40998137-Guardar-icono-Foto-de-archivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\40998137-Guardar-icono-Foto-de-archivo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Entypo_2716(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Entypo_2716(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linea_1f4(0)_1024" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linea_1f4(0)_1024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e03f(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e03f(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e7fb(3)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e7fb(3)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Entypo_2713(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Entypo_2713(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="27d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\27d1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abstracto-colores-triangulos-images-194433" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstracto-colores-triangulos-images-194433.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Entypo_e4ae(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Entypo_e4ae(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e235(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e235(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="la-foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\la-foto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e55a(1)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e55a(1)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maxresdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxresdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wallpaper_fullhd-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaper_fullhd-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo-negro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo-negro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3D-Neon-Balls-2880x1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3D-Neon-Balls-2880x1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Material Icons_e161(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e161(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-add-26863" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-add-26863.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linea_1f4(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linea_1f4(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="19828088-Login-Form-Formulario-para-el-sitio-web-la-p-gina-de-inicio-de-sesi-n-de-plantilla-Foto-de-archivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\19828088-Login-Form-Formulario-para-el-sitio-web-la-p-gina-de-inicio-de-sesi-n-de-plantilla-Foto-de-archivo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="27d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\27d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="638383__wallpaper-mambots-black-web_p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\638383__wallpaper-mambots-black-web_p.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Entypo_d83d(0)_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Entypo_d83d(0)_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Iconic_e01f(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconic_e01f(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Colorful-origami-background-vector-illustration-design" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Colorful-origami-background-vector-illustration-design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cryan-tick-round-button-26826" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cryan-tick-round-button-26826.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e7fe(0)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e7fe(0)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="40998137-Guardar-icono-Foto-de-archivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\40998137-Guardar-icono-Foto-de-archivo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Entypo_e4ae(0)_5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Entypo_e4ae(0)_5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e02f(1)_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e02f(1)_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material Icons_e7fe(0)_2561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material Icons_e7fe(0)_2561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-77901" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ubuntu-nuevos-fondos-escritorio-wallpaper-predominan-siempre-77901.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondos de Pantalla Gratis Abstractos (164)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondos de Pantalla Gratis Abstractos (164).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallpapers-room_com___Wood_I_clean_by_abh83_1280x800" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wallpapers-room_com___Wood_I_clean_by_abh83_1280x800.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

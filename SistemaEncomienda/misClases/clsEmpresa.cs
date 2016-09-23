@@ -9,15 +9,15 @@ namespace misClases
 {
    public  class clsEmpresa : clsObjeto
     {
-       clsArchivoBinario empresa = new clsArchivoBinario("C://prueba", "empresa.dat");
+       clsArchivoBinario empresa = new clsArchivoBinario("C://prueba","empresa.dat");
        
-       int id;
+       
        string nombreEmpresa;
        string ciudadUbicacion;
        string direccion;
        string telefono;
        int codPostal;
-
+       int id;
 
        public int CodPostal 
        {

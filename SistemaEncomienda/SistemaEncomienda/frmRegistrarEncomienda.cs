@@ -89,8 +89,9 @@ namespace SistemaEncomienda
 
         private void dgvElegirPaquete_Click(object sender, EventArgs e)
         {
+            float resultado =float.Parse(dgvElegirPaquete.CurrentRow.Cells["Kilos"].Value.ToString())*10;
             tbCodpaquete.Text = dgvElegirPaquete.CurrentRow.Cells["Codigo"].Value.ToString();
-            tbPrecio.Text = dgvElegirPaquete.CurrentRow.Cells["Kilos"].Value.ToString();
+            tbPrecio.Text = resultado.ToString();
             tbCodPostal.Text = dgvElegirPaquete.CurrentRow.Cells["codigoPostal"].Value.ToString();
            
         }

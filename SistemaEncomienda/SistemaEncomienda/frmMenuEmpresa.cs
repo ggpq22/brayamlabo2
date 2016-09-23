@@ -26,14 +26,16 @@ namespace SistemaEncomienda
 
         private void frmMenuEmpresa_Load(object sender, EventArgs e)
         {
+            clsFactura b = new clsFactura();
             dgvEnviosRecibidos.DataSource = null;
             lista = new List<clsFactura>();
-            foreach (clsFactura f in aux.Leer())
+            lista = b.traerFacturas(nombre);
+            if (lista != null)
             {
-                lista.Add(f);
+                dgvEnviosRecibidos.DataSource = lista;
             }
-            dgvEnviosRecibidos.DataSource = lista;
 
+            dt.Visible = false;
             List<clsSucursal> listasucursal = new List<clsSucursal>();
             clsSucursal a = new clsSucursal();
 
@@ -52,7 +54,7 @@ namespace SistemaEncomienda
         {
             clsEmpresa emp = new clsEmpresa();
             clsEmpresa aux = new clsEmpresa();
-            emp = aux.traerEmpresa(nombre);
+             emp = aux.traerEmpresa(nombre);
             if (dgvEnviosRecibidos.SelectedRows.Count != 0)
             {
 
@@ -89,7 +91,7 @@ namespace SistemaEncomienda
                             g.Id = cambiar.Id;
                             g.Codigo = cambiar.Codigo;
                             g.Kilos = cambiar.Kilos;
-                            g.Estado = "El paquete se encuentra en la central de:" + emp.NombreEmpresa + " en " + emp.CiudadUbicacion + "ubicada en:" + emp.Direccion + "y pronto se hara la entrega";
+                            g.Estado = "El paquete se encuentra en la central de:" + emp.NombreEmpresa + " en " + emp.CiudadUbicacion + "ubicada en: " + emp.Direccion + " y pronto se hara la entrega";
                             lista1.Add(g);
                         }
                         else { lista1.Add(g); }

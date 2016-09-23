@@ -111,7 +111,7 @@ namespace claseArchivo
             ArrayList Lista = new ArrayList();
 
 
-            FileStream fs = new FileStream(nombreCompleto, FileMode.OpenOrCreate);
+            FileStream fs = new FileStream(nombreCompleto, FileMode.OpenOrCreate,FileAccess.Read);
             BinaryReader br=new BinaryReader(fs);
 
             Type tipo = null;
@@ -171,9 +171,9 @@ namespace claseArchivo
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                Lista.Add(null);
             }
 
             br.Close();

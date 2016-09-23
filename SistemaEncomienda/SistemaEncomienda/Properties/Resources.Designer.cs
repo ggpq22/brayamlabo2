@@ -354,6 +354,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondoOtro {
+            get {
+                object obj = ResourceManager.GetObject("fondoOtro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fondos_de_Pantalla_Gratis_Abstractos__164_ {
             get {
                 object obj = ResourceManager.GetObject("Fondos de Pantalla Gratis Abstractos (164)", resourceCulture);
@@ -544,6 +554,16 @@ namespace SistemaEncomienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Material_Icons_e7fb_3__256 {
+            get {
+                object obj = ResourceManager.GetObject("Material Icons_e7fb(3)_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Material_Icons_e7fe_0__256 {
             get {
                 object obj = ResourceManager.GetObject("Material Icons_e7fe(0)_256", resourceCulture);
@@ -678,6 +698,16 @@ namespace SistemaEncomienda.Properties {
         internal static System.Drawing.Bitmap wallpaper_fullhd_2 {
             get {
                 object obj = ResourceManager.GetObject("wallpaper_fullhd-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wallpapers_room_com___Wood_I_clean_by_abh83_1280x800 {
+            get {
+                object obj = ResourceManager.GetObject("Wallpapers-room_com___Wood_I_clean_by_abh83_1280x800", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

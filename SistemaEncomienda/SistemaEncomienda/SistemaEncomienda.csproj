@@ -159,6 +159,12 @@
     <Compile Include="frmRegistrarse.Designer.cs">
       <DependentUpon>frmRegistrarse.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVerCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerCuentas.Designer.cs">
+      <DependentUpon>frmVerCuentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAgregarCliente.resx">
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrarse.resx">
       <DependentUpon>frmRegistrarse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerCuentas.resx">
+      <DependentUpon>frmVerCuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -354,6 +363,9 @@
     <None Include="Resources\fondo-abstracto-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Wallpapers-room_com___Wood_I_clean_by_abh83_1280x800.jpg" />
+    <None Include="Resources\Material Icons_e7fb%283%29_256.png" />
+    <None Include="Resources\fondoOtro.jpg" />
     <None Include="Resources\image1.jpg" />
     <None Include="Resources\linea_1f4%280%29_1024.png" />
     <None Include="Resources\linea_1f4%280%29_512.png" />

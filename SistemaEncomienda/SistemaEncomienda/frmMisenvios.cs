@@ -39,5 +39,23 @@ namespace SistemaEncomienda
         {
 
         }
+
+        private void tbDniBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            else if (char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            else if (char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

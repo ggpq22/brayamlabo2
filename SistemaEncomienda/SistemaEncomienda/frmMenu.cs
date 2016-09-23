@@ -68,6 +68,67 @@ namespace SistemaEncomienda
         {
             frmEstadisticas fe = new frmEstadisticas();
             fe.ShowDialog();
+           
+        }
+
+        ToolTip t = new ToolTip();
+        ToolTip t1 = new ToolTip();
+        ToolTip t2 = new ToolTip();
+        ToolTip t3 = new ToolTip();
+        ToolTip t4 = new ToolTip();
+        ToolTip t5 = new ToolTip();
+        ToolTip t6 = new ToolTip();
+        ToolTip t7 = new ToolTip();
+        ToolTip t8 = new ToolTip();
+        private void btnAgregarCliente_MouseHover(object sender, EventArgs e)
+        {
+            t.Show("Agregar Cliente",btnAgregarCliente);
+        }
+
+        private void btnEstadistica_MouseHover(object sender, EventArgs e)
+        {
+            t1.Show("Estadisticas", btnEstadistica);
+        }
+
+        private void btnAgregarEmpresa_MouseHover(object sender, EventArgs e)
+        {
+            t2.Show("Agregar Empresa",btnAgregarEmpresa);
+        }
+
+        private void btnMostrarEncomiendas_MouseHover(object sender, EventArgs e)
+        {
+            t3.Show("Ver envios",btnMostrarEncomiendas);
+        }
+
+        private void btnDespacharPaquete_MouseHover(object sender, EventArgs e)
+        {
+            t4.Show("Registrar Encomienda",btnDespacharPaquete);
+        }
+
+        private void btnAgregarPaquete_MouseHover(object sender, EventArgs e)
+        {
+            t5.Show("Registrar paquete",btnAgregarPaquete);
+        }
+
+        private void btnModificarEliminar_MouseHover(object sender, EventArgs e)
+        {
+            t6.Show("Modificar cliente",btnModificarEliminar);
+        }
+
+        private void btnVerUsuarios_Click(object sender, EventArgs e)
+        {
+            frmVerCuentas f = new frmVerCuentas();
+            f.ShowDialog();
+        }
+
+        private void btnVerUsuarios_MouseHover(object sender, EventArgs e)
+        {
+            t7.Show("Ver cuentas",btnVerUsuarios);
+        }
+
+        private void btnAgregarUsuarios_MouseHover(object sender, EventArgs e)
+        {
+            t8.Show("Agregar Usuario",btnAgregarUsuarios);
         }
     }
 }
