@@ -49,7 +49,7 @@ namespace claseArchivo
                 fs = new FileStream(nombreCompleto, FileMode.Append);
             }
 
-            bw = new BinaryWriter(fs);
+            bw = new BinaryWriter(fs,Encoding.UTF8);
 
             try
             {
@@ -112,8 +112,7 @@ namespace claseArchivo
 
 
             FileStream fs = new FileStream(nombreCompleto, FileMode.OpenOrCreate);
-            BinaryReader br;
-            br = new BinaryReader(fs);
+            BinaryReader br=new BinaryReader(fs);
 
             Type tipo = null;
             PropertyInfo[] propiedades = null;
