@@ -56,3 +56,11 @@ C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncom
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenuSucursal.resources
 C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmEstadisticas.resources
 >>>>>>> 129bd2a3ce2c1cf105269657b4771aebcfbadcad
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarEmpresa.resources
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmAgregarSucursal.resources
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmEmpresaMenuPrincipal.resources
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmEstadisticas.resources
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmLibre.resources
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmRastrearPaquete.resources
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMenuSucursal.resources
+C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\SistemaEncomienda\obj\Debug\SistemaEncomienda.frmMisenvios.resources

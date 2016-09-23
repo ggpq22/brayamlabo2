@@ -24,14 +24,18 @@ namespace SistemaEncomienda
 
         private void frmMostrarVentas_Load(object sender, EventArgs e)
         {
-          
 
-            cbEmpresa.Items.Add("Dumas cat");
-            cbEmpresa.Items.Add("Chevaliers");
-            cbEmpresa.Items.Add("Rapido argentino");
-            cbEmpresa.Items.Add("Transporte San Juan");
-            cbEmpresa.Items.Add("Panaholma");
-            cbEmpresa.Items.Add("Blanca Paloma");
+            clsEmpresa nueva = new clsEmpresa();
+
+            foreach (clsEmpresa a in nueva.Leer())
+            {
+                if (a != null)
+                {
+                    cbEmpresa.Items.Add(a.NombreEmpresa);
+                }
+
+            }
+
             cbEmpresa.Items.Add("Todas");
             cbEmpresa.SelectedItem = "Todas";
 

@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 using System;
-=======
-
-﻿using System;
->>>>>>> 129bd2a3ce2c1cf105269657b4771aebcfbadcad
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,14 +64,6 @@ namespace SistemaEncomienda
                 {
                     cbempresas.Items.Add(c.NombreEmpresa);
                 }
-<<<<<<< HEAD
-
-                else { MessageBox.Show("ocurrio el siguiente error" + res); }
-            }
-        }
-    }
-}
-=======
             }
 
            
@@ -192,5 +179,3 @@ namespace SistemaEncomienda
         }
     }
 }
-
->>>>>>> 129bd2a3ce2c1cf105269657b4771aebcfbadcad

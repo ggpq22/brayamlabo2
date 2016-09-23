@@ -56,28 +56,28 @@
             // 
             // tbDireccionEmpresa
             // 
+            this.tbDireccionEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDireccionEmpresa.Location = new System.Drawing.Point(214, 190);
-            this.tbDireccionEmpresa.Multiline = true;
             this.tbDireccionEmpresa.Name = "tbDireccionEmpresa";
-            this.tbDireccionEmpresa.Size = new System.Drawing.Size(105, 27);
-            this.tbDireccionEmpresa.TabIndex = 36;
+            this.tbDireccionEmpresa.Size = new System.Drawing.Size(105, 22);
+            this.tbDireccionEmpresa.TabIndex = 2;
             // 
             // tbCiudad
             // 
+            this.tbCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCiudad.Location = new System.Drawing.Point(214, 134);
-            this.tbCiudad.Multiline = true;
             this.tbCiudad.Name = "tbCiudad";
-            this.tbCiudad.Size = new System.Drawing.Size(105, 27);
-            this.tbCiudad.TabIndex = 34;
+            this.tbCiudad.Size = new System.Drawing.Size(105, 22);
+            this.tbCiudad.TabIndex = 1;
             this.tbCiudad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNomEmpresa_KeyPress);
             // 
             // tbNomEmpresa
             // 
+            this.tbNomEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNomEmpresa.Location = new System.Drawing.Point(214, 89);
-            this.tbNomEmpresa.Multiline = true;
             this.tbNomEmpresa.Name = "tbNomEmpresa";
-            this.tbNomEmpresa.Size = new System.Drawing.Size(105, 27);
-            this.tbNomEmpresa.TabIndex = 33;
+            this.tbNomEmpresa.Size = new System.Drawing.Size(105, 22);
+            this.tbNomEmpresa.TabIndex = 0;
             this.tbNomEmpresa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNomEmpresa_KeyPress);
             // 
             // lblCel
@@ -134,11 +134,11 @@
             // 
             // tbTelefono
             // 
+            this.tbTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTelefono.Location = new System.Drawing.Point(214, 242);
-            this.tbTelefono.Multiline = true;
             this.tbTelefono.Name = "tbTelefono";
-            this.tbTelefono.Size = new System.Drawing.Size(105, 27);
-            this.tbTelefono.TabIndex = 37;
+            this.tbTelefono.Size = new System.Drawing.Size(105, 22);
+            this.tbTelefono.TabIndex = 3;
             this.tbTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTelefono_KeyPress);
             // 
             // btnGrabar
@@ -159,12 +159,12 @@
             // 
             // tbCodP
             // 
+            this.tbCodP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCodP.Location = new System.Drawing.Point(214, 292);
             this.tbCodP.MaxLength = 4;
-            this.tbCodP.Multiline = true;
             this.tbCodP.Name = "tbCodP";
-            this.tbCodP.Size = new System.Drawing.Size(105, 27);
-            this.tbCodP.TabIndex = 43;
+            this.tbCodP.Size = new System.Drawing.Size(105, 22);
+            this.tbCodP.TabIndex = 4;
             this.tbCodP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTelefono_KeyPress);
             // 
             // label1

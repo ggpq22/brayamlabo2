@@ -20,25 +20,30 @@ namespace SistemaEncomienda
 
         private void frmAgregarEmpresa_Load(object sender, EventArgs e)
         {
+
+            actualizarGrilla();
+
+        }
+
+        public void actualizarGrilla()
+        {
             clsEmpresa nueva = new clsEmpresa();
             List<clsEmpresa> lista = new List<clsEmpresa>();
 
-            foreach (clsEmpresa a in nueva.Leer()) 
+            foreach (clsEmpresa a in nueva.Leer())
             {
-                if (a!=null)
+                if (a != null)
                 {
                     lista.Add(a);
                 }
-               
+
             }
 
-            if (lista != null) 
+            if (lista != null)
             {
                 dgvEmpresa.DataSource = null;
                 dgvEmpresa.DataSource = lista;
             }
-
-
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -65,6 +70,7 @@ namespace SistemaEncomienda
 
                 if (res1 == string.Empty && res2 == string.Empty)
                 {
+                    actualizarGrilla();
                     MessageBox.Show("Empresa registrada con exito el usuario para ingresar al sistema es: " + usuarioEmpresa.Usuario + " y la contraseña: " + usuarioEmpresa.Contraseña);
                 }
                 else { MessageBox.Show("ocurrio el siguiente error" + res1 + res2); }
