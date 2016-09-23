@@ -14,6 +14,8 @@ namespace SistemaEncomienda
     public partial class frmMenuEmpresa : Form
     {
         string nombre;
+        List<clsFactura> lista;
+        clsFactura aux = new clsFactura();
         public frmMenuEmpresa(string nombre)
         {
             this.nombre = nombre;
@@ -24,21 +26,26 @@ namespace SistemaEncomienda
 
         private void frmMenuEmpresa_Load(object sender, EventArgs e)
         {
-            List<clsFactura> lista = new List<clsFactura>();
-            clsFactura aux = new clsFactura();
-            lista = aux.traerFacturas(nombre);
-
+            dgvEnviosRecibidos.DataSource = null;
+            lista = new List<clsFactura>();
+            foreach (clsFactura f in aux.Leer())
+            {
+                lista.Add(f);
+            }
             dgvEnviosRecibidos.DataSource = lista;
 
             List<clsSucursal> listasucursal = new List<clsSucursal>();
             clsSucursal a = new clsSucursal();
 
-            foreach (clsSucursal f in a.Leer())
+            foreach (clsSucursal s in a.Leer())
             {
-                listasucursal.Add(f);
+                listasucursal.Add(s);
             }
 
             dgvSucursal.DataSource = listasucursal;
+
+            dtpFiltroFechaEnvioDesde.Enabled = ckbFiltroFechaEnvioDesde.Checked;
+            dtpFiltroFechaEnvioHasta.Enabled = ckbFiltroFechaEnvioHasta.Checked;
         }
 
         private void btnRecibido_Click(object sender, EventArgs e)
@@ -215,86 +222,172 @@ namespace SistemaEncomienda
         }
         private void btnDevolver_Click(object sender, EventArgs e)
         {
-            
-                clsFactura fac = new clsFactura();
-                if (dgvEnviosRecibidos.SelectedRows.Count != 0)
+
+            clsFactura fac = new clsFactura();
+            if (dgvEnviosRecibidos.SelectedRows.Count != 0)
+            {
+                fac.Id = int.Parse(dgvEnviosRecibidos.CurrentRow.Cells["id"].Value.ToString());
+                fac.Nombrecliente = dgvEnviosRecibidos.CurrentRow.Cells["nombrecliente"].Value.ToString();
+                fac.CodigoPaquete = dgvEnviosRecibidos.CurrentRow.Cells["codigoPaquete"].Value.ToString();
+                fac.Dnicliente = int.Parse(dgvEnviosRecibidos.CurrentRow.Cells["dnicliente"].Value.ToString());
+                fac.Empresa = dgvEnviosRecibidos.CurrentRow.Cells["empresa"].Value.ToString();
+                fac.Fechaenvio = Convert.ToDateTime(dgvEnviosRecibidos.CurrentRow.Cells["fechaenvio"].Value.ToString());
+                fac.Fechallegada = Convert.ToDateTime(dgvEnviosRecibidos.CurrentRow.Cells["fechallegada"].Value.ToString());
+                fac.Postal = int.Parse(dgvEnviosRecibidos.CurrentRow.Cells["Postal"].Value.ToString());
+                fac.Precio = float.Parse(dgvEnviosRecibidos.CurrentRow.Cells["precio"].Value.ToString());
+
+
+                List<clsPaquete> lista1 = new List<clsPaquete>();
+                clsPaquete cambiar = new clsPaquete();
+                cambiar = cambiar.retornarPaquete(fac.CodigoPaquete);
+
+                clsPaquete p2 = new clsPaquete();
+                if (cambiar.Estado == "Despachado")
                 {
-                    fac.Id = int.Parse(dgvEnviosRecibidos.CurrentRow.Cells["id"].Value.ToString());
-                    fac.Nombrecliente = dgvEnviosRecibidos.CurrentRow.Cells["nombrecliente"].Value.ToString();
-                    fac.CodigoPaquete = dgvEnviosRecibidos.CurrentRow.Cells["codigoPaquete"].Value.ToString();
-                    fac.Dnicliente = int.Parse(dgvEnviosRecibidos.CurrentRow.Cells["dnicliente"].Value.ToString());
-                    fac.Empresa = dgvEnviosRecibidos.CurrentRow.Cells["empresa"].Value.ToString();
-                    fac.Fechaenvio = Convert.ToDateTime(dgvEnviosRecibidos.CurrentRow.Cells["fechaenvio"].Value.ToString());
-                    fac.Fechallegada = Convert.ToDateTime(dgvEnviosRecibidos.CurrentRow.Cells["fechallegada"].Value.ToString());
-                    fac.Postal = int.Parse(dgvEnviosRecibidos.CurrentRow.Cells["Postal"].Value.ToString());
-                    fac.Precio = float.Parse(dgvEnviosRecibidos.CurrentRow.Cells["precio"].Value.ToString());
-
-
-                    List<clsPaquete> lista1 = new List<clsPaquete>();
-                    clsPaquete cambiar = new clsPaquete();
-                    cambiar = cambiar.retornarPaquete(fac.CodigoPaquete);
-
-                    clsPaquete p2 = new clsPaquete();
-                    if (cambiar.Estado == "Despachado")
+                    foreach (clsPaquete g in p2.Leer())
                     {
-                        foreach (clsPaquete g in p2.Leer())
+                        if (g.Id == cambiar.Id)
                         {
-                            if (g.Id == cambiar.Id)
-                            {
-                                g.NombreDestinatario = cambiar.NombreDestinatario;
-                                g.DniDestinatario = cambiar.DniDestinatario;
-                                g.Ciudad = cambiar.Ciudad;
-                                g.Direccion = cambiar.Direccion;
-                                g.Id = cambiar.Id;
-                                g.Codigo = cambiar.Codigo;
-                                g.Kilos = cambiar.Kilos;
-                                g.Estado = "El paquete fue devuelto al local donde usted envio la encomienda,para mas informacion comuniquese al 0800456788";
-                                lista1.Add(g);
-                            }
-                            else { lista1.Add(g); }
+                            g.NombreDestinatario = cambiar.NombreDestinatario;
+                            g.DniDestinatario = cambiar.DniDestinatario;
+                            g.Ciudad = cambiar.Ciudad;
+                            g.Direccion = cambiar.Direccion;
+                            g.Id = cambiar.Id;
+                            g.Codigo = cambiar.Codigo;
+                            g.Kilos = cambiar.Kilos;
+                            g.Estado = "El paquete fue devuelto al local donde usted envio la encomienda,para mas informacion comuniquese al 0800456788";
+                            lista1.Add(g);
                         }
+                        else { lista1.Add(g); }
+                    }
 
-                        clsPaquete modi = new clsPaquete();
-                        string res = string.Empty;
-                        res = modi.ModificarPaq(lista1);
+                    clsPaquete modi = new clsPaquete();
+                    string res = string.Empty;
+                    res = modi.ModificarPaq(lista1);
 
-                        List<clsFactura> listafact = new List<clsFactura>();
-                        clsFactura f = new clsFactura();
+                    List<clsFactura> listafact = new List<clsFactura>();
+                    clsFactura f = new clsFactura();
 
-                        foreach (clsFactura facturita in f.Leer())
+                    foreach (clsFactura facturita in f.Leer())
+                    {
+                        if (facturita.Id == fac.Id)
                         {
-                            if (facturita.Id == fac.Id)
-                            {
-                                facturita.Id = fac.Id;
-                                facturita.CodigoPaquete = fac.CodigoPaquete;
-                                facturita.Dnicliente = fac.Dnicliente;
-                                facturita.Empresa = fac.Empresa;
-                                facturita.Fechaenvio = fac.Fechaenvio;
-                                facturita.Fechallegada = dt.Value;
-                                facturita.Postal = fac.Postal;
-                                facturita.Precio = fac.Precio;
-                                facturita.Nombrecliente = fac.Nombrecliente;
+                            facturita.Id = fac.Id;
+                            facturita.CodigoPaquete = fac.CodigoPaquete;
+                            facturita.Dnicliente = fac.Dnicliente;
+                            facturita.Empresa = fac.Empresa;
+                            facturita.Fechaenvio = fac.Fechaenvio;
+                            facturita.Fechallegada = dt.Value;
+                            facturita.Postal = fac.Postal;
+                            facturita.Precio = fac.Precio;
+                            facturita.Nombrecliente = fac.Nombrecliente;
 
-                                listafact.Add(facturita);
-                            }
-                            else { listafact.Add(facturita); }
+                            listafact.Add(facturita);
                         }
+                        else { listafact.Add(facturita); }
+                    }
 
-                        clsFactura m = new clsFactura();
-                        string resFac = string.Empty;
-                        resFac = m.ModificarFac(listafact);
-                        if (res == string.Empty && resFac == string.Empty)
-                        {
-                            MessageBox.Show("los datos fueron actualizados");
-                        }
+                    clsFactura m = new clsFactura();
+                    string resFac = string.Empty;
+                    resFac = m.ModificarFac(listafact);
+                    if (res == string.Empty && resFac == string.Empty)
+                    {
+                        MessageBox.Show("los datos fueron actualizados");
+                    }
 
-                        else { MessageBox.Show("ocurrio el siguiente error:" + res + resFac); }
+                    else { MessageBox.Show("ocurrio el siguiente error:" + res + resFac); }
+
+                }
+                else { MessageBox.Show("No puede realizar esta operacion"); }
+            }
+            else { MessageBox.Show("Seleccione la encomienda"); }
+        }
+
+        private void tbFiltroCodigoPaquete_TextChanged(object sender, EventArgs e)
+        {
+            filtros();
+        }
+
+        public void filtros()
+        {
+            lista = new List<clsFactura>();
+            foreach (clsFactura f in aux.Leer())
+            {
+                lista.Add(f);
+            }
+            dgvEnviosRecibidos.DataSource = lista;
+
+  
+            if (tbFiltroCodigoPaquete.Text != string.Empty)
+            {
+                for (int i = 0; i < dgvEnviosRecibidos.Rows.Count; i++)
+                {
+                    if (tbFiltroCodigoPaquete.Text.Length > Convert.ToString(dgvEnviosRecibidos.Rows[i].Cells["CodigoPaquete"].Value).Length || Convert.ToString(dgvEnviosRecibidos.Rows[i].Cells["CodigoPaquete"].Value).Substring(0, tbFiltroCodigoPaquete.Text.Length).ToLower().CompareTo(tbFiltroCodigoPaquete.Text.ToLower()) != 0)
+                    {
+                        dgvEnviosRecibidos.CurrentCell = null;
+                        dgvEnviosRecibidos.Rows[i].Visible = false;
 
                     }
-                    else { MessageBox.Show("No puede realizar esta operacion"); }
                 }
-                else { MessageBox.Show("Seleccione la encomienda"); }
+            }
+
+            dtpFiltroFechaEnvioDesde.Enabled = ckbFiltroFechaEnvioDesde.Checked;
+            dtpFiltroFechaEnvioHasta.Enabled = ckbFiltroFechaEnvioHasta.Checked;
+
+            if ((ckbFiltroFechaEnvioDesde.Checked) && (ckbFiltroFechaEnvioHasta.Checked))
+            {
+
+                for (int i = 0; i < dgvEnviosRecibidos.Rows.Count; i++)
+                {
+                    if ((Convert.ToDateTime(dgvEnviosRecibidos.Rows[i].Cells["Fechaenvio"].Value).Date < Convert.ToDateTime(dtpFiltroFechaEnvioDesde.Value).Date) || (Convert.ToDateTime(dgvEnviosRecibidos.Rows[i].Cells["Fechaenvio"].Value).Date > Convert.ToDateTime(dtpFiltroFechaEnvioHasta.Value).Date))
+                    {
+                        dgvEnviosRecibidos.CurrentCell = null;
+                        dgvEnviosRecibidos.Rows[i].Visible = false;
+
+                    }
+                }
+
+            }
+            else if ((ckbFiltroFechaEnvioDesde.Checked) && (!ckbFiltroFechaEnvioHasta.Checked))
+            {
+                for (int i = 0; i < dgvEnviosRecibidos.Rows.Count; i++)
+                {
+                    if ((Convert.ToDateTime(dgvEnviosRecibidos.Rows[i].Cells["Fechaenvio"].Value).Date < Convert.ToDateTime(dtpFiltroFechaEnvioDesde.Value).Date))
+                    {
+                        dgvEnviosRecibidos.CurrentCell = null;
+                        dgvEnviosRecibidos.Rows[i].Visible = false;
+
+                    }
+                }
+            }
+            else if ((!ckbFiltroFechaEnvioDesde.Checked) && (ckbFiltroFechaEnvioHasta.Checked))
+            {
+                for (int i = 0; i < dgvEnviosRecibidos.Rows.Count; i++)
+                {
+                    if ((Convert.ToDateTime(dgvEnviosRecibidos.Rows[i].Cells["Fechaenvio"].Value).Date > Convert.ToDateTime(dtpFiltroFechaEnvioHasta.Value).Date))
+                    {
+                        dgvEnviosRecibidos.CurrentCell = null;
+                        dgvEnviosRecibidos.Rows[i].Visible = false;
+
+                    }
+                }
+            }
+
+            int indice = 0;
+            bool continuar = false;
+            while (indice < dgvEnviosRecibidos.Rows.Count && !continuar)
+            {
+                if (dgvEnviosRecibidos.Rows[indice].Visible)
+                {
+                    dgvEnviosRecibidos.Rows[indice].Selected = true;
+                    continuar = true;
+                }
+                indice++;
+            }
+
+
         }
-        }
+
     }
+}
 

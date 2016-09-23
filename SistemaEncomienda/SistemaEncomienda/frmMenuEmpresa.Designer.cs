@@ -30,49 +30,57 @@
         private void InitializeComponent()
         {
             this.dgvEnviosRecibidos = new System.Windows.Forms.DataGridView();
-            this.tbCodAbuscar = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbFiltroCodigoPaquete = new System.Windows.Forms.TextBox();
+            this.lblCodigoPaquete = new System.Windows.Forms.Label();
             this.dgvSucursal = new System.Windows.Forms.DataGridView();
             this.btnRecibido = new System.Windows.Forms.Button();
             this.btnTransferir = new System.Windows.Forms.Button();
             this.dt = new System.Windows.Forms.DateTimePicker();
             this.btnDevolver = new System.Windows.Forms.Button();
+            this.pnlFiltroFechaEnvio = new System.Windows.Forms.Panel();
+            this.ckbFiltroFechaEnvioHasta = new System.Windows.Forms.CheckBox();
+            this.ckbFiltroFechaEnvioDesde = new System.Windows.Forms.CheckBox();
+            this.dtpFiltroFechaEnvioHasta = new System.Windows.Forms.DateTimePicker();
+            this.dtpFiltroFechaEnvioDesde = new System.Windows.Forms.DateTimePicker();
+            this.lblFiltroFechaEnvio = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEnviosRecibidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSucursal)).BeginInit();
+            this.pnlFiltroFechaEnvio.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvEnviosRecibidos
             // 
             this.dgvEnviosRecibidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEnviosRecibidos.Location = new System.Drawing.Point(65, 100);
+            this.dgvEnviosRecibidos.Location = new System.Drawing.Point(65, 177);
             this.dgvEnviosRecibidos.Name = "dgvEnviosRecibidos";
-            this.dgvEnviosRecibidos.Size = new System.Drawing.Size(637, 248);
+            this.dgvEnviosRecibidos.Size = new System.Drawing.Size(637, 216);
             this.dgvEnviosRecibidos.TabIndex = 0;
             // 
-            // tbCodAbuscar
+            // tbFiltroCodigoPaquete
             // 
-            this.tbCodAbuscar.Location = new System.Drawing.Point(318, 53);
-            this.tbCodAbuscar.Multiline = true;
-            this.tbCodAbuscar.Name = "tbCodAbuscar";
-            this.tbCodAbuscar.Size = new System.Drawing.Size(129, 31);
-            this.tbCodAbuscar.TabIndex = 1;
+            this.tbFiltroCodigoPaquete.Location = new System.Drawing.Point(116, 123);
+            this.tbFiltroCodigoPaquete.Multiline = true;
+            this.tbFiltroCodigoPaquete.Name = "tbFiltroCodigoPaquete";
+            this.tbFiltroCodigoPaquete.Size = new System.Drawing.Size(129, 31);
+            this.tbFiltroCodigoPaquete.TabIndex = 1;
+            this.tbFiltroCodigoPaquete.TextChanged += new System.EventHandler(this.tbFiltroCodigoPaquete_TextChanged);
             // 
-            // label1
+            // lblCodigoPaquete
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(69, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 31);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Codigo Paquete";
+            this.lblCodigoPaquete.AutoSize = true;
+            this.lblCodigoPaquete.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoPaquete.Location = new System.Drawing.Point(75, 85);
+            this.lblCodigoPaquete.Name = "lblCodigoPaquete";
+            this.lblCodigoPaquete.Size = new System.Drawing.Size(222, 31);
+            this.lblCodigoPaquete.TabIndex = 2;
+            this.lblCodigoPaquete.Text = "Codigo Paquete";
             // 
             // dgvSucursal
             // 
             this.dgvSucursal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSucursal.Location = new System.Drawing.Point(65, 363);
+            this.dgvSucursal.Location = new System.Drawing.Point(65, 408);
             this.dgvSucursal.Name = "dgvSucursal";
-            this.dgvSucursal.Size = new System.Drawing.Size(637, 248);
+            this.dgvSucursal.Size = new System.Drawing.Size(637, 216);
             this.dgvSucursal.TabIndex = 3;
             // 
             // btnRecibido
@@ -109,11 +117,10 @@
             // 
             // dt
             // 
-            this.dt.Location = new System.Drawing.Point(473, 12);
+            this.dt.Location = new System.Drawing.Point(369, 12);
             this.dt.Name = "dt";
             this.dt.Size = new System.Drawing.Size(200, 20);
             this.dt.TabIndex = 30;
-            this.dt.Visible = false;
             // 
             // btnDevolver
             // 
@@ -131,20 +138,96 @@
             this.btnDevolver.UseVisualStyleBackColor = false;
             this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
             // 
+            // pnlFiltroFechaEnvio
+            // 
+            this.pnlFiltroFechaEnvio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlFiltroFechaEnvio.Controls.Add(this.ckbFiltroFechaEnvioHasta);
+            this.pnlFiltroFechaEnvio.Controls.Add(this.ckbFiltroFechaEnvioDesde);
+            this.pnlFiltroFechaEnvio.Controls.Add(this.dtpFiltroFechaEnvioHasta);
+            this.pnlFiltroFechaEnvio.Controls.Add(this.dtpFiltroFechaEnvioDesde);
+            this.pnlFiltroFechaEnvio.Controls.Add(this.lblFiltroFechaEnvio);
+            this.pnlFiltroFechaEnvio.Location = new System.Drawing.Point(321, 87);
+            this.pnlFiltroFechaEnvio.Name = "pnlFiltroFechaEnvio";
+            this.pnlFiltroFechaEnvio.Size = new System.Drawing.Size(371, 67);
+            this.pnlFiltroFechaEnvio.TabIndex = 32;
+            // 
+            // ckbFiltroFechaEnvioHasta
+            // 
+            this.ckbFiltroFechaEnvioHasta.AutoSize = true;
+            this.ckbFiltroFechaEnvioHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbFiltroFechaEnvioHasta.Location = new System.Drawing.Point(133, 34);
+            this.ckbFiltroFechaEnvioHasta.Name = "ckbFiltroFechaEnvioHasta";
+            this.ckbFiltroFechaEnvioHasta.Size = new System.Drawing.Size(64, 19);
+            this.ckbFiltroFechaEnvioHasta.TabIndex = 26;
+            this.ckbFiltroFechaEnvioHasta.TabStop = false;
+            this.ckbFiltroFechaEnvioHasta.Text = "Hasta :";
+            this.ckbFiltroFechaEnvioHasta.UseVisualStyleBackColor = true;
+            this.ckbFiltroFechaEnvioHasta.CheckedChanged += new System.EventHandler(this.tbFiltroCodigoPaquete_TextChanged);
+            // 
+            // ckbFiltroFechaEnvioDesde
+            // 
+            this.ckbFiltroFechaEnvioDesde.AutoSize = true;
+            this.ckbFiltroFechaEnvioDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbFiltroFechaEnvioDesde.Location = new System.Drawing.Point(133, 10);
+            this.ckbFiltroFechaEnvioDesde.Name = "ckbFiltroFechaEnvioDesde";
+            this.ckbFiltroFechaEnvioDesde.Size = new System.Drawing.Size(68, 19);
+            this.ckbFiltroFechaEnvioDesde.TabIndex = 25;
+            this.ckbFiltroFechaEnvioDesde.TabStop = false;
+            this.ckbFiltroFechaEnvioDesde.Text = "Desde :";
+            this.ckbFiltroFechaEnvioDesde.UseVisualStyleBackColor = true;
+            this.ckbFiltroFechaEnvioDesde.CheckedChanged += new System.EventHandler(this.tbFiltroCodigoPaquete_TextChanged);
+            // 
+            // dtpFiltroFechaEnvioHasta
+            // 
+            this.dtpFiltroFechaEnvioHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFiltroFechaEnvioHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFiltroFechaEnvioHasta.Location = new System.Drawing.Point(207, 33);
+            this.dtpFiltroFechaEnvioHasta.MaxDate = new System.DateTime(2030, 12, 30, 0, 0, 0, 0);
+            this.dtpFiltroFechaEnvioHasta.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.dtpFiltroFechaEnvioHasta.Name = "dtpFiltroFechaEnvioHasta";
+            this.dtpFiltroFechaEnvioHasta.Size = new System.Drawing.Size(146, 20);
+            this.dtpFiltroFechaEnvioHasta.TabIndex = 24;
+            this.dtpFiltroFechaEnvioHasta.TabStop = false;
+            this.dtpFiltroFechaEnvioHasta.ValueChanged += new System.EventHandler(this.tbFiltroCodigoPaquete_TextChanged);
+            // 
+            // dtpFiltroFechaEnvioDesde
+            // 
+            this.dtpFiltroFechaEnvioDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFiltroFechaEnvioDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFiltroFechaEnvioDesde.Location = new System.Drawing.Point(207, 7);
+            this.dtpFiltroFechaEnvioDesde.MaxDate = new System.DateTime(2030, 12, 30, 0, 0, 0, 0);
+            this.dtpFiltroFechaEnvioDesde.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.dtpFiltroFechaEnvioDesde.Name = "dtpFiltroFechaEnvioDesde";
+            this.dtpFiltroFechaEnvioDesde.Size = new System.Drawing.Size(146, 20);
+            this.dtpFiltroFechaEnvioDesde.TabIndex = 23;
+            this.dtpFiltroFechaEnvioDesde.TabStop = false;
+            this.dtpFiltroFechaEnvioDesde.ValueChanged += new System.EventHandler(this.tbFiltroCodigoPaquete_TextChanged);
+            // 
+            // lblFiltroFechaEnvio
+            // 
+            this.lblFiltroFechaEnvio.AutoSize = true;
+            this.lblFiltroFechaEnvio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFiltroFechaEnvio.Location = new System.Drawing.Point(12, 24);
+            this.lblFiltroFechaEnvio.Name = "lblFiltroFechaEnvio";
+            this.lblFiltroFechaEnvio.Size = new System.Drawing.Size(102, 16);
+            this.lblFiltroFechaEnvio.TabIndex = 9;
+            this.lblFiltroFechaEnvio.Text = "Fecha Envio :";
+            // 
             // frmMenuEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemaEncomienda.Properties.Resources.fondo_negro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1037, 649);
+            this.ClientSize = new System.Drawing.Size(1037, 741);
+            this.Controls.Add(this.pnlFiltroFechaEnvio);
             this.Controls.Add(this.btnDevolver);
             this.Controls.Add(this.dt);
             this.Controls.Add(this.btnTransferir);
             this.Controls.Add(this.btnRecibido);
             this.Controls.Add(this.dgvSucursal);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbCodAbuscar);
+            this.Controls.Add(this.lblCodigoPaquete);
+            this.Controls.Add(this.tbFiltroCodigoPaquete);
             this.Controls.Add(this.dgvEnviosRecibidos);
             this.DoubleBuffered = true;
             this.Name = "frmMenuEmpresa";
@@ -153,6 +236,8 @@
             this.Load += new System.EventHandler(this.frmMenuEmpresa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEnviosRecibidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSucursal)).EndInit();
+            this.pnlFiltroFechaEnvio.ResumeLayout(false);
+            this.pnlFiltroFechaEnvio.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,12 +246,18 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvEnviosRecibidos;
-        private System.Windows.Forms.TextBox tbCodAbuscar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbFiltroCodigoPaquete;
+        private System.Windows.Forms.Label lblCodigoPaquete;
         private System.Windows.Forms.DataGridView dgvSucursal;
         private System.Windows.Forms.Button btnRecibido;
         private System.Windows.Forms.Button btnTransferir;
         private System.Windows.Forms.DateTimePicker dt;
         private System.Windows.Forms.Button btnDevolver;
+        private System.Windows.Forms.Panel pnlFiltroFechaEnvio;
+        private System.Windows.Forms.CheckBox ckbFiltroFechaEnvioHasta;
+        private System.Windows.Forms.CheckBox ckbFiltroFechaEnvioDesde;
+        private System.Windows.Forms.DateTimePicker dtpFiltroFechaEnvioHasta;
+        private System.Windows.Forms.DateTimePicker dtpFiltroFechaEnvioDesde;
+        private System.Windows.Forms.Label lblFiltroFechaEnvio;
     }
 }
