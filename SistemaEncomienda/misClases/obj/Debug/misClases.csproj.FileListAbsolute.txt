@@ -1,25 +1,3 @@
-c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\misClases\bin\Debug\misClases.dll
-c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\misClases\bin\Debug\misClases.pdb
-c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\misClases\bin\Debug\claseArchivo.dll
-c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\misClases\bin\Debug\claseArchivo.pdb
-c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\misClases\obj\Debug\misClases.csprojResolveAssemblyReference.cache
-c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\misClases\obj\Debug\misClases.dll
-c:\users\brayamdario\documents\visual studio 2013\Projects\SistemaEncomienda\misClases\obj\Debug\misClases.pdb
-C:\Users\Admin\Downloads\SistemaEncomienda\misClases\bin\Debug\misClases.dll
-C:\Users\Admin\Downloads\SistemaEncomienda\misClases\bin\Debug\misClases.pdb
-C:\Users\Admin\Downloads\SistemaEncomienda\misClases\bin\Debug\claseArchivo.dll
-C:\Users\Admin\Downloads\SistemaEncomienda\misClases\bin\Debug\claseArchivo.pdb
-C:\Users\Admin\Downloads\SistemaEncomienda\misClases\obj\Debug\misClases.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Downloads\SistemaEncomienda\misClases\obj\Debug\misClases.dll
-C:\Users\Admin\Downloads\SistemaEncomienda\misClases\obj\Debug\misClases.pdb
-C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\bin\Debug\misClases.dll
-C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\bin\Debug\misClases.pdb
-C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\bin\Debug\claseArchivo.dll
-C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\bin\Debug\claseArchivo.pdb
-C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\obj\Debug\misClases.csprojResolveAssemblyReference.cache
-C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\obj\Debug\misClases.dll
-C:\Users\Brayamdario\Desktop\SistemaEncomienda\misClases\obj\Debug\misClases.pdb
-<<<<<<< HEAD
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\misClases.dll
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\misClases.pdb
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\claseArchivo.dll
@@ -27,12 +5,3 @@ C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debu
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\obj\Debug\misClases.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\obj\Debug\misClases.dll
 C:\Users\Admin\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\obj\Debug\misClases.pdb
-=======
-C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\misClases.dll
-C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\misClases.pdb
-C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\claseArchivo.dll
-C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\bin\Debug\claseArchivo.pdb
-C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\obj\Debug\misClases.csprojResolveAssemblyReference.cache
-C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\obj\Debug\misClases.dll
-C:\Users\Brayamdario\Documents\GitHub\brayamlabo2\SistemaEncomienda\misClases\obj\Debug\misClases.pdb
->>>>>>> c380b6b6e27f6fb3b77c6af4b0b596b2ea1dfb1f

@@ -72,6 +72,7 @@
             this.Controls.Add(this.dataGridView1);
             this.DoubleBuffered = true;
             this.Name = "frmMenuEmpresa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenuEmpresa";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
